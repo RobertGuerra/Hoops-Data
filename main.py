@@ -31,13 +31,11 @@ team_df["team_id"] = team_df["id"]
 team_df = team_df.drop("id", axis=1)
 
 # creating final df
-ballislife_df = player_metadata_df.join(team_df).astype(str)
+ballislife_df = player_metadata_df.join(team_df).drop(["player_id", "team_id", "city", "name"], axis=1).astype(str)
 ballislife_df = ballislife_df.replace(['nan', ''], 'N/A')
 
 # Polishing df, changing column style
-raw_cols = ballislife_df.columns
-formatted_cols = [col.replace("_", " ").title() for col in raw_cols]
-ballislife_df.columns = formatted_cols
+ballislife_df.columns = [col.replace("_", " ").title() for col in ballislife_df.columns]
 
 
 # main app layout
@@ -53,6 +51,7 @@ app.layout = html.Div(
         dash_table.DataTable(
             data=ballislife_df.to_dict('records'),
             id = 'table',
+
             columns = [
                 dict(
                     name=col,
@@ -61,7 +60,8 @@ app.layout = html.Div(
             ],
 
             style_data=dict(
-                textAlign="center"
+                textAlign="center",
+                border='1px solid blue'
             ),
 
             style_header=dict(
@@ -80,7 +80,8 @@ app.layout = html.Div(
             ],
 
             style_cell=dict(
-                backgroundColor="black"
+                backgroundColor="black",
+                fontFamily="Helvetica, serif"
             )
         )
     ]
