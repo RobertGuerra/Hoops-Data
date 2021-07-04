@@ -25,23 +25,37 @@ temp_df = pd.DataFrame.from_records(data)
 player_metadata_df = temp_df.drop("team", axis=1) # axis=1 specifies column-wise drop
 player_metadata_df["player_id"] = player_metadata_df["id"]
 player_metadata_df = player_metadata_df.drop("id", axis=1)
-player_metadata_df['Player'] = player_metadata_df["first_name"] + ' ' + player_metadata_df["last_name"]
 
-# player_metadata_df['first_name'] = player_metadata_df['Player']
-player_metadata_df.drop(["first_name", "last_name"], axis=1, inplace=True)
+# combining player first and last name
+player_metadata_df['Player'] = player_metadata_df['first_name'] + ' ' + player_metadata_df['last_name']
+player_metadata_df['first_name'] = player_metadata_df['Player']
+
+# dropping fields and renaming Player column
+player_metadata_df.drop(["last_name", "Player"], axis=1, inplace=True)
+player_metadata_df.rename(columns={'first_name':'Player'}, inplace=True)
+
+# combining player Height
+player_metadata_df['height_feet'] = player_metadata_df['height_feet'].astype(str)
+player_metadata_df['height_inches'] = player_metadata_df['height_inches'].astype(str)
+player_metadata_df['height_feet'] = player_metadata_df['height_feet'] + ' ' + player_metadata_df['height_inches']
+player_metadata_df.drop('height_inches', axis=1, inplace=True)
+player_metadata_df.rename(columns={'height_feet':'player_height'}, inplace=True)
 
 
 # separated team metadata
 team_df = pd.DataFrame.from_records(temp_df["team"])
 team_df["team_id"] = team_df["id"]
 team_df["abbr"] = team_df["abbreviation"]
-team_df = team_df.drop("id", axis=1)
-team_df = team_df.drop("abbreviation", axis=1)
+
+# dropping some fields and renaming Team column
+team_df = team_df.drop(["id","abbreviation", "city", "name"], axis=1)
+team_df.rename(columns={'full_name':'Team Name'}, inplace=True)
+
+
 
 # final dataframe
-ballislife_df = player_metadata_df.join(team_df)
+ballislife_df = player_metadata_df.join(team_df).drop(['player_id','team_id'], axis=1)
 
-print(player_metadata_df)
 
 # main app layout
 app.layout = html.Div(
