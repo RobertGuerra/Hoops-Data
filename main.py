@@ -30,22 +30,64 @@ team_df = pd.DataFrame.from_records(temp_df["team"])
 team_df["team_id"] = team_df["id"]
 team_df = team_df.drop("id", axis=1)
 
-# team_df["first_name"] = player_metadata_df["first_name"]
+# creating final df
+ballislife_df = player_metadata_df.join(team_df).astype(str)
+ballislife_df = ballislife_df.replace(['nan', ''], 'N/A')
 
-ballislife_df = player_metadata_df.join(team_df)
-print("SPAGHETTI: ", ballislife_df[["full_name", "name", "abbreviation"]])
-print(ballislife_df.columns)
+# Polishing df, changing column style
+raw_cols = ballislife_df.columns
+formatted_cols = [col.replace("_", " ").title() for col in raw_cols]
+ballislife_df.columns = formatted_cols
+
 
 # main app layout
-app.layout = dash_table.DataTable(ballislife_df,
-                             id = 'table',
-                             columns = [
-                                 dict(
-                                     name=col,
-                                     id=col
-                                 ) for col in ballislife_df.columns
-                             ])
+app.layout = html.Div(
+    [
+        html.H1(
+            "Hoops Data",
+            style=dict(
+                textAlign="center"
+            )
+        ),
+
+        dash_table.DataTable(
+            data=ballislife_df.to_dict('records'),
+            id = 'table',
+            columns = [
+                dict(
+                    name=col,
+                    id=col
+                ) for col in ballislife_df.columns
+            ],
+
+            style_data=dict(
+                textAlign="center"
+            ),
+
+            style_header=dict(
+                textAlign="center"
+            ),
+
+            style_data_conditional=[
+                {
+                    'if': {
+                        'filter_query': '{{{}}} = "N/A"'.format(col),
+                        'column_id': col
+                    },
+                    'color': 'red'
+
+                } for col in ballislife_df.columns
+            ],
+
+            style_cell=dict(
+                backgroundColor="black"
+            )
+        )
+    ]
+)
+
+
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    app.run_server("0.0.0.0", 5000, debug=True)
