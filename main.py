@@ -23,15 +23,15 @@ app.layout = html.Div(
 
                 style=dict(
                     display="flex",
-                    justifyContent="center"
+                    justifyContent="left",
+                    marginLeft="3.30%"
                 )
             )
         ],
-
 
         id="card-output"
     )
 )
 
 if __name__ == '__main__':
-    app.run_server("0.0.0.0", 5000, debug=True)
+    app.run_server(debug=True)

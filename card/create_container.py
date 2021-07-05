@@ -1,7 +1,6 @@
 import dash_html_components as html
 import dash_bootstrap_components as dbc
 
-# Helper Functions
 def create_card(datum):
 
     # DATUM CONTIANS:
@@ -13,7 +12,9 @@ def create_card(datum):
     color = datum['color']
     alt_color = datum['alternateColor']
 
-    print(name, record, summary)
+    className="first-place" if "1st" in record else "not-first"
+
+    print(name, record, summary,logo)
 
     card = dbc.Card(
             [
@@ -25,7 +26,8 @@ def create_card(datum):
                                     [
                                         html.H4(name, className="card-title"),
 
-                                        html.P(f"Standing: {summary}", className="card-text")
+                                        html.P(f"Standing: {summary}", className=className),
+
                                     ],
 
                                     className="title-date"
@@ -42,25 +44,56 @@ def create_card(datum):
                                 # )
 
                             ],
-
-                            className="upper-card-container"
+                            className="upper-card-container",
                         )
                     ],
 
                     style=dict(
                         fontFamily="Frutiger, Frutiger Linotype, Univers, Calibri, Gill Sans, Gill Sans MT, Myriad Pro, Myriad,\
                             DejaVu Sans Condensed, Liberation Sans, Nimbus Sans L, Tahoma, Geneva, Helvetica Neue, \
-                            Helvetica, Arial, sans-serif"
+                            Helvetica, Arial, sans-serif",
                     )
                 ),
-                dbc.CardFooter(f"{record}"),
+                dbc.CardFooter(
+                    [
+                        html.Div(
+                            f"Season Record: {record}",
+                            className=className,
+                            style=dict(
+                                display="flex",
+                            )
+                        ),
+
+                        html.Div(
+                            html.Img(
+                                src=f"{logo}",
+                                height="80%",
+                                width="80%"
+                            ),
+
+                            style=dict(
+                                marginLeft="50%"
+                            )
+                        )
+                    ],
+
+                    style=dict(
+                        display="flex",
+
+                    )
+                               # style={
+                               #     "backgroundImage":f"url({logo})",
+                               #     "backgroundSize":"25% auto",
+                               #     "backgroundRepeat":"no-repeat"
+                               # }
+                )
             ],
 
             className='card-containers',
             style=dict(
                 width="18rem",
-                margin="5px"
-            )
-        )
+                margin="2px"
+            ),
+    )
     print(type(card))
     return card

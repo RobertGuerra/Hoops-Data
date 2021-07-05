@@ -33,4 +33,3 @@ for team in ABBR:
     request = requests.get(BASE_URL + f'{team}')
     info = json.loads(request.content)['team']
     card_data.append(filter_card_components(info))
-
