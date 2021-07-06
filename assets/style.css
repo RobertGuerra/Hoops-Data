@@ -6,3 +6,16 @@
 .first-place {
     font-color:red;
 }
+
+.disp {
+    float: left;
+    whiteSpace: no-warp;
+}
+
+.image-logo {
+    width: 75px;
+    height: 75px;
+    margin: auto;
+    object-fit: contain;
+    display: list-item;
+}

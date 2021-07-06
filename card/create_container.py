@@ -13,6 +13,8 @@ def create_card(datum):
     alt_color = datum['alternateColor']
 
     className="first-place" if "1st" in record else "not-first"
+    className="disp"
+    className="image"
 
     print(name, record, summary,logo)
 
@@ -24,75 +26,49 @@ def create_card(datum):
                             [
                                 html.Div(
                                     [
-                                        html.H4(name, className="card-title"),
-
-                                        html.P(f"Standing: {summary}", className=className),
-
+                                        html.H4(name, className="card-title", style={"display":"inline-table"}),
+                                        #html.P(f"Standing: {summary}", className="disp"),
+                                        html.Img(
+                                            src=f"{logo}",
+                                            className="image-logo"
+                                        ),
                                     ],
 
                                     className="title-date"
                                 ),
 
-                                # html.P(
-                                #     error_text,
-                                #     className="error-text",
-                                #     hidden=is_valid,
-                                #     style=dict(
-                                #         marginLeft="60px",
-                                #         fontWeight=100
-                                #     )
-                                # )
-
                             ],
                             className="upper-card-container",
                         )
                     ],
-
                     style=dict(
                         fontFamily="Frutiger, Frutiger Linotype, Univers, Calibri, Gill Sans, Gill Sans MT, Myriad Pro, Myriad,\
                             DejaVu Sans Condensed, Liberation Sans, Nimbus Sans L, Tahoma, Geneva, Helvetica Neue, \
                             Helvetica, Arial, sans-serif",
+                        borderBottom="solid"
                     )
                 ),
                 dbc.CardFooter(
                     [
                         html.Div(
-                            f"Season Record: {record}",
-                            className=className,
-                            style=dict(
-                                display="flex",
-                            )
+                            [
+                                html.P(f"Season Record: {record}"),
+                                html.P(f"Standing: {summary}", className="disp")
+                            ]
+
                         ),
-
-                        html.Div(
-                            html.Img(
-                                src=f"{logo}",
-                                height="80%",
-                                width="80%"
-                            ),
-
-                            style=dict(
-                                marginLeft="50%"
-                            )
-                        )
                     ],
 
                     style=dict(
                         display="flex",
-
                     )
-                               # style={
-                               #     "backgroundImage":f"url({logo})",
-                               #     "backgroundSize":"25% auto",
-                               #     "backgroundRepeat":"no-repeat"
-                               # }
                 )
             ],
 
             className='card-containers',
             style=dict(
                 width="18rem",
-                margin="2px"
+                margin="4px"
             ),
     )
     print(type(card))
