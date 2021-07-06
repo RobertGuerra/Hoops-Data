@@ -4,7 +4,7 @@
 }
 
 .first-place {
-    font-color:red;
+    color:green;
 }
 
 .disp {
@@ -18,4 +18,5 @@
     margin: auto;
     object-fit: contain;
     display: list-item;
+    text-transform: none;
 }

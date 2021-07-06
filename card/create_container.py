@@ -12,6 +12,7 @@ def create_card(datum):
     color = datum['color']
     alt_color = datum['alternateColor']
 
+    # css class names
     className="first-place" if "1st" in record else "not-first"
     className="disp"
     className="image"
@@ -27,7 +28,6 @@ def create_card(datum):
                                 html.Div(
                                     [
                                         html.H4(name, className="card-title", style={"display":"inline-table"}),
-                                        #html.P(f"Standing: {summary}", className="disp"),
                                         html.Img(
                                             src=f"{logo}",
                                             className="image-logo"
@@ -53,9 +53,8 @@ def create_card(datum):
                         html.Div(
                             [
                                 html.P(f"Season Record: {record}"),
-                                html.P(f"Standing: {summary}", className="disp")
-                            ]
-
+                                html.P(f"Standing: {summary}")
+                            ],
                         ),
                     ],
 
@@ -68,8 +67,11 @@ def create_card(datum):
             className='card-containers',
             style=dict(
                 width="18rem",
-                margin="4px"
+                margin="4px",
+                textAlign="-webkit-center"
             ),
     )
+
     print(type(card))
+
     return card
