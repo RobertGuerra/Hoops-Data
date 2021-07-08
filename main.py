@@ -12,7 +12,7 @@ app = dash.Dash(__name__, external_stylesheets=[dbc.themes.DARKLY])
 app.layout = html.Div(
             children=[
                 html.Div(
-                        [
+                        [   # dropdown skeleton
                             dcc.Dropdown(
                                 id='team-list',
                                 options=[
