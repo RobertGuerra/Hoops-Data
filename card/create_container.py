@@ -3,9 +3,6 @@ import dash_bootstrap_components as dbc
 
 
 def create_card(datum):
-
-    # DATUM CONTIANS:
-    # 'displayName', 'logo', 'record', 'standingSummary', 'color', 'alternateColor'
     name = datum['displayName']
     logo = datum['logo']
     record = datum['record']
