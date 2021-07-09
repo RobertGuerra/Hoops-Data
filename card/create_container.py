@@ -33,16 +33,22 @@ def create_card(datum):
                                             className="card-title",
                                             style=dict(
                                                 display="inline-table",
-                                                color="#" + team_color,
-                                                textShadow="-0.4px 0.6px #" + alt_color,
+                                                color="white",
+                                                # color="#" + team_color,
+                                                # textShadow="-0.4px 0.6px #" + alt_color,
                                                 font="30px"
                                             )
                                         ),
 
                                         html.Img(
                                             src=f"{logo}",
-                                            className="image-logo"
+                                            className="image-logo",
                                         ),
+                                        html.Br(),
+                                        html.P(f"Season Record: {record}"),
+                                        html.P(f"Standing: {summary}",
+                                               className=numberOne)
+
                                     ],
 
                                     className="title-date"
@@ -57,28 +63,29 @@ def create_card(datum):
                             DejaVu Sans Condensed, Liberation Sans, Nimbus Sans L, Tahoma, Geneva, Helvetica Neue, \
                             Helvetica, Arial, sans-serif",
                         #borderBottom="solid",
-                        backgroundColor="dark-gray",
+                        #backgroundColor="dark-gray",
+                        backgroundColor="#" + team_color,
                         fontWeight="200"
                     )
                 ),
 
-                dbc.CardFooter(
-                    [
-                        html.Div(
-                            [
-                                html.P(f"Season Record: {record}"),
-                                html.P(f"Standing: {summary}",
-                                       className=numberOne)
-                            ],
-                        ),
-                    ],
-
-                    style=dict(
-                        display="flex",
-                        backgroundColor='#' + team_color,
-                        justifyContent="center"
-                    )
-                )
+                # dbc.CardFooter(
+                #     [
+                #         html.Div(
+                #             [
+                #                 html.P(f"Season Record: {record}"),
+                #                 html.P(f"Standing: {summary}",
+                #                        className=numberOne)
+                #             ],
+                #         ),
+                #     ],
+                #
+                #     style=dict(
+                #         display="flex",
+                #         backgroundColor='#' + team_color,
+                #         justifyContent="center"
+                #     )
+                # )
             ],
 
             className='card-containers',
