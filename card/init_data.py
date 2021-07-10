@@ -16,7 +16,6 @@ BASE_URL = 'http://site.api.espn.com/apis/site/v2/sports/basketball/nba/teams/'
 with open('teams.json', 'r') as json_file:
     allData = json.load(json_file)
 
-
 def get_team_roster():
     data_access = allData['sports']
     for leagues_access in data_access:
@@ -27,11 +26,7 @@ def get_team_roster():
             #print(the_teams)
             for access_Individual_teams in the_teams:
                 each_team = access_Individual_teams['team']
-                #print(each_team)
-                for team_roster_links in each_team['links']:
-                    team_rosters = team_roster_links
-                    (print(team_rosters))
-
+                print(each_team['links'][1]['href'])
 
 
 def filter_card_components(info):
