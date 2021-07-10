@@ -13,31 +13,19 @@ ABBR = ["ATL", "BOS","CHA","CHI","CLE","DAL", "DEN","DET",
 
 BASE_URL = 'http://site.api.espn.com/apis/site/v2/sports/basketball/nba/teams/'
 
-with open('teams.json', 'r') as json_file:
-    allData = json.load(json_file)
-
-def get_team_roster():
-    data_access = allData['sports']
-    for leagues_access in data_access:
-        league_data = leagues_access['leagues']
-        #print(league_data)
-        for access_teams in league_data:
-            the_teams = access_teams['teams']
-            #print(the_teams)
-            for access_Individual_teams in the_teams:
-                each_team = access_Individual_teams['team']
-                print(each_team['links'][1]['href'])
-
 
 def filter_card_components(info):
     ser = pd.Series(info)
     # WE WANT displayName, color, alternateColor, standingSummary, logo, and record ovr
-    raw_ser = ser[["displayName", "logos", "record", "standingSummary", "color", "alternateColor"]]
+    raw_ser = ser[["displayName", "logos", "record", "standingSummary", "color", "alternateColor", "links"]]
 
     logo = raw_ser["logos"][0]["href"]
     record_ovr = raw_ser["record"]["items"][0]["summary"]
+    team_link = raw_ser["links"][1]["href"]
 
     refined_ser = raw_ser
+
+    refined_ser["team-link"] = team_link
     refined_ser["logos"] = logo
     refined_ser["record"] = record_ovr
     refined_ser.rename({"logos": "logo"}, inplace=True)
@@ -48,6 +36,3 @@ for team in ABBR:
     request = requests.get(BASE_URL + f'{team}')
     info = json.loads(request.content)['team']
     card_data.append(filter_card_components(info))
-
-
-get_team_roster()

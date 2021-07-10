@@ -25,8 +25,12 @@
 #                     (print(team_rosters))
 
 
-# THIS WORKS!!  ONLY ROSTER LINKS
+#  getting info directly from json file and traversing through it
+# with open('teams.json', 'r') as json_file:
+#     allData = json.load(json_file)
+#
 # def get_team_roster():
+#     team_roster_links = []
 #     data_access = allData['sports']
 #     for leagues_access in data_access:
 #         league_data = leagues_access['leagues']
@@ -36,4 +40,7 @@
 #             #print(the_teams)
 #             for access_Individual_teams in the_teams:
 #                 each_team = access_Individual_teams['team']
-#                 print(each_team['links'][1]['href'])
+#                 team_roster_links.append(each_team['links'][1]['href'])
+#     return team_roster_links
+#
+# teamRosters = get_team_roster()

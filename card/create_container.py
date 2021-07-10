@@ -9,11 +9,10 @@ def create_card(datum):
     summary = datum['standingSummary']
     team_color = datum['color']
     alt_color = datum['alternateColor']
-
+    team_link = datum['team-link']
 
     # fire for first place
     numberOne = "fire" if "1st" in datum['standingSummary'] else ''
-
 
     # give "white" to alt_color if it resembles team_color
     if alt_color.upper() == team_color.upper() or name in ["Los Angeles Lakers", "Memphis Grizzlies", "Indiana Pacers", "Oklahoma City Thunder", "Toronto Raptors"]:
@@ -47,8 +46,10 @@ def create_card(datum):
                                         html.Br(),
                                         html.P(f"Season Record: {record}"),
                                         html.P(f"Standing: {summary}",
-                                               className=numberOne)
-
+                                               className=numberOne),
+                                        html.A(html.Button('Team Roster', style={"color":"white", "backgroundColor":"#" + team_color}),
+                                               href=team_link
+                                               ),
                                     ],
 
                                     className="title-date"
@@ -73,9 +74,12 @@ def create_card(datum):
                 #     [
                 #         html.Div(
                 #             [
-                #                 html.P(f"Season Record: {record}"),
-                #                 html.P(f"Standing: {summary}",
-                #                        className=numberOne)
+                #                 # html.P(f"Season Record: {record}"),
+                #                 # html.P(f"Standing: {summary}",
+                #                 #        className=numberOne)
+                #                 html.A(html.Button('Team Roster'),
+                #                        href='https://github.com/czbiohub/singlecell-dash/issues/new'
+                #         ),
                 #             ],
                 #         ),
                 #     ],
