@@ -59,7 +59,7 @@ app.layout = html.Div(
                     )
                 ],
                 style={
-                    "margin":"0 auto"
+                    "margin":"auto"
                 }
             )
 if __name__ == '__main__':

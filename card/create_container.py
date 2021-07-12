@@ -18,6 +18,9 @@ def create_card(datum):
     if alt_color.upper() == team_color.upper() or name in ["Los Angeles Lakers", "Memphis Grizzlies", "Indiana Pacers", "Oklahoma City Thunder", "Toronto Raptors"]:
         alt_color = "FFFFFF"
 
+    if name in ["Toronto Raptors"]:
+        team_color = "000000"
+
 
     card = dbc.Card(
             [
@@ -48,7 +51,7 @@ def create_card(datum):
                                         html.P(f"Standing: {summary}",
                                                className=numberOne),
                                         html.A(html.Button('Team Roster', style={"color":"white", "backgroundColor":"#" + team_color}),
-                                               href=team_link
+                                               href=team_link, target='blank'
                                                ),
                                     ],
 
