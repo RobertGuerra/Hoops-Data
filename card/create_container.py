@@ -1,23 +1,23 @@
 import dash_html_components as html
 import dash_bootstrap_components as dbc
 
-def create_card(datum):
 
-    # DATUM CONTIANS:
-    # 'displayName', 'logo', 'record', 'standingSummary', 'color', 'alternateColor'
+def create_card(datum):
     name = datum['displayName']
     logo = datum['logo']
     record = datum['record']
     summary = datum['standingSummary']
-    color = datum['color']
+    team_color = datum['color']
     alt_color = datum['alternateColor']
+    team_link = datum['team-link']
 
-    # css class names
-    className="first-place" if "1st" in record else "not-first"
-    className="disp"
-    className="image"
+    # fire for first place
+    numberOne = "fire" if "1st" in datum['standingSummary'] else ''
 
-    print(name, record, summary,logo)
+    # give "white" to alt_color if it resembles team_color
+    if alt_color.upper() == team_color.upper() or name in ["Los Angeles Lakers", "Memphis Grizzlies", "Indiana Pacers", "Oklahoma City Thunder", "Toronto Raptors"]:
+        alt_color = "FFFFFF"
+
 
     card = dbc.Card(
             [
@@ -27,11 +27,29 @@ def create_card(datum):
                             [
                                 html.Div(
                                     [
-                                        html.H4(name, className="card-title", style={"display":"inline-table"}),
+                                        html.H4(
+                                            name,
+                                            className="card-title",
+                                            style=dict(
+                                                display="inline-table",
+                                                color="white",
+                                                # color="#" + team_color,
+                                                # textShadow="-0.4px 0.6px #" + alt_color,
+                                                font="30px"
+                                            )
+                                        ),
+
                                         html.Img(
                                             src=f"{logo}",
-                                            className="image-logo"
+                                            className="image-logo",
                                         ),
+                                        html.Br(),
+                                        html.P(f"Season Record: {record}"),
+                                        html.P(f"Standing: {summary}",
+                                               className=numberOne),
+                                        html.A(html.Button('Team Roster', style={"color":"white", "backgroundColor":"#" + team_color}),
+                                               href=team_link
+                                               ),
                                     ],
 
                                     className="title-date"
@@ -45,33 +63,41 @@ def create_card(datum):
                         fontFamily="Frutiger, Frutiger Linotype, Univers, Calibri, Gill Sans, Gill Sans MT, Myriad Pro, Myriad,\
                             DejaVu Sans Condensed, Liberation Sans, Nimbus Sans L, Tahoma, Geneva, Helvetica Neue, \
                             Helvetica, Arial, sans-serif",
-                        borderBottom="solid"
+                        #borderBottom="solid",
+                        #backgroundColor="dark-gray",
+                        backgroundColor="#" + team_color,
+                        fontWeight="200"
                     )
                 ),
-                dbc.CardFooter(
-                    [
-                        html.Div(
-                            [
-                                html.P(f"Season Record: {record}"),
-                                html.P(f"Standing: {summary}")
-                            ],
-                        ),
-                    ],
 
-                    style=dict(
-                        display="flex",
-                    )
-                )
+                # dbc.CardFooter(
+                #     [
+                #         html.Div(
+                #             [
+                #                 # html.P(f"Season Record: {record}"),
+                #                 # html.P(f"Standing: {summary}",
+                #                 #        className=numberOne)
+                #                 html.A(html.Button('Team Roster'),
+                #                        href='https://github.com/czbiohub/singlecell-dash/issues/new'
+                #         ),
+                #             ],
+                #         ),
+                #     ],
+                #
+                #     style=dict(
+                #         display="flex",
+                #         backgroundColor='#' + team_color,
+                #         justifyContent="center"
+                #     )
+                # )
             ],
 
             className='card-containers',
             style=dict(
                 width="18rem",
                 margin="4px",
-                textAlign="-webkit-center"
+                textAlign="-webkit-center",
             ),
     )
-
-    print(type(card))
 
     return card
