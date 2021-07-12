@@ -55,9 +55,12 @@ app.layout = html.Div(
                             )
                         ],
 
-                        id="card-output"
+                        id="card-output",
                     )
                 ],
+                style={
+                    "margin":"0 auto"
+                }
             )
 if __name__ == '__main__':
     app.run_server('0.0.0.0', 5000, debug=True)
