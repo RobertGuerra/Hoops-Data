@@ -42,15 +42,17 @@ app.layout = html.Div(
                         [
                             dbc.Row(
                                 [
-                                    create_card(datum)
-
+                                    dbc.Col(create_card(datum), width=12, lg=3)
                                     for datum in card_data
+                                    # create_card(datum)
+                                    #
+                                    # for datum in card_data
                                 ],
 
                                 style=dict(
                                     display="flex",
                                     justifyContent="left",
-                                    marginLeft="3.30%"
+                                    #marginLeft="3.30%"
                                 )
                             )
                         ],
