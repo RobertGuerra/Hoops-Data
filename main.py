@@ -20,9 +20,7 @@ app.layout = html.Div(
                     id="team-list",
                     options=[
                         {"label": i, "value": i}
-                        for i in ["Atlantic", "Central",
-                                  "Pacific", "Northwest",
-                                  "Southeast", "Southwest"]
+                        for i in [card_data]
                         # {"label": "New York", "value": 'NYC'},
                         # {"label": "Los Angeles", "value": 'LA'},
                         # {"label": "Boston", "value": 'MA'}
