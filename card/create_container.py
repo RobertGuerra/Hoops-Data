@@ -60,13 +60,7 @@ def create_card(datum):
                         )
                     ],
                     style=dict(
-                        fontFamily="Frutiger, Frutiger Linotype, Univers, Calibri, Gill Sans, Gill Sans MT, Myriad Pro, Myriad,\
-                            DejaVu Sans Condensed, Liberation Sans, Nimbus Sans L, Tahoma, Geneva, Helvetica Neue, \
-                            Helvetica, Arial, sans-serif",
-                        #borderBottom="solid",
-                        #backgroundColor="dark-gray",
                         backgroundColor="#" + team_color,
-                        fontWeight="200"
                     )
                 ),
 
@@ -92,12 +86,7 @@ def create_card(datum):
                 # )
             ],
 
-            className='card-containers',
-            style=dict(
-                width="18rem",
-                margin="4px",
-                textAlign="-webkit-center",
-            ),
+            className='card',
     )
 
     return card

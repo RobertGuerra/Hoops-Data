@@ -7,60 +7,62 @@ from card.init_data import card_data
 from card.create_container import create_card
 
 # app start
-app = dash.Dash(__name__, external_stylesheets=[dbc.themes.DARKLY])
+app = dash.Dash(__name__, external_stylesheets=[dbc.themes.DARKLY],
+                meta_tags=[{
+                    'name':'viewport',
+                    'content':'width=device-width, initial-scale=1.0, maximum-scale-1.2, minimum-scale=0.5'}])
 
 app.layout = html.Div(
-            children=[
-                html.Div(
-                        [   # dropdown skeleton
-                            dcc.Dropdown(
-                                id='team-list',
-                                options=[
-                                    # {"label": i, "value": i}
-                                    # for i in [card_data]
-                                    {"label": "New York", "value": 'NYC'},
-                                    {"label": "Los Angeles", "value": 'LA'},
-                                    {"label": "Boston", "value": 'MA'}
+    children=[
+        html.Div(
+            [   # dropdown skeleton
+                dcc.Dropdown(
+                    id="team-list",
+                    options=[
+                        {"label": i, "value": i}
+                        for i in ["Atlantic", "Central",
+                                  "Pacific", "Northwest",
+                                  "Southeast", "Southwest"]
+                        # {"label": "New York", "value": 'NYC'},
+                        # {"label": "Los Angeles", "value": 'LA'},
+                        # {"label": "Boston", "value": 'MA'}
 
-                                ],
+                    ],
 
-                                value=['LAL'],
-                                placeholder="Select Sport",
-                                multi=True
-                            )
-                        ],
-                                style={
-                                    "width": "25%",
-                                    "margin-left": "475px",
-                                    "margin-top":"10px",
-                                    "margin-bottom":"10px",
-                                    "verticalAlign":"middle",
-                                    "color":"#000000"
-                                }
-                        ),
-                    html.Div(
-                        [
-                            dbc.Row(
-                                [
-                                    create_card(datum)
+                    className="dropdown",
+                    value=['LAL'],
+                    placeholder="Select Sport",
+                    multi=True
+                )
+            ],
 
-                                    for datum in card_data
-                                ],
+            className="dropdown-div"
+            # style={
+            #     "width": "25%",
+            #     "margin-left": "475px",
+            #     "margin-top":"10px",
+            #     "margin-bottom":"10px",
+            #     "verticalAlign":"middle",
+            #     "color":"#000000"
+            # }
+        ),
 
-                                style=dict(
-                                    display="flex",
-                                    justifyContent="left",
-                                    marginLeft="3.30%"
-                                )
-                            )
-                        ],
+        html.Div(
+            [
+                create_card(datum)
 
-                        id="card-output",
-                    )
-                ],
-                style={
-                    "margin":"0 auto"
-                }
-            )
+                for datum in card_data
+            ],
+
+            id="card-output",
+            className="card-grid"
+        )
+    ],
+
+    className="outermost-div",
+
+)
+
+
 if __name__ == '__main__':
     app.run_server('0.0.0.0', 5000, debug=True)
