@@ -23,84 +23,76 @@ def create_card(datum):
 
 
     card = dbc.Card(
-            [
-                dbc.CardBody(
-                    [
-                        html.Div(
-                            [
-                                html.Div(
-                                    [
-                                        html.H4(
-                                            name,
-                                            className="card-title",
-                                            style=dict(
-                                                display="inline-table",
-                                                color="white",
-                                                # color="#" + team_color,
-                                                # textShadow="-0.4px 0.6px #" + alt_color,
-                                                font="30px"
-                                            )
-                                        ),
+        [
+            dbc.CardBody(
+                [
+                    html.Div(
+                        [
+                            html.Div(
+                                [
+                                    html.H4(
+                                        name,
+                                        className="card-title",
+                                        style=dict(
+                                            display="inline-table",
+                                            color="white",
+                                            # color="#" + team_color,
+                                            # textShadow="-0.4px 0.6px #" + alt_color,
+                                            font="30px"
+                                        )
+                                    ),
 
-                                        html.Img(
-                                            src=f"{logo}",
-                                            className="image-logo",
-                                        ),
-                                        html.Br(),
-                                        html.P(f"Season Record: {record}"),
-                                        html.P(f"Standing: {summary}",
-                                               className=numberOne),
-                                        html.A(html.Button('Team Roster', style={"color":"white", "backgroundColor":"#" + team_color}),
-                                               href=team_link, target='blank'
-                                               ),
-                                    ],
+                                    html.Img(
+                                        src=f"{logo}",
+                                        className="image-logo",
+                                    ),
+                                    html.Br(),
+                                    html.P(f"Season Record: {record}"),
+                                    html.P(f"Standing: {summary}",
+                                           className=numberOne),
+                                    html.A(html.Button(
+                                        'Team Roster',
+                                        style={"color":"white", "backgroundColor":"#" + team_color}),
+                                        href=team_link, target='blank'
+                                    ),
+                                ],
 
-                                    className="title-date"
-                                ),
+                                className="title-date"
+                            ),
 
-                            ],
-                            className="upper-card-container",
-                        )
-                    ],
-                    style=dict(
-                        fontFamily="Frutiger, Frutiger Linotype, Univers, Calibri, Gill Sans, Gill Sans MT, Myriad Pro, Myriad,\
-                            DejaVu Sans Condensed, Liberation Sans, Nimbus Sans L, Tahoma, Geneva, Helvetica Neue, \
-                            Helvetica, Arial, sans-serif",
-                        #borderBottom="solid",
-                        #backgroundColor="dark-gray",
-                        backgroundColor="#" + team_color,
-                        fontWeight="200"
+                        ],
+                        className="upper-card-container",
                     )
-                ),
-
-                # dbc.CardFooter(
-                #     [
-                #         html.Div(
-                #             [
-                #                 # html.P(f"Season Record: {record}"),
-                #                 # html.P(f"Standing: {summary}",
-                #                 #        className=numberOne)
-                #                 html.A(html.Button('Team Roster'),
-                #                        href='https://github.com/czbiohub/singlecell-dash/issues/new'
-                #         ),
-                #             ],
-                #         ),
-                #     ],
-                #
-                #     style=dict(
-                #         display="flex",
-                #         backgroundColor='#' + team_color,
-                #         justifyContent="center"
-                #     )
-                # )
-            ],
-
-            className='card-containers',
-            style=dict(
-                width="20rem",
-                margin="4px",
-                textAlign="-webkit-center",
+                ],
+                style=dict(
+                    backgroundColor="#" + team_color,
+                )
             ),
+
+            # dbc.CardFooter(
+            #     [
+            #         html.Div(
+            #             [
+            #                 # html.P(f"Season Record: {record}"),
+            #                 # html.P(f"Standing: {summary}",
+            #                 #        className=numberOne)
+            #                 html.A(html.Button('Team Roster'),
+            #                        href='https://github.com/czbiohub/singlecell-dash/issues/new'
+            #         ),
+            #             ],
+            #         ),
+            #     ],
+            #
+            #     style=dict(
+            #         display="flex",
+            #         backgroundColor='#' + team_color,
+            #         justifyContent="center"
+            #     )
+            # )
+        ],
+
+        className='card',
+
     )
 
     return card

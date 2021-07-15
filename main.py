@@ -7,62 +7,61 @@ from card.init_data import card_data
 from card.create_container import create_card
 
 # app start
-app = dash.Dash(__name__, external_stylesheets=[dbc.themes.DARKLY])  #dbc.themes.DARKLY,  #dbc.themes.BOOTSTRAP
+app = dash.Dash(__name__, external_stylesheets=[dbc.themes.DARKLY],
+                meta_tags=[{
+                    'name':'viewport',
+                    'content':'width=device-width, initial-scale=1.0, maximum-scale-1.2, minimum-scale=0.5'}])
 
 app.layout = html.Div(
-            children=[
-                html.Div(
-                        [   # dropdown skeleton
-                            dcc.Dropdown(
-                                id='team-list',
-                                options=[
-                                    # {"label": i, "value": i}
-                                    # for i in [card_data]
-                                    {"label": "Eastern Conference", "value": 'NYC'},
-                                    {"label": "Western Conference", "value": 'LA'},
-                                    {"label": "Boston", "value": 'MA'}
+    children=[
+        html.Div(
+            [   # dropdown skeleton
+                dcc.Dropdown(
+                    id="team-list",
+                    options=[
+                        {"label": i, "value": i}
+                        for i in [card_data]
+                        # {"label": "New York", "value": 'NYC'},
+                        # {"label": "Los Angeles", "value": 'LA'},
+                        # {"label": "Boston", "value": 'MA'}
 
-                                ],
 
-                                value=['LAL', 'BOS'],
-                                placeholder="Selections",
-                                multi=True
-                            )
-                        ],
-                                style={
-                                    "width": "25%",
-                                    "margin-left": "475px",
-                                    "margin-top":"10px",
-                                    "margin-bottom":"10px",
-                                    "verticalAlign":"middle",
-                                    "color":"#000000"
-                                }
-                        ),
-                    html.Div(
-                        [
-                            dbc.Row(
-                                [
-                                    dbc.Col(create_card(datum), width=12, lg=3)
-                                    for datum in card_data
-                                    # create_card(datum)
-                                    #
-                                    # for datum in card_data
-                                ],
+                    ],
 
-                                style=dict(
-                                    display="flex",
-                                    justifyContent="left",
-                                    #marginLeft="3.30%"
-                                )
-                            )
-                        ],
 
-                        id="card-output",
-                    )
-                ],
-                # style={
-                #     "margin":"auto"
-                # }
-            )
+                    className="dropdown",
+                    value=['LAL'],
+                    placeholder="Select Sport",
+                    multi=True
+                )
+            ],
+
+            className="dropdown-div"
+            # style={
+            #     "width": "25%",
+            #     "margin-left": "475px",
+            #     "margin-top":"10px",
+            #     "margin-bottom":"10px",
+            #     "verticalAlign":"middle",
+            #     "color":"#000000"
+            # }
+        ),
+
+        html.Div(
+            [
+                create_card(datum)
+
+                for datum in card_data
+            ],
+
+            id="card-output",
+            className="card-grid"
+        )
+    ],
+
+    className="outermost-div"
+)
+
+
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    app.run_server('0.0.0.0', 5000, debug=True)
