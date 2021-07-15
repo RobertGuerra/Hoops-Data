@@ -13,9 +13,10 @@ ABBR = ["ATL", "BOS","CHA","CHI","CLE","DAL", "DEN","DET",
 
 BASE_URL = 'http://site.api.espn.com/apis/site/v2/sports/basketball/nba/teams/'
 
-
 def filter_card_components(info):
     ser = pd.Series(info)
+
+
     # WE WANT displayName, color, alternateColor, standingSummary, logo, and record ovr
     raw_ser = ser[["displayName", "logos", "record", "standingSummary", "color", "alternateColor", "links"]]
 
