@@ -25,7 +25,9 @@ app.layout = html.Div(
                         # {"label": "Los Angeles", "value": 'LA'},
                         # {"label": "Boston", "value": 'MA'}
 
+
                     ],
+
 
                     className="dropdown",
                     value=['LAL'],
@@ -57,8 +59,7 @@ app.layout = html.Div(
         )
     ],
 
-    className="outermost-div",
-
+    className="outermost-div"
 )
 
 

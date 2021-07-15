@@ -15,78 +15,84 @@ def create_card(datum):
     numberOne = "fire" if "1st" in datum['standingSummary'] else ''
 
     # give "white" to alt_color if it resembles team_color
-    if alt_color.upper() == team_color.upper() or name in ["Los Angeles Lakers", "Memphis Grizzlies", "Indiana Pacers", "Oklahoma City Thunder", "Toronto Raptors"]:
-        alt_color = "FFFFFF"
+    # if alt_color.upper() == team_color.upper() or name in ["Los Angeles Lakers", "Memphis Grizzlies", "Indiana Pacers", "Oklahoma City Thunder", "Toronto Raptors"]:
+    #     alt_color = "FFFFFF"
+
+    if name in ["Toronto Raptors", "Houston Rockets"]:
+        team_color = "000000"
 
 
     card = dbc.Card(
-            [
-                dbc.CardBody(
-                    [
-                        html.Div(
-                            [
-                                html.Div(
-                                    [
-                                        html.H4(
-                                            name,
-                                            className="card-title",
-                                            style=dict(
-                                                display="inline-table",
-                                                color="white",
-                                                # color="#" + team_color,
-                                                # textShadow="-0.4px 0.6px #" + alt_color,
-                                                font="30px"
-                                            )
-                                        ),
+        [
+            dbc.CardBody(
+                [
+                    html.Div(
+                        [
+                            html.Div(
+                                [
+                                    html.H4(
+                                        name,
+                                        className="card-title",
+                                        style=dict(
+                                            display="inline-table",
+                                            color="white",
+                                            # color="#" + team_color,
+                                            # textShadow="-0.4px 0.6px #" + alt_color,
+                                            font="30px"
+                                        )
+                                    ),
 
-                                        html.Img(
-                                            src=f"{logo}",
-                                            className="image-logo",
-                                        ),
-                                        html.Br(),
-                                        html.P(f"Season Record: {record}"),
-                                        html.P(f"Standing: {summary}",
-                                               className=numberOne),
-                                        html.A(html.Button('Team Roster', style={"color":"white", "backgroundColor":"#" + team_color}),
-                                               href=team_link
-                                               ),
-                                    ],
+                                    html.Img(
+                                        src=f"{logo}",
+                                        className="image-logo",
+                                    ),
+                                    html.Br(),
+                                    html.P(f"Season Record: {record}"),
+                                    html.P(f"Standing: {summary}",
+                                           className=numberOne),
+                                    html.A(html.Button(
+                                        'Team Roster',
+                                        style={"color":"white", "backgroundColor":"#" + team_color}),
+                                        href=team_link, target='blank'
+                                    ),
+                                ],
 
-                                    className="title-date"
-                                ),
+                                className="title-date"
+                            ),
 
-                            ],
-                            className="upper-card-container",
-                        )
-                    ],
-                    style=dict(
-                        backgroundColor="#" + team_color,
+                        ],
+                        className="upper-card-container",
                     )
-                ),
+                ],
+                style=dict(
+                    backgroundColor="#" + team_color,
+                )
+            ),
 
-                # dbc.CardFooter(
-                #     [
-                #         html.Div(
-                #             [
-                #                 # html.P(f"Season Record: {record}"),
-                #                 # html.P(f"Standing: {summary}",
-                #                 #        className=numberOne)
-                #                 html.A(html.Button('Team Roster'),
-                #                        href='https://github.com/czbiohub/singlecell-dash/issues/new'
-                #         ),
-                #             ],
-                #         ),
-                #     ],
-                #
-                #     style=dict(
-                #         display="flex",
-                #         backgroundColor='#' + team_color,
-                #         justifyContent="center"
-                #     )
-                # )
-            ],
+            # dbc.CardFooter(
+            #     [
+            #         html.Div(
+            #             [
+            #                 # html.P(f"Season Record: {record}"),
+            #                 # html.P(f"Standing: {summary}",
+            #                 #        className=numberOne)
+            #                 html.A(html.Button('Team Roster'),
+            #                        href='https://github.com/czbiohub/singlecell-dash/issues/new'
+            #         ),
+            #             ],
+            #         ),
+            #     ],
+            #
+            #     style=dict(
+            #         display="flex",
+            #         backgroundColor='#' + team_color,
+            #         justifyContent="center"
+            #     )
+            # )
+        ],
 
-            className='card',
+        className='card',
+
     )
 
     return card
