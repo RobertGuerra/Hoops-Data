@@ -7,7 +7,7 @@ from card.init_data import card_data
 from card.create_container import create_card
 
 # app start
-app = dash.Dash(__name__, external_stylesheets=[dbc.themes.DARKLY])
+app = dash.Dash(__name__, external_stylesheets=[dbc.themes.DARKLY])  #dbc.themes.DARKLY,  #dbc.themes.BOOTSTRAP
 
 app.layout = html.Div(
             children=[
@@ -18,14 +18,14 @@ app.layout = html.Div(
                                 options=[
                                     # {"label": i, "value": i}
                                     # for i in [card_data]
-                                    {"label": "New York", "value": 'NYC'},
-                                    {"label": "Los Angeles", "value": 'LA'},
+                                    {"label": "Eastern Conference", "value": 'NYC'},
+                                    {"label": "Western Conference", "value": 'LA'},
                                     {"label": "Boston", "value": 'MA'}
 
                                 ],
 
-                                value=['LAL'],
-                                placeholder="Select Sport",
+                                value=['LAL', 'BOS'],
+                                placeholder="Selections",
                                 multi=True
                             )
                         ],
@@ -60,9 +60,9 @@ app.layout = html.Div(
                         id="card-output",
                     )
                 ],
-                style={
-                    "margin":"auto"
-                }
+                # style={
+                #     "margin":"auto"
+                # }
             )
 if __name__ == '__main__':
     app.run_server(debug=True)

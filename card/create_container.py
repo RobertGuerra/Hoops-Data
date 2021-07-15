@@ -15,8 +15,8 @@ def create_card(datum):
     numberOne = "fire" if "1st" in datum['standingSummary'] else ''
 
     # give "white" to alt_color if it resembles team_color
-    if alt_color.upper() == team_color.upper() or name in ["Los Angeles Lakers", "Memphis Grizzlies", "Indiana Pacers", "Oklahoma City Thunder", "Toronto Raptors"]:
-        alt_color = "FFFFFF"
+    # if alt_color.upper() == team_color.upper() or name in ["Los Angeles Lakers", "Memphis Grizzlies", "Indiana Pacers", "Oklahoma City Thunder", "Toronto Raptors"]:
+    #     alt_color = "FFFFFF"
 
     if name in ["Toronto Raptors", "Houston Rockets"]:
         team_color = "000000"
