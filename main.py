@@ -20,7 +20,7 @@ app.layout = html.Div(
                     id="team-list",
                     options=[
                         {"label": i, "value": i}
-                        for i in [card_data]
+                        for i in sorted(["Atlantic", "Southeast", "Central", "Northwest", "Pacific", "Southwest"])
                         # {"label": "New York", "value": 'NYC'},
                         # {"label": "Los Angeles", "value": 'LA'},
                         # {"label": "Boston", "value": 'MA'}
@@ -64,4 +64,4 @@ app.layout = html.Div(
 
 
 if __name__ == '__main__':
-    app.run_server('0.0.0.0', 5000, debug=True)
+    app.run_server(debug=True)
