@@ -9,7 +9,7 @@ card_data = []
 ABBR = ["ATL", "BOS","CHA","CHI","CLE","DAL", "DEN","DET",
         "GSW", "HOU", "IND", "LAC", "LAL", "MEM", "MIA",
         "MIL", "MIN", "NO", "NYK", "BKN", "OKC", "ORL", "PHI",
-        "PHO", "POR", "SAC", "TOR", "UTH", "WAS"]
+        "PHO", "POR", "SAC", "SAS", "TOR", "UTH", "WAS"]
 
 BASE_URL = 'http://site.api.espn.com/apis/site/v2/sports/basketball/nba/teams/'
 

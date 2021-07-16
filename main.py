@@ -21,17 +21,13 @@ app.layout = html.Div(
                     options=[
                         {"label": i, "value": i}
                         for i in sorted(["Atlantic", "Southeast", "Central", "Northwest", "Pacific", "Southwest"])
-                        # {"label": "New York", "value": 'NYC'},
-                        # {"label": "Los Angeles", "value": 'LA'},
-                        # {"label": "Boston", "value": 'MA'}
-
 
                     ],
 
 
                     className="dropdown",
                     value=['LAL'],
-                    placeholder="Select Sport",
+                    placeholder="View By Division",
                     multi=True
                 )
             ],
