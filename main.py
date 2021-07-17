@@ -33,14 +33,6 @@ app.layout = html.Div(
             ],
 
             className="dropdown-div"
-            # style={
-            #     "width": "25%",
-            #     "margin-left": "475px",
-            #     "margin-top":"10px",
-            #     "margin-bottom":"10px",
-            #     "verticalAlign":"middle",
-            #     "color":"#000000"
-            # }
         ),
 
         html.Div(

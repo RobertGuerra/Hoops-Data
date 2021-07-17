@@ -36,8 +36,6 @@ def create_card(datum):
                                         style=dict(
                                             display="inline-table",
                                             color="white",
-                                            # color="#" + team_color,
-                                            # textShadow="-0.4px 0.6px #" + alt_color,
                                             font="30px"
                                         )
                                     ),
