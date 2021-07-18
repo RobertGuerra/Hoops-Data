@@ -1,7 +1,6 @@
 import dash_html_components as html
 import dash_bootstrap_components as dbc
 
-
 def create_card(datum):
     name = datum['displayName']
     logo = datum['logo']
@@ -20,7 +19,6 @@ def create_card(datum):
 
     if name in ["Toronto Raptors", "Houston Rockets"]:
         team_color = "000000"
-
 
     card = dbc.Card(
         [
