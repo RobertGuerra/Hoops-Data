@@ -24,7 +24,6 @@ app.layout = html.Div(
 
                     ],
 
-
                     className="dropdown",
                     value=['LAL'],
                     placeholder="View By Division",

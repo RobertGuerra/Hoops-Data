@@ -66,27 +66,6 @@ def create_card(datum):
                     backgroundColor="#" + team_color,
                 )
             ),
-
-            # dbc.CardFooter(
-            #     [
-            #         html.Div(
-            #             [
-            #                 # html.P(f"Season Record: {record}"),
-            #                 # html.P(f"Standing: {summary}",
-            #                 #        className=numberOne)
-            #                 html.A(html.Button('Team Roster'),
-            #                        href='https://github.com/czbiohub/singlecell-dash/issues/new'
-            #         ),
-            #             ],
-            #         ),
-            #     ],
-            #
-            #     style=dict(
-            #         display="flex",
-            #         backgroundColor='#' + team_color,
-            #         justifyContent="center"
-            #     )
-            # )
         ],
 
         className='card',

@@ -52,3 +52,81 @@
             #     "verticalAlign":"middle",
             #     "color":"#000000"
             # }
+
+# dbc.CardFooter(
+            #     [
+            #         html.Div(
+            #             [
+            #                 # html.P(f"Season Record: {record}"),
+            #                 # html.P(f"Standing: {summary}",
+            #                 #        className=numberOne)
+            #                 html.A(html.Button('Team Roster'),
+            #                        href='https://github.com/czbiohub/singlecell-dash/issues/new'
+            #         ),
+            #             ],
+            #         ),
+            #     ],
+            #
+            #     style=dict(
+            #         display="flex",
+            #         backgroundColor='#' + team_color,
+            #         justifyContent="center"
+            #     )
+            # )
+
+
+# old code for drop down menu
+# .dropdown {
+#     padding: 15px;
+#     width: 295px;
+#     display: flex;
+#     color: black !important;
+# }
+#
+# .dropdown-div {
+#     justify-content: center;
+# }
+
+
+# new code for the drop down menu
+
+# https://stackoverflow.com/questions/56402207/style-dash-components-with-dark-theme-bootstrap-css
+#
+# .Select-control {
+#     background-color: #222 !important;
+# }
+#
+# .Select.is-focused > .Select-control {
+#     background-color: #222;
+# }
+#
+# #school-input {
+#     color: white;
+# }
+#
+# .Select-value-label {
+#     color: white;
+# }
+#
+# .Select--single > .Select-control .Select-value, .Select-placeholder {
+#     border: 1px solid grey;
+#     border-radius: 4px;
+# }
+#
+# .VirtualizedSelectOption {
+#     background-color: #222;
+#     color: white;
+#  }
+#
+# .VirtualizedSelectFocusedOption {
+#     background-color: #222;
+#     opacity: .7;
+# }
+#
+# .Select.is-focused:not(.is-open) > .Select-control {
+#     background-color: #222;
+#     border-color: var(--primary);
+#     box-shadow: none;
+# }
+
+
