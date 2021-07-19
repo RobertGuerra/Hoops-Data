@@ -4,10 +4,13 @@ import dash_html_components as html
 import dash_bootstrap_components as dbc
 from dash.dependencies import Input, Output
 
-from card.init_data import card_data
+from card.init_data import json_data
 from card.create_container import create_card
 
+from helpers.sort_cards_helper import sort_cards
+
 # app start
+
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.DARKLY],
                 meta_tags=[{
                     'name':'viewport',
@@ -40,7 +43,7 @@ app.layout = html.Div(
             [
                 create_card(datum)
 
-                for datum in card_data
+                for datum in json_data
             ],
 
             id="card-output",
@@ -60,11 +63,14 @@ def update_cards(division):
         raise dash.exceptions.PreventUpdate
 
     if division == "All Teams":
-        return [ create_card(datum) for datum in card_data ]
+        return [create_card(datum) for datum in json_data]
 
-    division_list = [ create_card(datum) for datum in card_data if division in datum["standingSummary"] ]
+    # sort_cards: helper function from sort_cards_helper
+    sorted_team_data = sort_cards(json_data, division)
+
+    division_list = [ create_card(datum) for datum in sorted_team_data ]
 
     return division_list
 
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    app.run_server('0.0.0.0', 5000, debug=True)
