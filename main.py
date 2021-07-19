@@ -31,7 +31,7 @@ app.layout = html.Div(
 
                     className="dropdown",
                     # value='Pacific',
-                    placeholder="View By Division",
+                    # placeholder="View By Division",
                     # multi=True
                 )
             ],
