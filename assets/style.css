@@ -35,9 +35,19 @@
     font-weight="200"
 }
 
+
+
 .card {
     text-align: center;
+    position: relative;
+    box-shadow: 0rem 0 3rem #000;
+    transition: .2s ease-in-out;
 }
+
+.card:hover {
+    transform: translateY(-0.5rem) translateX(-0.5rem) scale(1.01, 1.01)
+}
+
 
 .card-grid {
     display: grid;
@@ -79,6 +89,7 @@
 
 .Select-control {
     background-color: #222 !important;
+    color: white !important;
 }
 
 .Select.is-focused > .Select-control {
@@ -90,7 +101,7 @@
 }
 
 .Select-value-label {
-    color: white;
+    color: white !important;
 }
 
 .Select--single > .Select-control .Select-value, .Select-placeholder {

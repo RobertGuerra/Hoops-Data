@@ -9,7 +9,7 @@ from card.create_container import create_card
 
 from helpers.sort_cards_helper import sort_cards
 
-# app start
+# app start init
 
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.DARKLY],
                 meta_tags=[{
@@ -31,7 +31,7 @@ app.layout = html.Div(
 
                     className="dropdown",
                     # value='Pacific',
-                    placeholder="View By Division",
+                    # placeholder="View By Division",
                     # multi=True
                 )
             ],
