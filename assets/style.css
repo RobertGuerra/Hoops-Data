@@ -8,18 +8,25 @@
     whiteSpace: no-warp;
 }
 
-.dropdown {
-    padding-top: 2rem;
-    color: black !important;
+.navbar {
+    position: fixed;
+    z-index: 2;
+    left:0;                /* Position the navbar at the top of the page */
+    top: 0;                /* Position the navbar at the top of the page */
+    width: 100%;
 }
 
-.dropdown-div {
-    justify-content: center;
-    width: 50%;
+.navbar-expand-md>.container, .navbar-expand-md>.container-fluid, .navbar-expand-md>.container-sm, .navbar-expand-md>.container-md, .navbar-expand-md>.container-lg, .navbar-expand-md>.container-xl {
+    align-items: baseline;
 }
 
 .card-title {
     margin-bottom: 7rem;
+}
+
+.dropdown {
+    padding-top: 2rem;
+    color: black !important;
 }
 
 .image-logo {
@@ -30,6 +37,15 @@
     object-fit: contain;
     text-transform: none;
 }
+
+.card-title {
+    margin-bottom: 5rem;
+}
+
+.card-button {
+    radius: 1px solid white;
+}
+
 
 .card-body {
     font-family: Frutiger, Frutiger Linotype, Univers, Calibri, Gill Sans, Gill Sans MT,
@@ -42,6 +58,7 @@
 .card {
     text-align: center;
     position: relative;
+    height: 15rem;
     box-shadow: 0rem 0 3rem #000;
     transition: .2s ease-in-out;
 }
@@ -53,9 +70,9 @@
 .card-grid {
     display: grid;
     width: 100%;
-    padding: .5rem;
-    padding-top: 90px;
-
+    padding-top: 8.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 
@@ -64,7 +81,7 @@
 /* Screen larger than 600px? 2 column */
 @media (min-width: 600px) {
     .card-grid {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 

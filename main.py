@@ -19,68 +19,33 @@ app = dash.Dash(__name__, external_stylesheets=[dbc.themes.DARKLY],
 
 app.layout = html.Div(
     children=[
-        html.Nav(
-            dbc.NavbarSimple(
-                children=[
-                    dbc.NavItem(
-                        dbc.DropdownMenu(
-                            label="Division",
-                            id="teams-list",
-                            children=[
-                                dbc.DropdownMenuItem("All Teams"),
-                                dbc.DropdownMenuItem("Atlantic"),
-                                dbc.DropdownMenuItem("Central"),
-                                dbc.DropdownMenuItem("Northwest"),
-                                dbc.DropdownMenuItem("Pacific"),
-                                dbc.DropdownMenuItem("Southeast"),
-                                dbc.DropdownMenuItem("Southwest")
-                            ],
-                        )
+        dbc.NavbarSimple(
+            children=[
+                dbc.NavItem(
+                    dbc.DropdownMenu(
+                        [
+                            dbc.DropdownMenuItem(i, id=i)
+                            for i in sorted(
+                                ["All Teams", "Atlantic", "Southeast", "Central", "Northwest", "Pacific", "Southwest"]
+                            )
+                        ],
+                        nav=True,
+                        label="All Teams",
+                        id="team-list",
+                        in_navbar=True,
+                        className="dropdown"
                     )
-                    # dcc.Dropdown(
-                    #     id="team-list",
-                    #     options=[
-                    #         {"label": i, "value": i}
-                    #         for i in sorted(
-                    #             ["All Teams", "Atlantic", "Southeast", "Central", "Northwest", "Pacific", "Southwest"])
-                    #
-                    #     ],
-                    #
-                    #     className="dropdown",
-                    # )
-                ],
+                )
+            ],
+
+            className="navbar",
             brand="NBA",
             brand_href = "https://www.nba.com/",
+            brand_external_link="https://www.nba.com/",
             color="primary",
-            dark=True,
             sticky=True,
-            style={
-                "position":"fixed",
-                "left":"0",
-                "top": "0",                 # /* Position the navbar at the top of the page */
-                "width": "100%"             # /* Full width */
-        }
-    )
+            dark=True
         ),
-        # html.Div(
-        #     [   # dropdown skeleton
-        #         dcc.Dropdown(
-        #             id="team-list",
-        #             options=[
-        #                 {"label": i, "value": i}
-        #                 for i in sorted(["All Teams", "Atlantic", "Southeast", "Central", "Northwest", "Pacific", "Southwest"])
-        #
-        #             ],
-        #
-        #             className="dropdown",
-        #             # value='Pacific',
-        #             # placeholder="View By Division",
-        #             # multi=True
-        #         )
-        #     ],
-        #
-        #     className="dropdown-div"
-        # ),
 
         html.Div(
             [
@@ -98,22 +63,28 @@ app.layout = html.Div(
 )
 
 @app.callback(
-    Output("card-output", "children"),
-    [Input("team-list", "value")]
+    [Output("card-output", "children"),
+     Output("team-list", "label")],
+    [Input(option, "n_clicks") for option in
+     sorted(["All Teams", "Atlantic", "Southeast", "Central", "Northwest", "Pacific", "Southwest"])]
 )
-def update_cards(division):
-    if division is None:
-        raise dash.exceptions.PreventUpdate
+def update_cards(*args):
+    ctx = dash.callback_context
+
+    if not ctx.triggered:
+        division = "All Teams"
+    else:
+        division = ctx.triggered[0]["prop_id"].split(".")[0]
 
     if division == "All Teams":
-        return [create_card(datum) for datum in json_data]
+        return [create_card(datum) for datum in json_data], division
 
     # sort_cards: helper function from sort_cards_helper
     sorted_team_data = sort_cards(json_data, division)
 
     division_list = [ create_card(datum) for datum in sorted_team_data ]
 
-    return division_list
+    return division_list, division
 
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    app.run_server('0.0.0.0', 5000, debug=True)

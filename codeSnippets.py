@@ -130,3 +130,18 @@
 # }
 
 
+
+# SECTION: DCC DROPDOWN IMPLEMENTATION
+# dcc.Dropdown(
+#     id="team-list",
+#     options=[
+#         {"label": i, "value": i}
+#         for i in sorted(
+#             ["All Teams", "Atlantic", "Southeast", "Central", "Northwest", "Pacific", "Southwest"])
+#
+#     ],
+#
+#     className="dropdown",
+# )
+
+
