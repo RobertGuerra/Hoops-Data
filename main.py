@@ -1,5 +1,4 @@
 import dash
-import dash_core_components as dcc
 import dash_html_components as html
 import dash_bootstrap_components as dbc
 from dash.dependencies import Input, Output
@@ -8,48 +7,22 @@ from card.init_data import json_data
 from card.create_container import create_card
 
 from helpers.sort_cards_helper import sort_cards
+from helpers.components.navbar_helper import Navbar
 
 # app start init
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.DARKLY],
-                meta_tags=[{
-                    'name':'viewport',
-                    'content':'width=device-width, initial-scale=1.0, maximum-scale-1.2, minimum-scale=0.5'}],
+                meta_tags=[
+                    {
+                        'name':'viewport',
+                        'content':'width=device-width, initial-scale=1.0, maximum-scale-1.2, minimum-scale=0.5'
+                    }
+                ],
                 suppress_callback_exceptions=True)
 
 
 app.layout = html.Div(
     children=[
-        dbc.NavbarSimple(
-            children=[
-                html.H1(
-                    "TITLE HERE"
-                ),
-
-
-                dbc.DropdownMenu(
-                    [
-                        dbc.DropdownMenuItem(i, id=i)
-                        for i in sorted(
-                            ["All Teams", "Atlantic", "Southeast", "Central", "Northwest", "Pacific", "Southwest"]
-                        )
-                    ],
-                    nav=True,
-                    label="All Teams",
-                    id="team-list",
-                    in_navbar=True,
-                    className="dropdown"
-                )
-
-            ],
-
-            className="navbar",
-            brand="NBA",
-            brand_href = "https://www.nba.com/",
-            brand_external_link="https://www.nba.com/",
-            color="primary",
-            sticky=True,
-            dark=True
-        ),
+        Navbar(),
 
         html.Div(
             [
@@ -91,4 +64,4 @@ def update_cards(*args):
     return division_list, division
 
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    app.run_server('0.0.0.0', 5000, debug=True)
