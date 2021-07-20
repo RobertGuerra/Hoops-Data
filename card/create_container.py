@@ -57,6 +57,7 @@ def create_card(datum):
                                            className=numberOne),
                                     html.A(html.Button(
                                         'Team Roster',
+                                        className="card-button",
                                         style={"color":"white", "backgroundColor":"#" + team_color}),
                                         href=team_link, target='blank'
                                     ),

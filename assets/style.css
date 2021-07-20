@@ -8,16 +8,23 @@
     whiteSpace: no-warp;
 }
 
+.navbar {
+    position: fixed;
+    z-index: 2;
+    left:0;                /* Position the navbar at the top of the page */
+    top: 0;                /* Position the navbar at the top of the page */
+    width: 100%;
+}
+
+.navbar-expand-md>.container, .navbar-expand-md>.container-fluid, .navbar-expand-md>.container-sm, .navbar-expand-md>.container-md, .navbar-expand-md>.container-lg, .navbar-expand-md>.container-xl {
+    align-items: baseline;
+}
+
+
 .dropdown {
     padding-top: 2rem;
     color: black !important;
 }
-
-.dropdown-div {
-    justify-content: center;
-    width: 50%;
-}
-
 
 .image-logo {
     width: 10rem;
@@ -27,6 +34,15 @@
     opacity: 0.2;
     text-transform: none;
 }
+
+.card-title {
+    margin-bottom: 5rem;
+}
+
+.card-button {
+    radius: 1px solid white;
+}
+
 
 .card-body {
     font-family: Frutiger, Frutiger Linotype, Univers, Calibri, Gill Sans, Gill Sans MT,
@@ -39,6 +55,7 @@
 .card {
     text-align: center;
     position: relative;
+    height: 15rem;
     box-shadow: 0rem 0 3rem #000;
     transition: .2s ease-in-out;
 }
@@ -51,12 +68,11 @@
     display: grid;
     width: 100%;
     padding: 2rem;
+    padding-top: 8.5rem;
 
 }
 
-.card-grid card {
 
-}
 
 
 
