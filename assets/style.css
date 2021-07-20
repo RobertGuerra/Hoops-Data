@@ -10,7 +10,7 @@
 
 .navbar {
     position: fixed;
-    z-index: 2;
+    z-index: 1;
     left:0;                /* Position the navbar at the top of the page */
     top: 0;                /* Position the navbar at the top of the page */
     width: 100%;
@@ -38,12 +38,17 @@
     text-transform: none;
 }
 
-.card-title {
-    margin-bottom: 5rem;
+.card-button {
+    border-radius: 5px;
 }
 
-.card-button {
-    radius: 1px solid white;
+.anchor-tag {
+    position: relative;
+    z-index: 0;
+}
+
+.card-title {
+    margin-bottom: 5rem;
 }
 
 

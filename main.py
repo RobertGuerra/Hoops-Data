@@ -21,21 +21,25 @@ app.layout = html.Div(
     children=[
         dbc.NavbarSimple(
             children=[
-                dbc.NavItem(
-                    dbc.DropdownMenu(
-                        [
-                            dbc.DropdownMenuItem(i, id=i)
-                            for i in sorted(
-                                ["All Teams", "Atlantic", "Southeast", "Central", "Northwest", "Pacific", "Southwest"]
-                            )
-                        ],
-                        nav=True,
-                        label="All Teams",
-                        id="team-list",
-                        in_navbar=True,
-                        className="dropdown"
-                    )
+                html.H1(
+                    "TITLE HERE"
+                ),
+
+
+                dbc.DropdownMenu(
+                    [
+                        dbc.DropdownMenuItem(i, id=i)
+                        for i in sorted(
+                            ["All Teams", "Atlantic", "Southeast", "Central", "Northwest", "Pacific", "Southwest"]
+                        )
+                    ],
+                    nav=True,
+                    label="All Teams",
+                    id="team-list",
+                    in_navbar=True,
+                    className="dropdown"
                 )
+
             ],
 
             className="navbar",

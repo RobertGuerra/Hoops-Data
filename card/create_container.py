@@ -58,10 +58,13 @@ def create_card(datum):
                                     html.P(f"Season Record: {record}"),
                                     html.P(f"Standing: {summary}",
                                            className=numberOne),
-                                    html.A(html.Button(
-                                        'Team Roster',
-                                        className="card-button",
-                                        style={"color":"white", "backgroundColor":"#" + team_color}),
+                                    html.A(
+                                        html.Button(
+                                            'Team Roster',
+                                            className="card-button",
+                                            style={"color":"white", "backgroundColor":"#" + team_color}
+                                        ),
+                                        className="anchor-tag",
                                         href=team_link, target='blank'
                                     ),
                                 ],
