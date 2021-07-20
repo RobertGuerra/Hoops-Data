@@ -19,25 +19,66 @@ app = dash.Dash(__name__, external_stylesheets=[dbc.themes.DARKLY],
 
 app.layout = html.Div(
     children=[
-        html.Div(
-            [   # dropdown skeleton
-                dcc.Dropdown(
-                    id="team-list",
-                    options=[
-                        {"label": i, "value": i}
-                        for i in sorted(["All Teams", "Atlantic", "Southeast", "Central", "Northwest", "Pacific", "Southwest"])
+        html.Nav(
+            dbc.NavbarSimple(
+                children=[
+                    dbc.NavItem(
+                        dcc.Dropdown(
+                            id="team-list",
+                            options=[
+                                {"label": i, "value": i}
+                                for i in sorted(
+                                    ["All Teams", "Atlantic", "Southeast", "Central", "Northwest", "Pacific", "Southwest"])
 
-                    ],
+                            ],
 
-                    className="dropdown",
-                    # value='Pacific',
-                    # placeholder="View By Division",
-                    # multi=True
-                )
-            ],
-
-            className="dropdown-div"
+                            className="dropdown",
+                        )
+                    )
+                    # dcc.Dropdown(
+                    #     id="team-list",
+                    #     options=[
+                    #         {"label": i, "value": i}
+                    #         for i in sorted(
+                    #             ["All Teams", "Atlantic", "Southeast", "Central", "Northwest", "Pacific", "Southwest"])
+                    #
+                    #     ],
+                    #
+                    #     className="dropdown",
+                    # )
+                ],
+            brand="NBA",
+            #brand_href = "https://www.nba.com/",
+            brand_external_link="https://www.nba.com/",
+            color="primary",
+            dark=True,
+            style={
+                "position": "fixed",
+                "left":"0",
+                "top": "0",                 # /* Position the navbar at the top of the page */
+                "width": "100%"             # /* Full width */
+        }
+    )
         ),
+        # html.Div(
+        #     [   # dropdown skeleton
+        #         dcc.Dropdown(
+        #             id="team-list",
+        #             options=[
+        #                 {"label": i, "value": i}
+        #                 for i in sorted(["All Teams", "Atlantic", "Southeast", "Central", "Northwest", "Pacific", "Southwest"])
+        #
+        #             ],
+        #
+        #             className="dropdown",
+        #             # value='Pacific',
+        #             # placeholder="View By Division",
+        #             # multi=True
+        #         )
+        #     ],
+        #
+        #     className="dropdown-div"
+        # ),
 
         html.Div(
             [
@@ -73,4 +114,4 @@ def update_cards(division):
     return division_list
 
 if __name__ == '__main__':
-    app.run_server('0.0.0.0', 5000, debug=True)
+    app.run_server(debug=True)
