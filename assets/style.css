@@ -18,13 +18,16 @@
     width: 50%;
 }
 
+.card-title {
+    margin-bottom: 7rem;
+}
 
 .image-logo {
-    width: 10rem;
-    height: 10rem;
+    width: 12rem;
+    height: 12rem;
     margin: auto;
+    padding-top: 2rem;
     object-fit: contain;
-    opacity: 0.2;
     text-transform: none;
 }
 
@@ -33,7 +36,7 @@
                  Myriad Pro, Myriad, DejaVu Sans Condensed, Liberation Sans, Nimbus Sans L,
                  Tahoma, Geneva, Helvetica Neue, Helvetica, Arial, sans-serif;
 
-    font-weight="200"
+    font-weight="900";
 }
 
 .card {
@@ -50,14 +53,10 @@
 .card-grid {
     display: grid;
     width: 100%;
-    padding: 2rem;
+    padding: .5rem;
+    padding-top: 90px;
 
 }
-
-.card-grid card {
-
-}
-
 
 
 /* USING MEDIA QUERIES TO ADJUST NUMBER OF COLS BASED OFF SCREEN SIZE */

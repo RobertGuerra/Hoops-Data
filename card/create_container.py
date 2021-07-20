@@ -32,7 +32,10 @@ def create_card(datum):
                                         children=[
                                             html.Img(
                                                 src=f"{logo}",
-                                                className="image-logo"
+                                                className="image-logo",
+                                                style={
+                                                    "opacity":".3",
+                                            }
                                             )
                                         ],
                                     ),

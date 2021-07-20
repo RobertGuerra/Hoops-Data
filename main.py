@@ -10,11 +10,11 @@ from card.create_container import create_card
 from helpers.sort_cards_helper import sort_cards
 
 # app start init
-
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.DARKLY],
                 meta_tags=[{
                     'name':'viewport',
-                    'content':'width=device-width, initial-scale=1.0, maximum-scale-1.2, minimum-scale=0.5'}])
+                    'content':'width=device-width, initial-scale=1.0, maximum-scale-1.2, minimum-scale=0.5'}],
+                suppress_callback_exceptions=True)
 
 
 app.layout = html.Div(
@@ -23,16 +23,18 @@ app.layout = html.Div(
             dbc.NavbarSimple(
                 children=[
                     dbc.NavItem(
-                        dcc.Dropdown(
-                            id="team-list",
-                            options=[
-                                {"label": i, "value": i}
-                                for i in sorted(
-                                    ["All Teams", "Atlantic", "Southeast", "Central", "Northwest", "Pacific", "Southwest"])
-
+                        dbc.DropdownMenu(
+                            label="Division",
+                            id="teams-list",
+                            children=[
+                                dbc.DropdownMenuItem("All Teams"),
+                                dbc.DropdownMenuItem("Atlantic"),
+                                dbc.DropdownMenuItem("Central"),
+                                dbc.DropdownMenuItem("Northwest"),
+                                dbc.DropdownMenuItem("Pacific"),
+                                dbc.DropdownMenuItem("Southeast"),
+                                dbc.DropdownMenuItem("Southwest")
                             ],
-
-                            className="dropdown",
                         )
                     )
                     # dcc.Dropdown(
@@ -48,12 +50,12 @@ app.layout = html.Div(
                     # )
                 ],
             brand="NBA",
-            #brand_href = "https://www.nba.com/",
-            brand_external_link="https://www.nba.com/",
+            brand_href = "https://www.nba.com/",
             color="primary",
             dark=True,
+            sticky=True,
             style={
-                "position": "fixed",
+                "position":"fixed",
                 "left":"0",
                 "top": "0",                 # /* Position the navbar at the top of the page */
                 "width": "100%"             # /* Full width */
