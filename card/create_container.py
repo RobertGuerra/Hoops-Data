@@ -28,6 +28,15 @@ def create_card(datum):
                         [
                             html.Div(
                                 [
+                                    dbc.CardImgOverlay(
+                                        children=[
+                                            html.Img(
+                                                src=f"{logo}",
+                                                className="image-logo"
+                                            )
+                                        ],
+                                    ),
+
                                     html.H4(
                                         name,
                                         className="card-title",
@@ -38,10 +47,10 @@ def create_card(datum):
                                         )
                                     ),
 
-                                    html.Img(
-                                        src=f"{logo}",
-                                        className="image-logo",
-                                    ),
+                                    # html.Img(
+                                    #     src=f"{logo}",
+                                    #     className="image-logo",
+                                    # ),
                                     html.Br(),
                                     html.P(f"Season Record: {record}"),
                                     html.P(f"Standing: {summary}",
