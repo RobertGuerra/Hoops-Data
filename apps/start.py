@@ -1,6 +1,5 @@
 import dash
 import dash_html_components as html
-import dash_bootstrap_components as dbc
 from dash.dependencies import Input, Output
 
 from card.init_data import json_data
@@ -10,17 +9,10 @@ from helpers.sort_cards_helper import sort_cards
 from helpers.components.navbar_helper import Navbar
 
 # app start init
-app = dash.Dash(__name__, external_stylesheets=[dbc.themes.DARKLY],
-                meta_tags=[
-                    {
-                        'name':'viewport',
-                        'content':'width=device-width, initial-scale=1.0, maximum-scale-1.2, minimum-scale=0.5'
-                    }
-                ],
-                suppress_callback_exceptions=True)
+from app import app
 
 
-app.layout = html.Div(
+layout = html.Div(
     children=[
         Navbar(),
 
@@ -63,5 +55,3 @@ def update_cards(*args):
 
     return division_list, division
 
-if __name__ == '__main__':
-    app.run_server('0.0.0.0', 5000, debug=True)

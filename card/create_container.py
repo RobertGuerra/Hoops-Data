@@ -4,7 +4,7 @@ import dash_bootstrap_components as dbc
 def create_card(datum):
     name = datum['displayName']
     logo = datum['logo']
-    record = datum['record']
+    record = datum['record_ovr']
     summary = datum['standingSummary']
     team_color = datum['color']
     alt_color = datum['alternateColor']
@@ -22,64 +22,65 @@ def create_card(datum):
 
     card = dbc.Card(
         [
-            dbc.CardBody(
-                [
-                    html.Div(
-                        [
-                            html.Div(
-                                [
-                                    dbc.CardImgOverlay(
-                                        children=[
-                                            html.Img(
-                                                src=f"{logo}",
-                                                className="image-logo",
-                                                style={
-                                                    "opacity":".3",
-                                                }
-                                            )
-                                        ],
-                                    ),
-
-                                    html.H4(
-                                        name,
-                                        className="card-title",
-                                        style=dict(
-                                            display="inline-table",
-                                            color="white",
-                                            font="30px"
+            html.A(
+                dbc.CardBody(
+                    [
+                        html.Div(
+                            [
+                                dbc.CardImgOverlay(
+                                    children=[
+                                        html.Img(
+                                            src=f"{logo}",
+                                            className="image-logo",
+                                            style={
+                                                "opacity": ".3",
+                                            }
                                         )
+                                    ],
+                                ),
+
+                                html.H4(
+                                    name,
+                                    className="card-title",
+                                    style=dict(
+                                        display="inline-table",
+                                        color="white",
+                                        font="30px"
+                                    )
+                                ),
+
+                                # html.Img(
+                                #     src=f"{logo}",
+                                #     className="image-logo",
+                                # ),
+                                html.Br(),
+                                html.P(f"Season Record: {record}"),
+                                html.P(f"Standing: {summary}",
+                                       className=numberOne),
+                                html.A(
+                                    html.Button(
+                                        'Team Roster',
+                                        className="card-button",
+                                        style={"color": "white", "backgroundColor": "#" + team_color}
                                     ),
+                                    className="button-anchor",
+                                    href=team_link, target='blank'
+                                ),
+                            ],
 
-                                    # html.Img(
-                                    #     src=f"{logo}",
-                                    #     className="image-logo",
-                                    # ),
-                                    html.Br(),
-                                    html.P(f"Season Record: {record}"),
-                                    html.P(f"Standing: {summary}",
-                                           className=numberOne),
-                                    html.A(
-                                        html.Button(
-                                            'Team Roster',
-                                            className="card-button",
-                                            style={"color":"white", "backgroundColor":"#" + team_color}
-                                        ),
-                                        className="anchor-tag",
-                                        href=team_link, target='blank'
-                                    ),
-                                ],
+                            className="title-date",
+                        ),
 
-                                className="title-date"
-                            ),
+                    ],
 
-                        ],
-                        className="upper-card-container",
+                    style=dict(
+                        backgroundColor="#" + team_color,
                     )
-                ],
-                style=dict(
-                    backgroundColor="#" + team_color,
-                )
-            ),
+                ),
+
+                className="card-anchor",
+                href="/apps/selected/{}".format(name)
+            )
         ],
 
         className='card',

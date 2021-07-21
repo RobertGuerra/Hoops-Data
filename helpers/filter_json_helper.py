@@ -15,7 +15,7 @@ def filter_json(res):
 
     refined_ser["team-link"] = team_link
     refined_ser["logos"] = logo
-    refined_ser["record"] = record_ovr
+    refined_ser["record_ovr"] = record_ovr
     refined_ser.rename({"logos": "logo"}, inplace=True)
 
     return refined_ser.to_dict()
