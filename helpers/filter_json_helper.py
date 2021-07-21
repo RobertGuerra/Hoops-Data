@@ -1,8 +1,8 @@
 import pandas as pd
 
+
 def filter_json(res):
     ser = pd.Series(res)
-
 
     # WE WANT displayName, color, alternateColor, standingSummary, logo, and record ovr
     raw_ser = ser[["displayName", "logos", "record", "standingSummary", "color", "alternateColor", "links"]]
