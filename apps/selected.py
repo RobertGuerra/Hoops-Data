@@ -5,7 +5,7 @@ import pandas as pd
 from dash.dependencies import Input, Output
 
 from card.init_data import json_data
-from helpers.create_children import create_children
+from helpers.create_stats_children import create_children
 from app import app
 
 data = []
