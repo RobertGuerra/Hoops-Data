@@ -6,7 +6,8 @@ def Navbar():
     nav = dbc.NavbarSimple(
         children=[
             html.H1(
-                "TITLE HERE"
+                "Hoops",
+                style={"paddingRight": "5rem"}
             ),
 
 

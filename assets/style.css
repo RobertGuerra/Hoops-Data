@@ -200,6 +200,13 @@
 
 .stats-title-container {
     text-align: center;
-    padding: 2rem;
+}
+
+.home-button {
+    border-radius: 8px;
+}
+
+.hr {
+    background-color: white;
 }
 
