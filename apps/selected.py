@@ -1,25 +1,26 @@
 import dash_html_components as html
 import dash_core_components as dcc
+import dash_bootstrap_components as dbc
 import pandas as pd
 
 from dash.dependencies import Input, Output
 
 from card.init_data import json_data
-from helpers.create_stats_children import create_children
+
+from helpers.create_stats_helper import create_stats
+
 from app import app
 
-data = []
 
 layout = html.Div(
     [
         html.Div(
-            html.H1(
+            [
 
-                id='stats-title',
-                style={'width': '100%'}
-            ),
-
+            ],
             className="stats-title-container",
+            id='stats-title-container'
+
         ),
 
         html.Div(
@@ -33,23 +34,42 @@ layout = html.Div(
 )
 
 
-@app.callback([Output('stats-container', 'children'),
-               Output('stats-title', 'children')],
+@app.callback([Output('stats-title-container', 'children'),
+               Output('stats-container', 'children')],
               [Input('url', 'pathname')])
 def fetch_stats(pathname):
     name = pathname.split('/')[3].replace('%20', ' ')
     data = [datum for datum in json_data if datum["displayName"] == name]
 
-    home_stats = pd.DataFrame.from_records(data)["record"][0]['items'][1]['stats']
-    home_stats = [{d['name']: d['value']} for d in home_stats]
+    df = pd.DataFrame.from_records(data)
 
-    away_stats = pd.DataFrame.from_records(data)["record"][0]['items'][2]['stats']
-    away_stats = [{d['name']: d['value']} for d in away_stats]
+    stats_children = create_stats(df)
 
-    children = create_children(home_stats, away_stats)
+    team_color = df['color']
 
+    title_children = [
+        html.H1(
+            name,
+            className="stats-title",
+            id='stats-title',
+            style={
+                'width': '100%',
+                'font-size': '5em',
+                'color': f'#{team_color[0]}',
+                'text-shadow': '1px 1px 2px white'
+            }
+        ),
+        html.A(
+            dbc.Button(
+                'HOME',
+                className="home-button",
+                style={'height': '3em', 'width': '8em', 'background-color': f'#{team_color[0]}', 'color': 'white'}
+            ),
+            href='/apps/start'
+        )
+    ]
 
-    return children, name
+    return title_children, stats_children
 
 
 

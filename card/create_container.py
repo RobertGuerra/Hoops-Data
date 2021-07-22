@@ -33,7 +33,9 @@ def create_card(datum):
                                             src=f"{logo}",
                                             className="image-logo",
                                             style={
-                                                "opacity": ".3",
+                                                "opacity": ".4",
+                                                "z-index": "0",
+                                                "position": "relative"
                                             }
                                         )
                                     ],
@@ -54,9 +56,11 @@ def create_card(datum):
                                 #     className="image-logo",
                                 # ),
                                 html.Br(),
-                                html.P(f"Season Record: {record}"),
+                                html.P(f"Season Record: {record}",
+                                       style={"z-index": "1", "position": "relative"}),
                                 html.P(f"Standing: {summary}",
-                                       className=numberOne),
+                                       className=numberOne,
+                                       style={"z-index": "1", "position": "relative"}),
                                 html.A(
                                     html.Button(
                                         'Team Roster',
@@ -64,7 +68,8 @@ def create_card(datum):
                                         style={"color": "white", "backgroundColor": "#" + team_color}
                                     ),
                                     className="button-anchor",
-                                    href=team_link, target='blank'
+                                    href=team_link,
+                                    target='blank'
                                 ),
                             ],
 
@@ -88,3 +93,4 @@ def create_card(datum):
     )
 
     return card
+
