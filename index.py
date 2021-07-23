@@ -21,9 +21,9 @@ def display_page(pathname):
     elif '/apps/selected' in pathname:
         return selected.layout
     else:
-        print(pathname)
         return '404'
 
 
+# '0.0.0.0', 5001
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    app.run_server('0.0.0.0', 5001, debug=True)

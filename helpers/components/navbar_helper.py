@@ -5,13 +5,12 @@ import dash_bootstrap_components as dbc
 def Navbar():
     nav = dbc.NavbarSimple(
         children=[
-
             html.Img(
                 src="https://s3.amazonaws.com/file.imleagues/Images/Teams/Uploaded/201801/201812316271650f5a72e9de44767031d56a47aca3fcadf.png",
                 style={
                     "height": "10%",
                     "width": "10%",
-                    "display": "inline-bock",
+                    "display": "inline-block",
                 }
             ),
 
