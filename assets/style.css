@@ -17,6 +17,7 @@
     top: 0;                /* Position the navbar at the top of the page */
     width: 100%;
     text-color: white;
+    background-color: black !important;
 }
 
 .navbar-expand-md>.container, .navbar-expand-md>.container-fluid, .navbar-expand-md>.container-sm, .navbar-expand-md>.container-md, .navbar-expand-md>.container-lg, .navbar-expand-md>.container-xl {
@@ -40,11 +41,25 @@
     margin-bottom: 7rem;
 }
 
+.hoopsh1 {
+    padding-left: 0px;
+}
+
 .dropdown {
     padding-top: 2rem;
     color: black !important;
     font-color: white;
+    padding-left: 0 !important;
 }
+
+.dropdown-menu {
+    position: absolute;
+    top: 77%;
+    left: 0px;
+    padding: -0.5rem 0;
+    margin: -1.6rem 0 0;
+}
+
 
 .image-logo {
     width: 12rem;
@@ -116,7 +131,12 @@
         grid-template-columns: repeat(2, 1fr);
     }
 }
-
+@media (min-width: 768px) {
+    .hoopsh1 {
+        padding-left: 300px;
+        padding-right: 300px;
+    }
+}
 /* Screen larger than 900px? 3 columns */
 @media (min-width: 900px) {
     .card-grid {
