@@ -3,88 +3,111 @@ import dash_bootstrap_components as dbc
 
 
 def Navbar():
+    nav = dbc.NavbarSimple(
+        children=[
+            html.Img(
+                src="https://s3.amazonaws.com/file.imleagues/Images/Teams/Uploaded/201801/201812316271650f5a72e9de44767031d56a47aca3fcadf.png",
+                style={
+                    "height": "10%",
+                    "width": "10%",
+                    "display": "inline-block",
+                }
+            ),
 
-    nav = dbc.Nav(
-        [
-            dbc.Navbar(
-                children=[
-                    dbc.NavItem(
-                        dbc.NavLink(
-                            html.H1("NBA"),
-                            href="https://www.nba.com/",
-                            target="blank",
-                            className="nba",
-                        )
-                    ),
-                    dbc.NavItem(
-                        dbc.NavLink(
-                            html.H1(
-                                "HOOPS"
-                            ),
-                            style={"color": "white"}
-                        )
-                    ),
-                    dbc.NavItem(
-                        dbc.NavLink(
-                            dbc.DropdownMenu(
-                                [
-                                    dbc.DropdownMenuItem(i, id=i)
-                                    for i in sorted(
-                                    ["All Teams", "Atlantic", "Southeast", "Central",
-                                     "Northwest", "Pacific", "Southwest"]
-                                )
-                                ],
+            html.Div(
+                dbc.NavLink(
+                    html.H1("NBA"),
+                    href="https://www.nba.com/",
+                    target="blank",
+                    className="nba",
+                    style={"padding-right": "30%", "overflow": "hidden", "display": "inline-block"}
 
-                                nav=True,
-                                label="All Teams",
-                                id="team-list",
-                                in_navbar=True,
-                                className="dropdown",
-                            )
-                        )
-                    )],sticky=True, className="navbar"
+                ),
+            ),
+
+            html.H1(
+                "Hoops",
+                className="hoopsh1",
+            ),
+
+
+            dbc.DropdownMenu(
+                [
+                    dbc.DropdownMenuItem(i, id=i)
+                    for i in sorted(
+                        ["All Teams", "Atlantic", "Southeast", "Central", "Northwest", "Pacific", "Southwest"]
+                    )
+                ],
+                nav=True,
+                label="All Teams",
+                id="team-list",
+                in_navbar=True,
+                className="dropdown",
             )
 
-            # dbc.NavItem(
-            #     dbc.NavLink(
-            #         html.H1("NBA"),
-            #         href="https://www.nba.com/",
-            #         target="blank",
-            #         className="nba",
-            #     )
-            # ),
-            # dbc.NavItem(
-            #     dbc.NavLink(
-            #         html.H1(
-            #             "HOOPS"
-            #         ),
-            #         style={"color":"white"}
-            #     )
-            # ),
-            # dbc.NavItem(
-            #     dbc.NavLink(
-            #         dbc.DropdownMenu(
-            #             [
-            #                 dbc.DropdownMenuItem(i, id=i)
-            #                 for i in sorted(
-            #                     ["All Teams", "Atlantic", "Southeast", "Central",
-            #                      "Northwest", "Pacific", "Southwest"]
-            #                 )
-            #             ],
-            #
-            #             nav=True,
-            #             label="All Teams",
-            #             id="team-list",
-            #             in_navbar=True,
-            #             className="dropdown",
-            #         )
-            #     )
-            # )
         ],
 
-        fill=True,
-        justified=True,
+        className="navbar",
+        color="primary",
+        sticky=True,
+        dark=True
     )
+
 
     return nav
 
+
+
+
+# working navbar
+# nav = dbc.NavbarSimple(
+#         children=[
+#
+#             html.Img(
+#                 src="https://s3.amazonaws.com/file.imleagues/Images/Teams/Uploaded/201801/201812316271650f5a72e9de44767031d56a47aca3fcadf.png",
+#                 style={
+#                     "height": "10%",
+#                     "width": "10%",
+#                     "display": "inline-bock",
+#                 }
+#             ),
+#
+#             html.Div(
+#                 dbc.NavLink(
+#                     html.H1("NBA"),
+#                     href="https://www.nba.com/",
+#                     target="blank",
+#                     className="nba",
+#                     style={"padding-right": "30%", "overflow": "hidden", "display": "inline-block"}
+#
+#                 ),
+#             ),
+#
+#             html.H1(
+#                 "TITLE HERE",
+#                 style={"padding-left":"200px"}
+#             ),
+#
+#
+#             dbc.DropdownMenu(
+#                 [
+#                     dbc.DropdownMenuItem(i, id=i)
+#                     for i in sorted(
+#                         ["All Teams", "Atlantic", "Southeast", "Central", "Northwest", "Pacific", "Southwest"]
+#                     )
+#                 ],
+#                 nav=True,
+#                 label="Select Division",
+#                 id="team-list",
+#                 in_navbar=True,
+#                 className="dropdown",
+#                 style={"padding-left":"300px"}
+#             )
+#
+#         ],
+#
+#         className="navbar",
+#         color="primary",
+#         sticky=True,
+#         dark=True
+#     )
