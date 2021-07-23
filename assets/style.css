@@ -24,8 +24,26 @@
                  Tahoma, Geneva, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
+.nav-item {
+    width: 40%
+}
+
+.ml-auto, .mx-auto {
+    margin-left: 0 !important;
+    width: 100%
+}
+
 .navbar-light .navbar-nav .nav-link {
     color: white;
+}
+
+.navbar-nav {
+    text-align: center;
+    align-items: baseline;
+}
+
+.navbar-nav .dropdown-menu {
+    position: absolute;
 }
 
 .navbar-nav .nav-link:hover {
@@ -50,21 +68,22 @@
 
 .hoopsh1 {
     padding-left: 0px;
+    display: flex;
+    justify-content: flex-start;
 }
 
 .dropdown {
     padding-top: 2rem;
+    position: relative;
     color: black !important;
     font-color: white;
-    padding-left: 0 !important;
+    padding-left: 5px !important;
+    display: flex;
+    justify-content: flex-start;
 }
 
 .dropdown-menu {
-    position: absolute;
-    top: 77%;
-    left: 0px;
-    padding: -0.5rem 0;
-    margin: -1.6rem 0 0;
+    left: auto;
 }
 
 
@@ -139,9 +158,18 @@
 }
 
 @media (min-width: 768px) {
+    .navbar {
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+    }
+
+    .dropdown {
+        justify-content: center;
+    }
+
     .hoopsh1 {
-        padding-left: 300px;
-        padding-right: 300px;
+        justify-content: center;
     }
 
     .card-grid {
