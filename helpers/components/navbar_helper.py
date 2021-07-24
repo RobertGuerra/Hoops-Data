@@ -5,31 +5,32 @@ import dash_bootstrap_components as dbc
 def Navbar():
     nav = dbc.NavbarSimple(
         children=[
-            html.Img(
-                src="https://s3.amazonaws.com/file.imleagues/Images/Teams/Uploaded/201801/201812316271650f5a72e9de44767031d56a47aca3fcadf.png",
-                style={
-                    "height": "10%",
-                    "width": "10%",
-                    "display": "inline-block",
-                }
-            ),
-
-            html.Div(
+            dbc.NavItem(
                 dbc.NavLink(
-                    html.H1("NBA"),
+                    [
+                        html.Img(
+                            src="https://s3.amazonaws.com/file.imleagues/Images/Teams/Uploaded/201801/201812316271650f5a72e9de44767031d56a47aca3fcadf.png",
+                            style={"height": "30px", "width": "60px", "padding-right": "1rem"}
+                        ),
+
+                        html.H1("NBA", className="nba")
+                    ],
+
+
                     href="https://www.nba.com/",
                     target="blank",
-                    className="nba",
-                    style={"padding-right": "30%", "overflow": "hidden", "display": "inline-block"}
-
-                ),
+                    style={"display": "flex", "width": "15%", "text-align": "center", "align-items": "center"}
+                )
             ),
 
-            html.H1(
-                "Hoops",
-                className="hoopsh1",
+            dbc.NavItem(
+                dbc.NavLink(
+                    html.H1(
+                        "Hoops",
+                        className="hoopsh1",
+                    )
+                )
             ),
-
 
             dbc.DropdownMenu(
                 [
@@ -48,6 +49,7 @@ def Navbar():
         ],
 
         className="navbar",
+        fluid=True,
         color="primary",
         sticky=True,
         dark=True

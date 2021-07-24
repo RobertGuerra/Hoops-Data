@@ -18,14 +18,34 @@
     width: 100%;
     text-color: white;
     background-color: black !important;
+
     padding-left: 1rem;
     font-family: Frutiger, Frutiger Linotype, Univers, Calibri, Gill Sans, Gill Sans MT,
                  Myriad Pro, Myriad, DejaVu Sans Condensed, Liberation Sans, Nimbus Sans L,
                  Tahoma, Geneva, Helvetica Neue, Helvetica, Arial, sans-serif;
+
+}
+
+.nav-item {
+    width: 40%
+}
+
+.ml-auto, .mx-auto {
+    margin-left: 0 !important;
+    width: 100%
 }
 
 .navbar-light .navbar-nav .nav-link {
     color: white;
+}
+
+.navbar-nav {
+    text-align: center;
+    align-items: baseline;
+}
+
+.navbar-nav .dropdown-menu {
+    position: absolute;
 }
 
 .navbar-nav .nav-link:hover {
@@ -45,36 +65,37 @@
 }
 
 .card-title {
-    margin-bottom: 7rem;
+    margin-bottom: 8rem;
 }
 
 .hoopsh1 {
     padding-left: 0px;
+    display: flex;
+    justify-content: flex-start;
 }
 
 .dropdown {
     padding-top: 2rem;
+    position: relative;
     color: black !important;
     font-color: white;
-    padding-left: 0 !important;
+    padding-left: 5px !important;
+    display: flex;
+    justify-content: flex-start;
 }
 
 .dropdown-menu {
-    position: absolute;
-    top: 77%;
-    left: 0px;
-    padding: -0.5rem 0;
-    margin: -1.6rem 0 0;
+    left: auto;
 }
 
 
 .image-logo {
-    width: 12rem;
-    height: 12rem;
+    width: 11rem;
+    height: 11rem;
     margin: auto;
-    padding-top: 2rem;
     object-fit: contain;
     text-transform: none;
+    padding-top: 1.5rem;
 }
 
 .card-button {
@@ -95,11 +116,6 @@
 .card-anchor:hover {
     color: white;
 }
-
-.card-title {
-    margin-bottom: 5rem;
-}
-
 
 .card-body {
     font-family: Frutiger, Frutiger Linotype, Univers, Calibri, Gill Sans, Gill Sans MT,
@@ -139,9 +155,18 @@
 }
 
 @media (min-width: 768px) {
+    .navbar {
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+    }
+
+    .dropdown {
+        justify-content: center;
+    }
+
     .hoopsh1 {
-        padding-left: 300px;
-        padding-right: 300px;
+        justify-content: center;
     }
 
     .card-grid {
@@ -247,6 +272,7 @@
 
 .stats-title-container {
     text-align: center;
+    display: grid;
 }
 
 .home-button {
