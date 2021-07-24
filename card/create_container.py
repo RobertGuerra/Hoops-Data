@@ -47,7 +47,9 @@ def create_card(datum):
                                     style=dict(
                                         display="inline-table",
                                         color="white",
-                                        font="30px"
+                                        font="30px",
+                                        zIndex = "1",
+                                        position = "relative"
                                     )
                                 ),
 
@@ -56,21 +58,22 @@ def create_card(datum):
                                 #     className="image-logo",
                                 # ),
                                 html.Br(),
-                                html.P(f"Season Record: {record}",
+                                html.B(f"Season Record: {record}",
                                        style={"z-index": "1", "position": "relative"}),
-                                html.P(f"Standing: {summary}",
+                                html.Br(),
+                                html.B(f"Standing: {summary}",
                                        className=numberOne,
                                        style={"z-index": "1", "position": "relative"}),
-                                html.A(
-                                    html.Button(
-                                        'Team Roster',
-                                        className="card-button",
-                                        style={"color": "white", "backgroundColor": "#" + team_color}
-                                    ),
-                                    className="button-anchor",
-                                    href=team_link,
-                                    target='blank'
-                                ),
+                                # html.A(
+                                #     html.Button(
+                                #         'Team Roster',
+                                #         className="card-button",
+                                #         style={"color": "white", "backgroundColor": "#" + team_color}
+                                #     ),
+                                #     className="button-anchor",
+                                #     href=team_link,
+                                #     target='blank'
+                                # ),
                             ],
 
                             className="title-date",
