@@ -15,9 +15,7 @@ from app import app
 layout = html.Div(
     [
         html.Div(
-            [
 
-            ],
             className="stats-title-container",
             id='stats-title-container'
 

@@ -3,23 +3,25 @@ import dash_bootstrap_components as dbc
 
 
 def Navbar():
-    nav = dbc.NavbarSimple(
+    navbar = dbc.NavbarSimple(
         children=[
             dbc.NavItem(
                 dbc.NavLink(
                     [
                         html.Img(
                             src="https://s3.amazonaws.com/file.imleagues/Images/Teams/Uploaded/201801/201812316271650f5a72e9de44767031d56a47aca3fcadf.png",
-                            style={"height": "30px", "width": "60px", "padding-right": "1rem"}
+                            style={"height": "40px", "width": "55px", "padding-right": "1rem"}
                         ),
 
-                        html.H1("NBA", className="nba")
+                        dbc.NavLink(
+                            html.H1("NBA", className="nba"),
+                            href="https://www.nba.com/",
+                            target="blank"
+                        )
                     ],
 
-
-                    href="https://www.nba.com/",
-                    target="blank",
-                    style={"display": "flex", "width": "15%", "text-align": "center", "align-items": "center"}
+                    className="nba-logo-img",
+                    style={"display": "flex", "align-items": "baseline"}
                 )
             ),
 
@@ -56,7 +58,7 @@ def Navbar():
     )
 
 
-    return nav
+    return navbar
 
 
 
