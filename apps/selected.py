@@ -11,7 +11,6 @@ from helpers.create_stats_helper import create_stats
 
 from app import app
 
-
 layout = html.Div(
     [
         html.Div(
@@ -20,7 +19,6 @@ layout = html.Div(
             id='stats-title-container'
 
         ),
-
         html.Div(
 
             className="stats-container",
@@ -44,6 +42,7 @@ def fetch_stats(pathname):
     stats_children = create_stats(df)
 
     team_color = df['color']
+    team_link = df['team-link'].iloc[0]
 
     title_children = [
         html.H1(
@@ -57,6 +56,7 @@ def fetch_stats(pathname):
                 'text-shadow': '1px 1px 2px white'
             }
         ),
+
         html.A(
             dbc.Button(
                 'HOME',
@@ -64,7 +64,17 @@ def fetch_stats(pathname):
                 style={'height': '3em', 'width': '8em', 'background-color': f'#{team_color[0]}', 'color': 'white'}
             ),
             href='/apps/start'
-        )
+        ),
+        html.A(
+            dbc.Button(
+                'Team Roster',
+                className="card-button",
+                style={"height": "3em", "width": "8em", "color": "white", "backgroundColor": "#" + team_color}
+            ),
+            className="button-anchor",
+            href=team_link,
+            target='blank'
+        ),
     ]
 
     return title_children, stats_children

@@ -1,5 +1,6 @@
 import pandas as pd
 
+
 def sort_cards(json_data, division):
 
     # Create a temporary DataFrame
@@ -19,3 +20,4 @@ def sort_cards(json_data, division):
     temp_df = temp_df.sort_values(by="Rank").to_records()
 
     return temp_df
+
