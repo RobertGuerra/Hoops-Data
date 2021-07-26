@@ -1,6 +1,6 @@
 import dash
 import dash_bootstrap_components as dbc
-import os
+# import os
 
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.DARKLY],
                 meta_tags=[
@@ -11,4 +11,4 @@ app = dash.Dash(__name__, external_stylesheets=[dbc.themes.DARKLY],
                 ],
                 suppress_callback_exceptions=True)
 server = app.server
-server.secret_key = os.environ.get('secret_key', 'secret')
+# server.secret_key = os.environ.get('secret_key', 'secret')
