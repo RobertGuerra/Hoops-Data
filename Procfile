@@ -1,1 +1,1 @@
-web: gunicorn Hoops.index:server
+web: gunicorn index:server
