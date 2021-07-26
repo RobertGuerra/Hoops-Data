@@ -56,6 +56,10 @@
     background-color: #000000 !important;
 }
 
+.nba-logo-img{
+    justify-content: center;
+}
+
 .nba {
     color: white;
 }
@@ -139,7 +143,7 @@
 .card-grid {
     display: grid;
     width: 100%;
-    padding-top: 6rem;
+    padding-top: 5rem;
     padding-left: .7rem;
     padding-right: .7rem;
 }
@@ -161,6 +165,10 @@
         justify-content: center;
     }
 
+    .img-logo {
+        justify-content: center;
+    }
+
     .dropdown {
         justify-content: center;
     }
@@ -170,7 +178,7 @@
     }
 
     .card-grid {
-        padding-top: 8rem;
+        padding-top: 8.75rem;
     }
 }
 
