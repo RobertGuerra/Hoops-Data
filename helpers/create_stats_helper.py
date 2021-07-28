@@ -47,15 +47,6 @@ def create_stats(df):
                 "Games_behind: {}".format(int(home_ser['gamesBehind'])),
             ),
             html.P(
-                "Ties: {}".format(int(home_ser['ties']))
-            ),
-            html.P(
-                "OT_Wins: {}".format(int(home_ser['OTWins'])),
-            ),
-            html.P(
-                "OT_Losses: {}".format(int(home_ser['OTLosses']))
-            ),
-            html.P(
                 "Games_Played: {}".format(int(home_ser['gamesPlayed'])),
             ),
             html.P(
