@@ -6,6 +6,8 @@ from app import app
 from apps import start, selected
 
 
+server = app.server
+
 app.layout = html.Div([
     dcc.Location(id='url', refresh=False),
     html.Div(id='page-content')

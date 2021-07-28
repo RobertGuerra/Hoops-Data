@@ -3,7 +3,6 @@ Brotli==1.0.9
 certifi==2021.5.30
 chardet==4.0.0
 click==7.1.2
-Cython==0.28.2
 dash-bootstrap-components==0.12.2
 dash-core-components==1.16.0
 dash-html-components==1.1.3
