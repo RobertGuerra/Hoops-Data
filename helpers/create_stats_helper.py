@@ -1,10 +1,5 @@
 import dash_html_components as html
 import pandas as pd
-import dash_table
-import dash_core_components as dcc
-import dash_bootstrap_components as dbc
-from card.init_data import json_data
-from IPython.display import display_html
 
 def create_stats(df):
     home = df["record"][0]['items'][0]['stats']
