@@ -33,10 +33,10 @@ def create_card(datum):
                                             src=f"{logo}",
                                             className="image-logo",
                                             style={
-#                                                 "opacity": ".4",
+                                                # "opacity": ".4",
                                                 "z-index": "0",
                                                 "position": "relative",
-                                                "padding-bottom":"1opx"
+                                                "padding-bottom":"10px"
                                             }
                                         )
                                     ],

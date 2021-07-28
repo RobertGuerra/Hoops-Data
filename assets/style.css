@@ -276,6 +276,7 @@
     display: flex;
     text-align: center;
     padding: 2rem;
+    text-align-last: justify;
 }
 
 .stats-title-container {
@@ -291,3 +292,6 @@
     background-color: white;
 }
 
+.h2 {
+    "textAlignLast":"center";
+}
