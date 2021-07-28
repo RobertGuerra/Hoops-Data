@@ -36,9 +36,12 @@ def fetch_stats(pathname):
     name = pathname.split('/')[3].replace('%20', ' ')
     data = [datum for datum in json_data if datum["displayName"] == name]
 
+
     df = pd.DataFrame.from_records(data)
 
+
     stats_children = create_stats(df)
+
 
     team_color = df['color']
     team_link = df['team-link'].iloc[0]
@@ -79,7 +82,8 @@ def fetch_stats(pathname):
             target="blank"
         ),
         html.P("Team Roster",
-               style={"display":"relative"})
+               style={"display":"relative"}
+        ),
     ]
 
 
