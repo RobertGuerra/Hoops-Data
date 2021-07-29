@@ -1,23 +1,36 @@
 import dash_html_components as html
 import pandas as pd
-import dash_table
-import dash_core_components as dcc
-import dash_bootstrap_components as dbc
-from card.init_data import json_data
-from IPython.display import display_html
+
+
+import requests
+import json
+url = "https://content-api-prod.nba.com/public/1/draft/2021/board"
+
+payload={}
+headers = {
+  'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:89.0) Gecko/20100101 Firefox/89.0',
+  'Accept': '*/*',
+  'Accept-Language': 'en-US,en;q=0.5',
+  'Referer': 'https://www.nba.com/',
+  'Origin': 'https://www.nba.com',
+  'DNT': '1',
+  'Connection': 'keep-alive'
+}
+
 
 def create_stats(df):
     home = df["record"][0]['items'][0]['stats']
+    print(home)
     home = [{d['name']: d['value']} for d in home]
 
-    away = df["record"][0]['items'][2]['stats']
-    away = [{d['name']: d['value']} for d in away]
+    # away = df["record"][0]['items'][2]['stats']
+    # away = [{d['name']: d['value']} for d in away]
 
     home_ser = pd.Series(index=[list(d.keys())[0] for d in home], data=[list(d.values())[0] for d in home])
-    away_ser = pd.Series(index=[list(d.keys())[0] for d in away], data=[list(d.values())[0] for d in away])
+    # away_ser = pd.Series(index=[list(d.keys())[0] for d in away], data=[list(d.values())[0] for d in away])
+    print('printing...')
+    print(home_ser)
 
-    # test_df = pd.DataFrame(home_ser)
-    # my_dict = test_df.to_dict()
 
     home_div = html.Div(
         [
@@ -32,34 +45,34 @@ def create_stats(df):
             html.Hr(className="hr"),
 
             html.P(
-                "Playoff_seed: {}".format(int(home_ser['playoffSeed'])),
+                "Playoff_seed: {}".format(int(home_ser['playoffSeed']))
             ),
             html.P(
-                "WINS: {}".format(int(home_ser['wins'])),
+                "WINS: {}".format(int(home_ser['wins']))
             ),
             html.P(
                 "LOSSES: {}".format(int(home_ser['losses']))
             ),
             html.P(
-                "win%: {:.2%}".format((home_ser['winPercent'])),
+                "win%: {:.2%}".format((home_ser['winPercent']))
             ),
             html.P(
-                "Games_behind: {}".format(int(home_ser['gamesBehind'])),
+                "Games_behind: {}".format(int(home_ser['gamesBehind']))
             ),
             html.P(
-                "Games_Played: {}".format(int(home_ser['gamesPlayed'])),
+                "Games_Played: {}".format(int(home_ser['gamesPlayed']))
             ),
             html.P(
-                "Points_For: {}".format(int(home_ser['pointsFor'])),
+                "Points_For: {}".format(int(home_ser['pointsFor']))
             ),
             html.P(
-                "Points_Against: {}".format(int(home_ser['pointsAgainst'])),
+                "Points_Against: {}".format(int(home_ser['pointsAgainst']))
             ),
             html.P(
-                "avg_Points_For: {}".format(int(home_ser['avgPointsFor'])),
+                "avg_Points_For: {}".format(int(home_ser['avgPointsFor']))
             ),
             html.P(
-                "avg_Points_Against: {}".format(int(home_ser['avgPointsAgainst'])),
+                "avg_Points_Against: {}".format(int(home_ser['avgPointsAgainst']))
             ),
             html.P(
                 "division_Win_Percent: {:.2%}".format((home_ser['divisionWinPercent']))
@@ -67,6 +80,7 @@ def create_stats(df):
             html.P(
                 "league_Win_Percent: {:.2%}".format((home_ser['leagueWinPercent']))
             ),
+
         ],
 
         style={'width': '100%'}
