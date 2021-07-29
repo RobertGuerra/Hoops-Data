@@ -19,11 +19,24 @@ response = requests.get(url, headers=headers)
 lottery_data = response.json()
 
 lotto_df = pd.DataFrame(lottery_data)
-
 #new_home = lotto_df['results'][6]['firstRound']
-new_home = 
 
-print(pd.DataFrame.from_records(new_home).columns)
+print("before flatten...")
+print(lottery_data)
+
+def flatten(current, key, result):
+  if isinstance(current, dict):
+    for k in current:
+      new_key = "{0}.{1}".format(key, k) if len(key) > 0 else k
+      flatten(current[k], new_key, result)
+    else:
+      result[key] = current
+    return result
+
+
+result = flatten(lottery_data, '', {})
+print("\n\nafter flatten...\n")
+print(result)
 
 
 
