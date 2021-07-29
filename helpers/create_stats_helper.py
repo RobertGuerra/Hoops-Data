@@ -1,22 +1,6 @@
 import dash_html_components as html
 import pandas as pd
-
-
-import requests
-import json
-url = "https://content-api-prod.nba.com/public/1/draft/2021/board"
-
-payload={}
-headers = {
-  'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:89.0) Gecko/20100101 Firefox/89.0',
-  'Accept': '*/*',
-  'Accept-Language': 'en-US,en;q=0.5',
-  'Referer': 'https://www.nba.com/',
-  'Origin': 'https://www.nba.com',
-  'DNT': '1',
-  'Connection': 'keep-alive'
-}
-
+from IPython.display import display, HTML
 
 def create_stats(df):
     home = df["record"][0]['items'][0]['stats']
@@ -28,8 +12,7 @@ def create_stats(df):
 
     home_ser = pd.Series(index=[list(d.keys())[0] for d in home], data=[list(d.values())[0] for d in home])
     # away_ser = pd.Series(index=[list(d.keys())[0] for d in away], data=[list(d.values())[0] for d in away])
-    print('printing...')
-    print(home_ser)
+
 
 
     home_div = html.Div(
@@ -80,7 +63,6 @@ def create_stats(df):
             html.P(
                 "league_Win_Percent: {:.2%}".format((home_ser['leagueWinPercent']))
             ),
-
         ],
 
         style={'width': '100%'}

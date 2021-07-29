@@ -16,33 +16,26 @@ headers = {
 
 response = requests.get(url, headers=headers)
 
-# lottery_data = response.json()
-#
-# lotto_df = pd.DataFrame(lottery_data)
-#
-# new_home = lotto_df['results'][6]['firstRound'][0]['team']
-#
-# print(new_home)
-
 
 lotto_df = pd.DataFrame(response.json())
 
 picks = lotto_df.loc['picks', 'results']
 
 pd.json_normalize(picks['firstRound'][0])
+# new_home = lotto_df['results'][6]['firstRound'][0]['team']
 
 df = pd.DataFrame(dtype='object')
 
 for pick in picks['firstRound']:
-  df = df.append(pd.json_normalize(pick), ignore_index=True)
-
+    df = df.append(pd.json_normalize(pick), ignore_index=True)
 
 df = df.set_index('pickNumber')
 
 df = df.rename(axis=1, mapper=lambda x: x.split('.')[-1])
 
-selected_df = df[['prospect', 'teamName', 'pickedFirstRound', 'pickedSecondRound']]
+selected_df = df[['pickDetails','prospect', 'winsAndLosses','seasonFinish','playoffsFinish','teamName']]
 selected_df = selected_df.to_html('picks.html')
-
 print(selected_df)
+
+
 
