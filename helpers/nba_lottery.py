@@ -16,27 +16,33 @@ headers = {
 
 response = requests.get(url, headers=headers)
 
-lottery_data = response.json()
-
-lotto_df = pd.DataFrame(lottery_data)
-#new_home = lotto_df['results'][6]['firstRound']
-
-print("before flatten...")
-print(lottery_data)
-
-def flatten(current, key, result):
-  if isinstance(current, dict):
-    for k in current:
-      new_key = "{0}.{1}".format(key, k) if len(key) > 0 else k
-      flatten(current[k], new_key, result)
-    else:
-      result[key] = current
-    return result
+# lottery_data = response.json()
+#
+# lotto_df = pd.DataFrame(lottery_data)
+#
+# new_home = lotto_df['results'][6]['firstRound'][0]['team']
+#
+# print(new_home)
 
 
-result = flatten(lottery_data, '', {})
-print("\n\nafter flatten...\n")
-print(result)
+lotto_df = pd.DataFrame(response.json())
+
+picks = lotto_df.loc['picks', 'results']
+
+pd.json_normalize(picks['firstRound'][0])
+
+df = pd.DataFrame(dtype='object')
+
+for pick in picks['firstRound']:
+  df = df.append(pd.json_normalize(pick), ignore_index=True)
 
 
+df = df.set_index('pickNumber')
+
+df = df.rename(axis=1, mapper=lambda x: x.split('.')[-1])
+
+selected_df = df[['prospect', 'teamName', 'pickedFirstRound', 'pickedSecondRound']]
+selected_df = selected_df.to_html('picks.html')
+
+print(selected_df)
 
