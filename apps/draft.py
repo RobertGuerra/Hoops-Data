@@ -15,7 +15,7 @@ layout = html.Div(
             "NBA LOTTERY",
             style={
                 "textAlignLast":"center",
-                "backgroundColor": "blue"
+                # "backgroundColor": "blue",
             }
         ),
 
@@ -28,14 +28,19 @@ layout = html.Div(
 
         dbc.Tabs(
             [
-                dbc.Tab(label="First Round Pick",
+                dbc.Tab(
+                        label="First Round Pick",
                         id="first-round-pick",
+                        active_label_style={"color":"white"},
                         tab_style={'textAlign': 'center'},
-                        active_tab_style={'color': 'red'}),
-                dbc.Tab(label="Second Round Pick",
+                ),
+
+                dbc.Tab(
+                        label="Second Round Pick",
                         id="second-round-pick",
+                        active_label_style={"color":"white"},
                         tab_style={'textAlign': 'center'},
-                        active_tab_style={'color': 'red'})
+                )
             ],
             style={'justifyContent': 'center'}
         ),
@@ -46,7 +51,7 @@ layout = html.Div(
         )
     ],
 
-    style={'width': '100%'}
+    style={'width': '100%', "height":"100%","backgroundColor": "blue"}
 )
 
 
