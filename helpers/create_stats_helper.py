@@ -3,7 +3,6 @@ import pandas as pd
 
 def create_stats(df):
     home = df["record"][0]['items'][0]['stats']
-    print(home)
     home = [{d['name']: d['value']} for d in home]
 
     # away = df["record"][0]['items'][2]['stats']

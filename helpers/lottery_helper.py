@@ -17,26 +17,26 @@ def create_lotto_picks(lottery_df):
 
 
 
-    lottery_div = html.Div(
-        [
-            html.Hr(className="hr"),
-            html.H2(
-                "NBA LOTTERY",
-                style={
-                    "textAlignLast":"center"
-                }
-            ),
-
-            html.Hr(className="hr"),
-
-           dcc.Interval(
-               id='my_interval',
-               interval=1*3000,
-           )
-        ],
-
-        style={'width': '100%'}
-    )
+    # lottery_div = html.Div(
+    #     [
+    #         html.Hr(className="hr"),
+    #         html.H2(
+    #             "NBA LOTTERY",
+    #             style={
+    #                 "textAlignLast":"center"
+    #             }
+    #         ),
+    #
+    #         html.Hr(className="hr"),
+    #
+    #        dcc.Interval(
+    #            id='my_interval',
+    #            interval=1*3000,
+    #        )
+    #     ],
+    #
+    #     style={'width': '100%'}
+    # )
 
 
     return [lottery_div]
