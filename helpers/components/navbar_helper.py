@@ -34,6 +34,13 @@ def Navbar():
                 )
             ),
 
+            dbc.NavItem(
+                dbc.NavLink(
+                    html.H1("Draft", className="draft-title"),
+                    href="/apps/draft",
+                )
+            ),
+
             dbc.DropdownMenu(
                 [
                     dbc.DropdownMenuItem(i, id=i)

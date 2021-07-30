@@ -1,5 +1,8 @@
 /* SECTION: PAGE 1 */
 
+a.nav-link{
+    margin:auto;
+}
 
 .table {
     background-color:black;

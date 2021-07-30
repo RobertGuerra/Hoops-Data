@@ -13,8 +13,17 @@ def create_df(records):
   temp_df = temp_df.set_index('pickNumber')
 
   temp_df = temp_df.rename(axis=1, mapper=lambda x: x.split('.')[-1])
+  temp_df = temp_df.rename({'teamName': 'Team Name',
+                            'displayName': 'Draft Pick',
+                            'position': 'Position',
+                            'feetAndInches': 'Feet-Inches',
+                            'weightLbs': 'Weight (lbs)',
+                            'school': 'School',
+                            'status': 'Status',
+                            'country': 'Country'},
+                           axis=1)
 
-  return temp_df[['teamName', 'displayName', 'position', 'feetAndInches', 'weightLbs', 'school', 'status', 'country']]
+  return temp_df[['Team Name', 'Draft Pick', 'Position', 'Feet-Inches', 'Weight (lbs)', 'School', 'Status', 'Country']]
 
 
 def get_lottery_picks():

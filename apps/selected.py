@@ -66,7 +66,8 @@ def fetch_stats(pathname):
                 className="home-button",
                 style={'height': '3em', 'width': '8em', 'background-color': f'#{team_color[0]}', 'color': 'white'}
             ),
-            href='/apps/start'
+            href='/apps/start',
+            style={"margin": "auto"}
         ),
         html.A(
             html.Img(
@@ -79,7 +80,8 @@ def fetch_stats(pathname):
                 }
             ),
             href=team_link,
-            target="blank"
+            target="blank",
+            style={"margin": "auto"}
         ),
         html.P("Team Roster",
                style={"display":"relative"}
