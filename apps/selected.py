@@ -1,5 +1,4 @@
 import dash_html_components as html
-import dash_core_components as dcc
 import dash_bootstrap_components as dbc
 import pandas as pd
 
@@ -23,7 +22,7 @@ layout = html.Div(
 
             className="stats-container",
             id="stats-container"
-        )
+        ),
     ],
 
     className="stats-page-layout"
@@ -31,18 +30,22 @@ layout = html.Div(
 
 
 @app.callback([Output('stats-title-container', 'children'),
-               Output('stats-container', 'children')],
+               Output('stats-container', 'children'),],
               [Input('url', 'pathname')])
 def fetch_stats(pathname):
     name = pathname.split('/')[3].replace('%20', ' ')
     data = [datum for datum in json_data if datum["displayName"] == name]
 
+
     df = pd.DataFrame.from_records(data)
+
 
     stats_children = create_stats(df)
 
+
     team_color = df['color']
     team_link = df['team-link'].iloc[0]
+    team_logos = df['logo']
 
     title_children = [
         html.H1(
@@ -66,19 +69,22 @@ def fetch_stats(pathname):
             href='/apps/start'
         ),
         html.A(
-            dbc.Button(
-                'Team Roster',
-                className="card-button",
-                style={"height": "3em", "width": "8em", "color": "white", "backgroundColor": "#" + team_color}
+            html.Img(
+                src=f"{team_logos[0]}",
+                style={
+                    "position": "relative",
+                    "width": "11rem",
+                    "height": "11rem",
+                    "top":"5px"
+                }
             ),
-            className="button-anchor",
             href=team_link,
-            target='blank'
+            target="blank"
+        ),
+        html.P("Team Roster",
+               style={"display":"relative"}
         ),
     ]
 
+
     return title_children, stats_children
-
-
-
-

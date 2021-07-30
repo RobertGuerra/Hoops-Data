@@ -1,0 +1,2170 @@
+{
+    "results": {
+        "id": 576706,
+        "type": "draft",
+        "season": 2021,
+        "status": "round-1",
+        "isDraftLive": true,
+        "permalink": "https://www.nba.com/draft/2021/draft-board",
+        "appUrl": "https://www.nba.com/webview/draft/2021/draft-board",
+        "picks": {
+            "firstRound": [
+                {
+                    "pickNumber": 1,
+                    "pickDetails": "",
+                    "team": {
+                        "id": 577291,
+                        "type": "draft_team",
+                        "season": 2021,
+                        "teamId": 1610612765,
+                        "teamRecord": {
+                            "season": "2020-21",
+                            "winsAndLosses": "20-52",
+                            "seasonFinish": "5th place, Central Division",
+                            "playoffsFinish": "Did not make playoffs"
+                        },
+                        "permalink": "https://www.nba.com/draft/2021/team-profiles/detroit-pistons",
+                        "appUrl": "https://www.nba.com/webview/draft/2021/team-profiles/detroit-pistons",
+                        "tradeDetails": [],
+                        "teamName": "Detroit Pistons",
+                        "teamAbbr": "DET",
+                        "pickedFirstRound": true,
+                        "pickedSecondRound": true
+                    },
+                    "prospect": {
+                        "id": 572150,
+                        "type": "draft_prospect",
+                        "season": 2021,
+                        "displayName": "Cade Cunningham",
+                        "firstName": "Cade",
+                        "lastName": "Cunningham",
+                        "permalink": "https://www.nba.com/draft/2021/prospects/cade-cunningham",
+                        "appUrl": "https://www.nba.com/webview/draft/2021/prospects/cade-cunningham",
+                        "position": "G",
+                        "height": {
+                            "feetAndInches": "6-8",
+                            "inchesOnly": 80
+                        },
+                        "weightLbs": 220,
+                        "school": "Oklahoma State",
+                        "status": "Freshman",
+                        "birthday": "09/25/2001",
+                        "country": "USA",
+                        "tradeDetails": []
+                    }
+                },
+                {
+                    "pickNumber": 2,
+                    "pickDetails": "",
+                    "team": {
+                        "id": 576069,
+                        "type": "draft_team",
+                        "season": 2021,
+                        "teamId": 1610612745,
+                        "teamRecord": {
+                            "season": "2020-21",
+                            "winsAndLosses": "17-55",
+                            "seasonFinish": "5th place, Southwest Division",
+                            "playoffsFinish": "Did not make playoffs"
+                        },
+                        "permalink": "https://www.nba.com/draft/2021/team-profiles/houston-rockets",
+                        "appUrl": "https://www.nba.com/webview/draft/2021/team-profiles/houston-rockets",
+                        "tradeDetails": [],
+                        "teamName": "Houston Rockets",
+                        "teamAbbr": "HOU",
+                        "pickedFirstRound": true
+                    },
+                    "prospect": {
+                        "id": 577296,
+                        "type": "draft_prospect",
+                        "season": 2021,
+                        "displayName": "Jalen Green",
+                        "firstName": "Jalen",
+                        "lastName": "Green",
+                        "permalink": "https://www.nba.com/draft/2021/prospects/jalen-green",
+                        "appUrl": "https://www.nba.com/webview/draft/2021/prospects/jalen-green",
+                        "position": "G",
+                        "height": {
+                            "feetAndInches": "6-6",
+                            "inchesOnly": 78
+                        },
+                        "weightLbs": 178,
+                        "school": "G League Ignite",
+                        "status": "G League",
+                        "birthday": "02/09/2002",
+                        "country": "USA",
+                        "tradeDetails": []
+                    }
+                },
+                {
+                    "pickNumber": 3,
+                    "pickDetails": "",
+                    "team": {
+                        "id": 572152,
+                        "type": "draft_team",
+                        "season": 2021,
+                        "teamId": 1610612739,
+                        "teamRecord": {
+                            "season": "2020-21",
+                            "winsAndLosses": "22-50",
+                            "seasonFinish": "4th place, Central Division",
+                            "playoffsFinish": "Did not make playoffs"
+                        },
+                        "permalink": "https://www.nba.com/draft/2021/team-profiles/cleveland-cavaliers",
+                        "appUrl": "https://www.nba.com/webview/draft/2021/team-profiles/cleveland-cavaliers",
+                        "tradeDetails": [],
+                        "teamName": "Cleveland Cavaliers",
+                        "teamAbbr": "CLE",
+                        "pickedFirstRound": true
+                    },
+                    "prospect": {
+                        "id": 575872,
+                        "type": "draft_prospect",
+                        "season": 2021,
+                        "displayName": "Evan Mobley",
+                        "firstName": "Evan",
+                        "lastName": "Mobley",
+                        "permalink": "https://www.nba.com/draft/2021/prospects/evan-mobley",
+                        "appUrl": "https://www.nba.com/webview/draft/2021/prospects/evan-mobley",
+                        "position": "C",
+                        "height": {
+                            "feetAndInches": "7-0",
+                            "inchesOnly": 84
+                        },
+                        "weightLbs": 215,
+                        "school": "USC",
+                        "status": "Freshman",
+                        "birthday": "06/18/2001",
+                        "country": "USA",
+                        "tradeDetails": []
+                    }
+                },
+                {
+                    "pickNumber": 4,
+                    "pickDetails": "",
+                    "team": {
+                        "id": 578159,
+                        "type": "draft_team",
+                        "season": 2021,
+                        "teamId": 1610612761,
+                        "teamRecord": {
+                            "season": "2020-21",
+                            "winsAndLosses": "27-45",
+                            "seasonFinish": "5th Place, Atlantic Division",
+                            "playoffsFinish": "Did not qualify for playoffs"
+                        },
+                        "permalink": "https://www.nba.com/draft/2021/team-profiles/toronto-raptors",
+                        "appUrl": "https://www.nba.com/webview/draft/2021/team-profiles/toronto-raptors",
+                        "tradeDetails": [],
+                        "teamName": "Toronto Raptors",
+                        "teamAbbr": "TOR",
+                        "pickedFirstRound": true,
+                        "pickedSecondRound": true
+                    },
+                    "prospect": {
+                        "id": 577304,
+                        "type": "draft_prospect",
+                        "season": 2021,
+                        "displayName": "Scottie Barnes",
+                        "firstName": "Scottie",
+                        "lastName": "Barnes",
+                        "permalink": "https://www.nba.com/draft/2021/prospects/scottie-barnes",
+                        "appUrl": "https://www.nba.com/webview/draft/2021/prospects/scottie-barnes",
+                        "position": "F",
+                        "height": {
+                            "feetAndInches": "6-8",
+                            "inchesOnly": 80
+                        },
+                        "weightLbs": 225,
+                        "school": "Florida State",
+                        "status": "Freshman",
+                        "birthday": "08/01/2001",
+                        "country": "USA",
+                        "tradeDetails": []
+                    }
+                },
+                {
+                    "pickNumber": 5,
+                    "pickDetails": "",
+                    "team": {
+                        "id": 576796,
+                        "type": "draft_team",
+                        "season": 2021,
+                        "teamId": 1610612753,
+                        "teamRecord": {
+                            "season": "2020-21",
+                            "winsAndLosses": "21-51",
+                            "seasonFinish": "5th place, Southeast Division",
+                            "playoffsFinish": "Did not make playoffs"
+                        },
+                        "permalink": "https://www.nba.com/draft/2021/team-profiles/orlando-magic",
+                        "appUrl": "https://www.nba.com/webview/draft/2021/team-profiles/orlando-magic",
+                        "tradeDetails": [],
+                        "teamName": "Orlando Magic",
+                        "teamAbbr": "ORL",
+                        "pickedFirstRound": true,
+                        "pickedSecondRound": true
+                    },
+                    "prospect": {
+                        "id": 573994,
+                        "type": "draft_prospect",
+                        "season": 2021,
+                        "displayName": "Jalen Suggs",
+                        "firstName": "Jalen",
+                        "lastName": "Suggs",
+                        "permalink": "https://www.nba.com/draft/2021/prospects/jalen-suggs",
+                        "appUrl": "https://www.nba.com/webview/draft/2021/prospects/jalen-suggs",
+                        "position": "G",
+                        "height": {
+                            "feetAndInches": "6-4",
+                            "inchesOnly": 76
+                        },
+                        "weightLbs": 205,
+                        "school": "Gonzaga",
+                        "status": "Freshman",
+                        "birthday": "06/03/2001",
+                        "country": "USA",
+                        "tradeDetails": []
+                    }
+                },
+                {
+                    "pickNumber": 6,
+                    "pickDetails": "",
+                    "team": {
+                        "id": 576753,
+                        "type": "draft_team",
+                        "season": 2021,
+                        "teamId": 1610612760,
+                        "teamRecord": {
+                            "season": "2020-21",
+                            "winsAndLosses": "22-50",
+                            "seasonFinish": "5th Place, Northwest Division",
+                            "playoffsFinish": "Did not make playoffs"
+                        },
+                        "permalink": "https://www.nba.com/draft/2021/team-profiles/oklahoma-city-thunder",
+                        "appUrl": "https://www.nba.com/webview/draft/2021/team-profiles/oklahoma-city-thunder",
+                        "tradeDetails": [],
+                        "teamName": "Oklahoma City Thunder",
+                        "teamAbbr": "OKC",
+                        "pickedFirstRound": true,
+                        "pickedSecondRound": true
+                    },
+                    "prospect": {
+                        "id": 577323,
+                        "type": "draft_prospect",
+                        "season": 2021,
+                        "displayName": "Josh Giddey",
+                        "firstName": "Josh",
+                        "lastName": "Giddey",
+                        "permalink": "https://www.nba.com/draft/2021/prospects/josh-giddey",
+                        "appUrl": "https://www.nba.com/webview/draft/2021/prospects/josh-giddey",
+                        "position": "G",
+                        "height": {
+                            "feetAndInches": "6-8",
+                            "inchesOnly": 80
+                        },
+                        "weightLbs": 200,
+                        "school": "Adelaide (Australia)",
+                        "status": "International",
+                        "birthday": "10/10/2002",
+                        "country": "Australia",
+                        "tradeDetails": []
+                    }
+                },
+                {
+                    "pickNumber": 7,
+                    "pickDetails": "",
+                    "team": {
+                        "id": 576028,
+                        "type": "draft_team",
+                        "season": 2021,
+                        "teamId": 1610612744,
+                        "teamRecord": {
+                            "season": "2020-21",
+                            "winsAndLosses": "39-33",
+                            "seasonFinish": "4th place, Pacific Division",
+                            "playoffsFinish": "Lost to Grizzlies in Play-In Tournament"
+                        },
+                        "permalink": "https://www.nba.com/draft/2021/team-profiles/golden-state-warriors",
+                        "appUrl": "https://www.nba.com/webview/draft/2021/team-profiles/golden-state-warriors",
+                        "tradeDetails": [],
+                        "teamName": "Golden State Warriors",
+                        "teamAbbr": "GSW",
+                        "pickedFirstRound": true
+                    },
+                    "prospect": {
+                        "id": 577300,
+                        "type": "draft_prospect",
+                        "season": 2021,
+                        "displayName": "Jonathan Kuminga",
+                        "firstName": "Jonathan",
+                        "lastName": "Kuminga",
+                        "permalink": "https://www.nba.com/draft/2021/prospects/jonathan-kuminga",
+                        "appUrl": "https://www.nba.com/webview/draft/2021/prospects/jonathan-kuminga",
+                        "position": "F",
+                        "height": {
+                            "feetAndInches": "6-6",
+                            "inchesOnly": 78
+                        },
+                        "weightLbs": 210,
+                        "school": "G League Ignite",
+                        "status": "G League",
+                        "birthday": "10/06/2002",
+                        "country": "DRC",
+                        "tradeDetails": []
+                    }
+                },
+                {
+                    "pickNumber": 8,
+                    "pickDetails": "",
+                    "team": {
+                        "id": 576796,
+                        "type": "draft_team",
+                        "season": 2021,
+                        "teamId": 1610612753,
+                        "teamRecord": {
+                            "season": "2020-21",
+                            "winsAndLosses": "21-51",
+                            "seasonFinish": "5th place, Southeast Division",
+                            "playoffsFinish": "Did not make playoffs"
+                        },
+                        "permalink": "https://www.nba.com/draft/2021/team-profiles/orlando-magic",
+                        "appUrl": "https://www.nba.com/webview/draft/2021/team-profiles/orlando-magic",
+                        "tradeDetails": [],
+                        "teamName": "Orlando Magic",
+                        "teamAbbr": "ORL",
+                        "pickedFirstRound": true,
+                        "pickedSecondRound": true
+                    },
+                    "prospect": {
+                        "id": 577313,
+                        "type": "draft_prospect",
+                        "season": 2021,
+                        "displayName": "Franz Wagner",
+                        "firstName": "Franz",
+                        "lastName": "Wagner",
+                        "permalink": "https://www.nba.com/draft/2021/prospects/franz-wagner",
+                        "appUrl": "https://www.nba.com/webview/draft/2021/prospects/franz-wagner",
+                        "position": "G-F",
+                        "height": {
+                            "feetAndInches": "6-9",
+                            "inchesOnly": 81
+                        },
+                        "weightLbs": 220,
+                        "school": "Michigan",
+                        "status": "Sophomore",
+                        "birthday": "08/27/2001",
+                        "country": "Germany",
+                        "tradeDetails": []
+                    }
+                },
+                {
+                    "pickNumber": 9,
+                    "pickDetails": "",
+                    "team": {
+                        "id": 575987,
+                        "type": "draft_team",
+                        "season": 2021,
+                        "teamId": 1610612758,
+                        "teamRecord": {
+                            "season": "2020-21",
+                            "winsAndLosses": "31-41",
+                            "seasonFinish": "5th place, Pacific Division",
+                            "playoffsFinish": "Did not make playoffs"
+                        },
+                        "permalink": "https://www.nba.com/draft/2021/team-profiles/sacramento-kings",
+                        "appUrl": "https://www.nba.com/webview/draft/2021/team-profiles/sacramento-kings",
+                        "tradeDetails": [],
+                        "teamName": "Sacramento Kings",
+                        "teamAbbr": "SAC",
+                        "pickedFirstRound": true,
+                        "pickedSecondRound": true
+                    },
+                    "prospect": {
+                        "id": 577307,
+                        "type": "draft_prospect",
+                        "season": 2021,
+                        "displayName": "Davion Mitchell",
+                        "firstName": "Davion",
+                        "lastName": "Mitchell",
+                        "permalink": "https://www.nba.com/draft/2021/prospects/davion-mitchell",
+                        "appUrl": "https://www.nba.com/webview/draft/2021/prospects/davion-mitchell",
+                        "position": "G",
+                        "height": {
+                            "feetAndInches": "6-1",
+                            "inchesOnly": 73
+                        },
+                        "weightLbs": 202,
+                        "school": "Baylor",
+                        "status": "Junior",
+                        "birthday": "09/05/1998",
+                        "country": "USA",
+                        "tradeDetails": []
+                    }
+                },
+                {
+                    "pickNumber": 10,
+                    "pickDetails": "",
+                    "team": {
+                        "id": 576816,
+                        "type": "draft_team",
+                        "season": 2021,
+                        "teamId": 1610612740,
+                        "teamRecord": {
+                            "season": "2020-21",
+                            "winsAndLosses": "31-41",
+                            "seasonFinish": "4th place, Southwest Division",
+                            "playoffsFinish": "Did not make playoffs"
+                        },
+                        "permalink": "https://www.nba.com/draft/2021/team-profiles/new-orleans-pelicans",
+                        "appUrl": "https://www.nba.com/webview/draft/2021/team-profiles/new-orleans-pelicans",
+                        "tradeDetails": [],
+                        "teamName": "New Orleans Pelicans",
+                        "teamAbbr": "NOP",
+                        "pickedFirstRound": true,
+                        "pickedSecondRound": true
+                    },
+                    "prospect": {
+                        "id": 577394,
+                        "type": "draft_prospect",
+                        "season": 2021,
+                        "displayName": "Ziaire Williams",
+                        "firstName": "Ziaire",
+                        "lastName": "Williams",
+                        "permalink": "https://www.nba.com/draft/2021/prospects/ziaire-williams",
+                        "appUrl": "https://www.nba.com/webview/draft/2021/prospects/ziaire-williams",
+                        "position": "F",
+                        "height": {
+                            "feetAndInches": "6-8",
+                            "inchesOnly": 80
+                        },
+                        "weightLbs": 185,
+                        "school": "Stanford",
+                        "status": "Freshman",
+                        "birthday": "09/12/2001",
+                        "country": "USA",
+                        "tradeDetails": []
+                    }
+                },
+                {
+                    "pickNumber": 11,
+                    "pickDetails": "",
+                    "team": {
+                        "id": 577271,
+                        "type": "draft_team",
+                        "season": 2021,
+                        "teamId": 1610612766,
+                        "teamRecord": {
+                            "season": "2020-21",
+                            "winsAndLosses": "33-39",
+                            "seasonFinish": "4th Place, Southeast Division",
+                            "playoffsFinish": "Lost to Pacers in Play-In Tournament"
+                        },
+                        "permalink": "https://www.nba.com/draft/2021/team-profiles/charlotte-hornets",
+                        "appUrl": "https://www.nba.com/webview/draft/2021/team-profiles/charlotte-hornets",
+                        "tradeDetails": [],
+                        "teamName": "Charlotte Hornets",
+                        "teamAbbr": "CHA",
+                        "pickedFirstRound": true,
+                        "pickedSecondRound": true
+                    },
+                    "prospect": null
+                },
+                {
+                    "pickNumber": 12,
+                    "pickDetails": "",
+                    "team": {
+                        "id": 576750,
+                        "type": "draft_team",
+                        "season": 2021,
+                        "teamId": 1610612759,
+                        "teamRecord": {
+                            "season": "2020-21",
+                            "winsAndLosses": "33-29",
+                            "seasonFinish": "3rd place, Southwest Division",
+                            "playoffsFinish": "Lost to Grizzlies in Play-In Tournament"
+                        },
+                        "permalink": "https://www.nba.com/draft/2021/team-profiles/san-antonio-spurs",
+                        "appUrl": "https://www.nba.com/webview/draft/2021/team-profiles/san-antonio-spurs",
+                        "tradeDetails": [],
+                        "teamName": "San Antonio Spurs",
+                        "teamAbbr": "SAS",
+                        "pickedFirstRound": true,
+                        "pickedSecondRound": true
+                    },
+                    "prospect": null
+                },
+                {
+                    "pickNumber": 13,
+                    "pickDetails": "",
+                    "team": {
+                        "id": 577279,
+                        "type": "draft_team",
+                        "season": 2021,
+                        "teamId": 1610612754,
+                        "teamRecord": {
+                            "season": "2020-21",
+                            "winsAndLosses": "34-38",
+                            "seasonFinish": "2nd place, Central Divsion",
+                            "playoffsFinish": "Lost to Wizards in Play-In Tournament"
+                        },
+                        "permalink": "https://www.nba.com/draft/2021/team-profiles/indiana-pacers",
+                        "appUrl": "https://www.nba.com/webview/draft/2021/team-profiles/indiana-pacers",
+                        "tradeDetails": [],
+                        "teamName": "Indiana Pacers",
+                        "teamAbbr": "IND",
+                        "pickedFirstRound": true,
+                        "pickedSecondRound": true
+                    },
+                    "prospect": null
+                },
+                {
+                    "pickNumber": 14,
+                    "pickDetails": "",
+                    "team": {
+                        "id": 576028,
+                        "type": "draft_team",
+                        "season": 2021,
+                        "teamId": 1610612744,
+                        "teamRecord": {
+                            "season": "2020-21",
+                            "winsAndLosses": "39-33",
+                            "seasonFinish": "4th place, Pacific Division",
+                            "playoffsFinish": "Lost to Grizzlies in Play-In Tournament"
+                        },
+                        "permalink": "https://www.nba.com/draft/2021/team-profiles/golden-state-warriors",
+                        "appUrl": "https://www.nba.com/webview/draft/2021/team-profiles/golden-state-warriors",
+                        "tradeDetails": [],
+                        "teamName": "Golden State Warriors",
+                        "teamAbbr": "GSW",
+                        "pickedFirstRound": true
+                    },
+                    "prospect": null
+                },
+                {
+                    "pickNumber": 15,
+                    "pickDetails": "",
+                    "team": {
+                        "id": 577334,
+                        "type": "draft_team",
+                        "season": 2021,
+                        "teamId": 1610612764,
+                        "teamRecord": {
+                            "season": "2020-21",
+                            "winsAndLosses": "34-38",
+                            "seasonFinish": "3rd place, Southeast Division",
+                            "playoffsFinish": "Lost in first round to 76ers"
+                        },
+                        "permalink": "https://www.nba.com/draft/2021/team-profiles/washington-wizards",
+                        "appUrl": "https://www.nba.com/webview/draft/2021/team-profiles/washington-wizards",
+                        "tradeDetails": [],
+                        "teamName": "Washington Wizards",
+                        "teamAbbr": "WAS",
+                        "pickedFirstRound": true
+                    },
+                    "prospect": null
+                },
+                {
+                    "pickNumber": 16,
+                    "pickDetails": "",
+                    "team": {
+                        "id": 576753,
+                        "type": "draft_team",
+                        "season": 2021,
+                        "teamId": 1610612760,
+                        "teamRecord": {
+                            "season": "2020-21",
+                            "winsAndLosses": "22-50",
+                            "seasonFinish": "5th Place, Northwest Division",
+                            "playoffsFinish": "Did not make playoffs"
+                        },
+                        "permalink": "https://www.nba.com/draft/2021/team-profiles/oklahoma-city-thunder",
+                        "appUrl": "https://www.nba.com/webview/draft/2021/team-profiles/oklahoma-city-thunder",
+                        "tradeDetails": [],
+                        "teamName": "Oklahoma City Thunder",
+                        "teamAbbr": "OKC",
+                        "pickedFirstRound": true,
+                        "pickedSecondRound": true
+                    },
+                    "prospect": null
+                },
+                {
+                    "pickNumber": 17,
+                    "pickDetails": "",
+                    "team": {
+                        "id": 576021,
+                        "type": "draft_team",
+                        "season": 2021,
+                        "teamId": 1610612763,
+                        "teamRecord": {
+                            "season": "2020-21",
+                            "winsAndLosses": "38-34",
+                            "seasonFinish": "2nd place, Southwest Division",
+                            "playoffsFinish": "Lost in first round to Jazz"
+                        },
+                        "permalink": "https://www.nba.com/draft/2021/team-profiles/memphis-grizzlies",
+                        "appUrl": "https://www.nba.com/webview/draft/2021/team-profiles/memphis-grizzlies",
+                        "tradeDetails": [],
+                        "teamName": "Memphis Grizzlies",
+                        "teamAbbr": "MEM",
+                        "pickedFirstRound": true,
+                        "pickedSecondRound": true
+                    },
+                    "prospect": null
+                },
+                {
+                    "pickNumber": 18,
+                    "pickDetails": "",
+                    "team": {
+                        "id": 576753,
+                        "type": "draft_team",
+                        "season": 2021,
+                        "teamId": 1610612760,
+                        "teamRecord": {
+                            "season": "2020-21",
+                            "winsAndLosses": "22-50",
+                            "seasonFinish": "5th Place, Northwest Division",
+                            "playoffsFinish": "Did not make playoffs"
+                        },
+                        "permalink": "https://www.nba.com/draft/2021/team-profiles/oklahoma-city-thunder",
+                        "appUrl": "https://www.nba.com/webview/draft/2021/team-profiles/oklahoma-city-thunder",
+                        "tradeDetails": [],
+                        "teamName": "Oklahoma City Thunder",
+                        "teamAbbr": "OKC",
+                        "pickedFirstRound": true,
+                        "pickedSecondRound": true
+                    },
+                    "prospect": null
+                },
+                {
+                    "pickNumber": 19,
+                    "pickDetails": "",
+                    "team": {
+                        "id": 576758,
+                        "type": "draft_team",
+                        "season": 2021,
+                        "teamId": 1610612752,
+                        "teamRecord": {
+                            "season": "2020-21",
+                            "winsAndLosses": "41-31",
+                            "seasonFinish": "3rd place, Atlantic Division",
+                            "playoffsFinish": "Lost in first round to Hawks"
+                        },
+                        "permalink": "https://www.nba.com/draft/2021/team-profiles/new-york-knicks",
+                        "appUrl": "https://www.nba.com/webview/draft/2021/team-profiles/new-york-knicks",
+                        "tradeDetails": [],
+                        "teamName": "New York Knicks",
+                        "teamAbbr": "NYK",
+                        "pickedFirstRound": true,
+                        "pickedSecondRound": true
+                    },
+                    "prospect": null
+                },
+                {
+                    "pickNumber": 20,
+                    "pickDetails": "",
+                    "team": {
+                        "id": 576012,
+                        "type": "draft_team",
+                        "season": 2021,
+                        "teamId": 1610612737,
+                        "teamRecord": {
+                            "season": "2020-21",
+                            "winsAndLosses": "41-31",
+                            "seasonFinish": "1st place, Southeast Division",
+                            "playoffsFinish": "Lost to Bucks in East finals"
+                        },
+                        "permalink": "https://www.nba.com/draft/2021/team-profiles/atlanta-hawks",
+                        "appUrl": "https://www.nba.com/webview/draft/2021/team-profiles/atlanta-hawks",
+                        "tradeDetails": [],
+                        "teamName": "Atlanta Hawks",
+                        "teamAbbr": "ATL",
+                        "pickedFirstRound": true,
+                        "pickedSecondRound": true
+                    },
+                    "prospect": null
+                },
+                {
+                    "pickNumber": 21,
+                    "pickDetails": "",
+                    "team": {
+                        "id": 576758,
+                        "type": "draft_team",
+                        "season": 2021,
+                        "teamId": 1610612752,
+                        "teamRecord": {
+                            "season": "2020-21",
+                            "winsAndLosses": "41-31",
+                            "seasonFinish": "3rd place, Atlantic Division",
+                            "playoffsFinish": "Lost in first round to Hawks"
+                        },
+                        "permalink": "https://www.nba.com/draft/2021/team-profiles/new-york-knicks",
+                        "appUrl": "https://www.nba.com/webview/draft/2021/team-profiles/new-york-knicks",
+                        "tradeDetails": [],
+                        "teamName": "New York Knicks",
+                        "teamAbbr": "NYK",
+                        "pickedFirstRound": true,
+                        "pickedSecondRound": true
+                    },
+                    "prospect": null
+                },
+                {
+                    "pickNumber": 22,
+                    "pickDetails": "",
+                    "team": {
+                        "id": 575049,
+                        "type": "draft_team",
+                        "season": 2021,
+                        "teamId": 1610612747,
+                        "teamRecord": {
+                            "season": "2020-21",
+                            "winsAndLosses": "42-30",
+                            "seasonFinish": "3rd place, Pacific Division",
+                            "playoffsFinish": "Lost in first round to Suns"
+                        },
+                        "permalink": "https://www.nba.com/draft/2021/team-profiles/los-angeles-lakers",
+                        "appUrl": "https://www.nba.com/webview/draft/2021/team-profiles/los-angeles-lakers",
+                        "tradeDetails": [],
+                        "teamName": "Los Angeles Lakers",
+                        "teamAbbr": "LAL",
+                        "pickedFirstRound": true
+                    },
+                    "prospect": null
+                },
+                {
+                    "pickNumber": 23,
+                    "pickDetails": "",
+                    "team": {
+                        "id": 576069,
+                        "type": "draft_team",
+                        "season": 2021,
+                        "teamId": 1610612745,
+                        "teamRecord": {
+                            "season": "2020-21",
+                            "winsAndLosses": "17-55",
+                            "seasonFinish": "5th place, Southwest Division",
+                            "playoffsFinish": "Did not make playoffs"
+                        },
+                        "permalink": "https://www.nba.com/draft/2021/team-profiles/houston-rockets",
+                        "appUrl": "https://www.nba.com/webview/draft/2021/team-profiles/houston-rockets",
+                        "tradeDetails": [],
+                        "teamName": "Houston Rockets",
+                        "teamAbbr": "HOU",
+                        "pickedFirstRound": true
+                    },
+                    "prospect": null
+                },
+                {
+                    "pickNumber": 24,
+                    "pickDetails": "",
+                    "team": {
+                        "id": 576069,
+                        "type": "draft_team",
+                        "season": 2021,
+                        "teamId": 1610612745,
+                        "teamRecord": {
+                            "season": "2020-21",
+                            "winsAndLosses": "17-55",
+                            "seasonFinish": "5th place, Southwest Division",
+                            "playoffsFinish": "Did not make playoffs"
+                        },
+                        "permalink": "https://www.nba.com/draft/2021/team-profiles/houston-rockets",
+                        "appUrl": "https://www.nba.com/webview/draft/2021/team-profiles/houston-rockets",
+                        "tradeDetails": [],
+                        "teamName": "Houston Rockets",
+                        "teamAbbr": "HOU",
+                        "pickedFirstRound": true
+                    },
+                    "prospect": null
+                },
+                {
+                    "pickNumber": 25,
+                    "pickDetails": "",
+                    "team": {
+                        "id": 575962,
+                        "type": "draft_team",
+                        "season": 2021,
+                        "teamId": 1610612746,
+                        "teamRecord": {
+                            "season": "2020-21",
+                            "winsAndLosses": "47-25",
+                            "seasonFinish": "2nd place, Pacific Division",
+                            "playoffsFinish": "Lost in West finals to Suns"
+                        },
+                        "permalink": "https://www.nba.com/draft/2021/team-profiles/la-clippers",
+                        "appUrl": "https://www.nba.com/webview/draft/2021/team-profiles/la-clippers",
+                        "tradeDetails": [],
+                        "teamName": "LA Clippers",
+                        "teamAbbr": "LAC",
+                        "pickedFirstRound": true
+                    },
+                    "prospect": null
+                },
+                {
+                    "pickNumber": 26,
+                    "pickDetails": "",
+                    "team": {
+                        "id": 577289,
+                        "type": "draft_team",
+                        "season": 2021,
+                        "teamId": 1610612743,
+                        "teamRecord": {
+                            "season": "2020-21",
+                            "winsAndLosses": "47-25",
+                            "seasonFinish": "2nd place, Northwest Division",
+                            "playoffsFinish": "Lost to Suns in West semifinals"
+                        },
+                        "permalink": "https://www.nba.com/draft/2021/team-profiles/denver-nuggets",
+                        "appUrl": "https://www.nba.com/webview/draft/2021/team-profiles/denver-nuggets",
+                        "tradeDetails": [],
+                        "teamName": "Denver Nuggets",
+                        "teamAbbr": "DEN",
+                        "pickedFirstRound": true
+                    },
+                    "prospect": null
+                },
+                {
+                    "pickNumber": 27,
+                    "pickDetails": "",
+                    "team": {
+                        "id": 576757,
+                        "type": "draft_team",
+                        "season": 2021,
+                        "teamId": 1610612751,
+                        "teamRecord": {
+                            "season": "2020-21",
+                            "winsAndLosses": "48-24",
+                            "seasonFinish": "2nd place, Atlantic Division",
+                            "playoffsFinish": "Lost to Bucks in East semifinals"
+                        },
+                        "permalink": "https://www.nba.com/draft/2021/team-profiles/brooklyn-nets",
+                        "appUrl": "https://www.nba.com/webview/draft/2021/team-profiles/brooklyn-nets",
+                        "tradeDetails": [],
+                        "teamName": "Brooklyn Nets",
+                        "teamAbbr": "BKN",
+                        "pickedFirstRound": true,
+                        "pickedSecondRound": true
+                    },
+                    "prospect": null
+                },
+                {
+                    "pickNumber": 28,
+                    "pickDetails": "",
+                    "team": {
+                        "id": 578160,
+                        "type": "draft_team",
+                        "season": 2021,
+                        "teamId": 1610612755,
+                        "teamRecord": {
+                            "season": "2020-21",
+                            "winsAndLosses": "49-23",
+                            "seasonFinish": "1st place, Atlantic Division",
+                            "playoffsFinish": "Lost in East semifinals to Hawks"
+                        },
+                        "permalink": "https://www.nba.com/draft/2021/team-profiles/philadelphia-76ers",
+                        "appUrl": "https://www.nba.com/webview/draft/2021/team-profiles/philadelphia-76ers",
+                        "tradeDetails": [],
+                        "teamName": "Philadelphia 76ers",
+                        "teamAbbr": "PHI",
+                        "pickedFirstRound": true,
+                        "pickedSecondRound": true
+                    },
+                    "prospect": null
+                },
+                {
+                    "pickNumber": 29,
+                    "pickDetails": "",
+                    "team": {
+                        "id": 575959,
+                        "type": "draft_team",
+                        "season": 2021,
+                        "teamId": 1610612756,
+                        "teamRecord": {
+                            "season": "2020-21",
+                            "winsAndLosses": "51-21",
+                            "seasonFinish": "1st place, Pacific Division",
+                            "playoffsFinish": "Lost in The Finals to Bucks"
+                        },
+                        "permalink": "https://www.nba.com/draft/2021/team-profiles/phoenix-suns",
+                        "appUrl": "https://www.nba.com/webview/draft/2021/team-profiles/phoenix-suns",
+                        "tradeDetails": [],
+                        "teamName": "Phoenix Suns",
+                        "teamAbbr": "PHX",
+                        "pickedFirstRound": true
+                    },
+                    "prospect": null
+                },
+                {
+                    "pickNumber": 30,
+                    "pickDetails": "",
+                    "team": {
+                        "id": 576714,
+                        "type": "draft_team",
+                        "season": 2021,
+                        "teamId": 1610612762,
+                        "teamRecord": {
+                            "season": "2020-21",
+                            "winsAndLosses": "52-20",
+                            "seasonFinish": "1st place, Northwest Division",
+                            "playoffsFinish": "Lost in to Clippers in West semifinals"
+                        },
+                        "permalink": "https://www.nba.com/draft/2021/team-profiles/utah-jazz",
+                        "appUrl": "https://www.nba.com/webview/draft/2021/team-profiles/utah-jazz",
+                        "tradeDetails": [],
+                        "teamName": "Utah Jazz",
+                        "teamAbbr": "UTA",
+                        "pickedFirstRound": true
+                    },
+                    "prospect": null
+                }
+            ],
+            "secondRound": [
+                {
+                    "pickNumber": 31,
+                    "pickDetails": "",
+                    "team": {
+                        "id": 577344,
+                        "type": "draft_team",
+                        "season": 2021,
+                        "teamId": 1610612749,
+                        "teamRecord": {
+                            "season": "2020-21",
+                            "winsAndLosses": "46-26",
+                            "seasonFinish": "1st place, Central Division",
+                            "playoffsFinish": "Won NBA championship"
+                        },
+                        "permalink": "https://www.nba.com/draft/2021/team-profiles/milwaukee-bucks",
+                        "appUrl": "https://www.nba.com/webview/draft/2021/team-profiles/milwaukee-bucks",
+                        "tradeDetails": [],
+                        "teamName": "Milwaukee Bucks",
+                        "teamAbbr": "MIL",
+                        "pickedSecondRound": true
+                    },
+                    "prospect": null
+                },
+                {
+                    "pickNumber": 32,
+                    "pickDetails": "",
+                    "team": {
+                        "id": 576758,
+                        "type": "draft_team",
+                        "season": 2021,
+                        "teamId": 1610612752,
+                        "teamRecord": {
+                            "season": "2020-21",
+                            "winsAndLosses": "41-31",
+                            "seasonFinish": "3rd place, Atlantic Division",
+                            "playoffsFinish": "Lost in first round to Hawks"
+                        },
+                        "permalink": "https://www.nba.com/draft/2021/team-profiles/new-york-knicks",
+                        "appUrl": "https://www.nba.com/webview/draft/2021/team-profiles/new-york-knicks",
+                        "tradeDetails": [],
+                        "teamName": "New York Knicks",
+                        "teamAbbr": "NYK",
+                        "pickedFirstRound": true,
+                        "pickedSecondRound": true
+                    },
+                    "prospect": null
+                },
+                {
+                    "pickNumber": 33,
+                    "pickDetails": "",
+                    "team": {
+                        "id": 576796,
+                        "type": "draft_team",
+                        "season": 2021,
+                        "teamId": 1610612753,
+                        "teamRecord": {
+                            "season": "2020-21",
+                            "winsAndLosses": "21-51",
+                            "seasonFinish": "5th place, Southeast Division",
+                            "playoffsFinish": "Did not make playoffs"
+                        },
+                        "permalink": "https://www.nba.com/draft/2021/team-profiles/orlando-magic",
+                        "appUrl": "https://www.nba.com/webview/draft/2021/team-profiles/orlando-magic",
+                        "tradeDetails": [],
+                        "teamName": "Orlando Magic",
+                        "teamAbbr": "ORL",
+                        "pickedFirstRound": true,
+                        "pickedSecondRound": true
+                    },
+                    "prospect": null
+                },
+                {
+                    "pickNumber": 34,
+                    "pickDetails": "",
+                    "team": {
+                        "id": 576753,
+                        "type": "draft_team",
+                        "season": 2021,
+                        "teamId": 1610612760,
+                        "teamRecord": {
+                            "season": "2020-21",
+                            "winsAndLosses": "22-50",
+                            "seasonFinish": "5th Place, Northwest Division",
+                            "playoffsFinish": "Did not make playoffs"
+                        },
+                        "permalink": "https://www.nba.com/draft/2021/team-profiles/oklahoma-city-thunder",
+                        "appUrl": "https://www.nba.com/webview/draft/2021/team-profiles/oklahoma-city-thunder",
+                        "tradeDetails": [],
+                        "teamName": "Oklahoma City Thunder",
+                        "teamAbbr": "OKC",
+                        "pickedFirstRound": true,
+                        "pickedSecondRound": true
+                    },
+                    "prospect": null
+                },
+                {
+                    "pickNumber": 35,
+                    "pickDetails": "",
+                    "team": {
+                        "id": 576816,
+                        "type": "draft_team",
+                        "season": 2021,
+                        "teamId": 1610612740,
+                        "teamRecord": {
+                            "season": "2020-21",
+                            "winsAndLosses": "31-41",
+                            "seasonFinish": "4th place, Southwest Division",
+                            "playoffsFinish": "Did not make playoffs"
+                        },
+                        "permalink": "https://www.nba.com/draft/2021/team-profiles/new-orleans-pelicans",
+                        "appUrl": "https://www.nba.com/webview/draft/2021/team-profiles/new-orleans-pelicans",
+                        "tradeDetails": [],
+                        "teamName": "New Orleans Pelicans",
+                        "teamAbbr": "NOP",
+                        "pickedFirstRound": true,
+                        "pickedSecondRound": true
+                    },
+                    "prospect": null
+                },
+                {
+                    "pickNumber": 36,
+                    "pickDetails": "",
+                    "team": {
+                        "id": 576753,
+                        "type": "draft_team",
+                        "season": 2021,
+                        "teamId": 1610612760,
+                        "teamRecord": {
+                            "season": "2020-21",
+                            "winsAndLosses": "22-50",
+                            "seasonFinish": "5th Place, Northwest Division",
+                            "playoffsFinish": "Did not make playoffs"
+                        },
+                        "permalink": "https://www.nba.com/draft/2021/team-profiles/oklahoma-city-thunder",
+                        "appUrl": "https://www.nba.com/webview/draft/2021/team-profiles/oklahoma-city-thunder",
+                        "tradeDetails": [],
+                        "teamName": "Oklahoma City Thunder",
+                        "teamAbbr": "OKC",
+                        "pickedFirstRound": true,
+                        "pickedSecondRound": true
+                    },
+                    "prospect": null
+                },
+                {
+                    "pickNumber": 37,
+                    "pickDetails": "",
+                    "team": {
+                        "id": 577291,
+                        "type": "draft_team",
+                        "season": 2021,
+                        "teamId": 1610612765,
+                        "teamRecord": {
+                            "season": "2020-21",
+                            "winsAndLosses": "20-52",
+                            "seasonFinish": "5th place, Central Division",
+                            "playoffsFinish": "Did not make playoffs"
+                        },
+                        "permalink": "https://www.nba.com/draft/2021/team-profiles/detroit-pistons",
+                        "appUrl": "https://www.nba.com/webview/draft/2021/team-profiles/detroit-pistons",
+                        "tradeDetails": [],
+                        "teamName": "Detroit Pistons",
+                        "teamAbbr": "DET",
+                        "pickedFirstRound": true,
+                        "pickedSecondRound": true
+                    },
+                    "prospect": null
+                },
+                {
+                    "pickNumber": 38,
+                    "pickDetails": "",
+                    "team": {
+                        "id": 577273,
+                        "type": "draft_team",
+                        "season": 2021,
+                        "teamId": 1610612741,
+                        "teamRecord": {
+                            "season": "2020-21",
+                            "winsAndLosses": "31-41",
+                            "seasonFinish": "3rd place, Central Division",
+                            "playoffsFinish": "Did not make playoffs"
+                        },
+                        "permalink": "https://www.nba.com/draft/2021/team-profiles/chicago-bulls",
+                        "appUrl": "https://www.nba.com/webview/draft/2021/team-profiles/chicago-bulls",
+                        "tradeDetails": [],
+                        "teamName": "Chicago Bulls",
+                        "teamAbbr": "CHI",
+                        "pickedSecondRound": true
+                    },
+                    "prospect": null
+                },
+                {
+                    "pickNumber": 39,
+                    "pickDetails": "",
+                    "team": {
+                        "id": 575987,
+                        "type": "draft_team",
+                        "season": 2021,
+                        "teamId": 1610612758,
+                        "teamRecord": {
+                            "season": "2020-21",
+                            "winsAndLosses": "31-41",
+                            "seasonFinish": "5th place, Pacific Division",
+                            "playoffsFinish": "Did not make playoffs"
+                        },
+                        "permalink": "https://www.nba.com/draft/2021/team-profiles/sacramento-kings",
+                        "appUrl": "https://www.nba.com/webview/draft/2021/team-profiles/sacramento-kings",
+                        "tradeDetails": [],
+                        "teamName": "Sacramento Kings",
+                        "teamAbbr": "SAC",
+                        "pickedFirstRound": true,
+                        "pickedSecondRound": true
+                    },
+                    "prospect": null
+                },
+                {
+                    "pickNumber": 40,
+                    "pickDetails": "",
+                    "team": {
+                        "id": 576816,
+                        "type": "draft_team",
+                        "season": 2021,
+                        "teamId": 1610612740,
+                        "teamRecord": {
+                            "season": "2020-21",
+                            "winsAndLosses": "31-41",
+                            "seasonFinish": "4th place, Southwest Division",
+                            "playoffsFinish": "Did not make playoffs"
+                        },
+                        "permalink": "https://www.nba.com/draft/2021/team-profiles/new-orleans-pelicans",
+                        "appUrl": "https://www.nba.com/webview/draft/2021/team-profiles/new-orleans-pelicans",
+                        "tradeDetails": [],
+                        "teamName": "New Orleans Pelicans",
+                        "teamAbbr": "NOP",
+                        "pickedFirstRound": true,
+                        "pickedSecondRound": true
+                    },
+                    "prospect": null
+                },
+                {
+                    "pickNumber": 41,
+                    "pickDetails": "",
+                    "team": {
+                        "id": 576750,
+                        "type": "draft_team",
+                        "season": 2021,
+                        "teamId": 1610612759,
+                        "teamRecord": {
+                            "season": "2020-21",
+                            "winsAndLosses": "33-29",
+                            "seasonFinish": "3rd place, Southwest Division",
+                            "playoffsFinish": "Lost to Grizzlies in Play-In Tournament"
+                        },
+                        "permalink": "https://www.nba.com/draft/2021/team-profiles/san-antonio-spurs",
+                        "appUrl": "https://www.nba.com/webview/draft/2021/team-profiles/san-antonio-spurs",
+                        "tradeDetails": [],
+                        "teamName": "San Antonio Spurs",
+                        "teamAbbr": "SAS",
+                        "pickedFirstRound": true,
+                        "pickedSecondRound": true
+                    },
+                    "prospect": null
+                },
+                {
+                    "pickNumber": 42,
+                    "pickDetails": "",
+                    "team": {
+                        "id": 577291,
+                        "type": "draft_team",
+                        "season": 2021,
+                        "teamId": 1610612765,
+                        "teamRecord": {
+                            "season": "2020-21",
+                            "winsAndLosses": "20-52",
+                            "seasonFinish": "5th place, Central Division",
+                            "playoffsFinish": "Did not make playoffs"
+                        },
+                        "permalink": "https://www.nba.com/draft/2021/team-profiles/detroit-pistons",
+                        "appUrl": "https://www.nba.com/webview/draft/2021/team-profiles/detroit-pistons",
+                        "tradeDetails": [],
+                        "teamName": "Detroit Pistons",
+                        "teamAbbr": "DET",
+                        "pickedFirstRound": true,
+                        "pickedSecondRound": true
+                    },
+                    "prospect": null
+                },
+                {
+                    "pickNumber": 43,
+                    "pickDetails": "",
+                    "team": {
+                        "id": 576816,
+                        "type": "draft_team",
+                        "season": 2021,
+                        "teamId": 1610612740,
+                        "teamRecord": {
+                            "season": "2020-21",
+                            "winsAndLosses": "31-41",
+                            "seasonFinish": "4th place, Southwest Division",
+                            "playoffsFinish": "Did not make playoffs"
+                        },
+                        "permalink": "https://www.nba.com/draft/2021/team-profiles/new-orleans-pelicans",
+                        "appUrl": "https://www.nba.com/webview/draft/2021/team-profiles/new-orleans-pelicans",
+                        "tradeDetails": [],
+                        "teamName": "New Orleans Pelicans",
+                        "teamAbbr": "NOP",
+                        "pickedFirstRound": true,
+                        "pickedSecondRound": true
+                    },
+                    "prospect": null
+                },
+                {
+                    "pickNumber": 44,
+                    "pickDetails": "",
+                    "team": {
+                        "id": 576757,
+                        "type": "draft_team",
+                        "season": 2021,
+                        "teamId": 1610612751,
+                        "teamRecord": {
+                            "season": "2020-21",
+                            "winsAndLosses": "48-24",
+                            "seasonFinish": "2nd place, Atlantic Division",
+                            "playoffsFinish": "Lost to Bucks in East semifinals"
+                        },
+                        "permalink": "https://www.nba.com/draft/2021/team-profiles/brooklyn-nets",
+                        "appUrl": "https://www.nba.com/webview/draft/2021/team-profiles/brooklyn-nets",
+                        "tradeDetails": [],
+                        "teamName": "Brooklyn Nets",
+                        "teamAbbr": "BKN",
+                        "pickedFirstRound": true,
+                        "pickedSecondRound": true
+                    },
+                    "prospect": null
+                },
+                {
+                    "pickNumber": 45,
+                    "pickDetails": "",
+                    "team": {
+                        "id": 576723,
+                        "type": "draft_team",
+                        "season": 2021,
+                        "teamId": 1610612738,
+                        "teamRecord": {
+                            "season": "2020-21",
+                            "winsAndLosses": "36-36",
+                            "seasonFinish": "4th Place, Atlantic Division",
+                            "playoffsFinish": "Lost to Nets in first round"
+                        },
+                        "permalink": "https://www.nba.com/draft/2021/team-profiles/boston-celtics",
+                        "appUrl": "https://www.nba.com/webview/draft/2021/team-profiles/boston-celtics",
+                        "tradeDetails": [],
+                        "teamName": "Boston Celtics",
+                        "teamAbbr": "BOS",
+                        "pickedSecondRound": true
+                    },
+                    "prospect": null
+                },
+                {
+                    "pickNumber": 46,
+                    "pickDetails": "",
+                    "team": {
+                        "id": 578159,
+                        "type": "draft_team",
+                        "season": 2021,
+                        "teamId": 1610612761,
+                        "teamRecord": {
+                            "season": "2020-21",
+                            "winsAndLosses": "27-45",
+                            "seasonFinish": "5th Place, Atlantic Division",
+                            "playoffsFinish": "Did not qualify for playoffs"
+                        },
+                        "permalink": "https://www.nba.com/draft/2021/team-profiles/toronto-raptors",
+                        "appUrl": "https://www.nba.com/webview/draft/2021/team-profiles/toronto-raptors",
+                        "tradeDetails": [],
+                        "teamName": "Toronto Raptors",
+                        "teamAbbr": "TOR",
+                        "pickedFirstRound": true,
+                        "pickedSecondRound": true
+                    },
+                    "prospect": null
+                },
+                {
+                    "pickNumber": 47,
+                    "pickDetails": "",
+                    "team": {
+                        "id": 578159,
+                        "type": "draft_team",
+                        "season": 2021,
+                        "teamId": 1610612761,
+                        "teamRecord": {
+                            "season": "2020-21",
+                            "winsAndLosses": "27-45",
+                            "seasonFinish": "5th Place, Atlantic Division",
+                            "playoffsFinish": "Did not qualify for playoffs"
+                        },
+                        "permalink": "https://www.nba.com/draft/2021/team-profiles/toronto-raptors",
+                        "appUrl": "https://www.nba.com/webview/draft/2021/team-profiles/toronto-raptors",
+                        "tradeDetails": [],
+                        "teamName": "Toronto Raptors",
+                        "teamAbbr": "TOR",
+                        "pickedFirstRound": true,
+                        "pickedSecondRound": true
+                    },
+                    "prospect": null
+                },
+                {
+                    "pickNumber": 48,
+                    "pickDetails": "",
+                    "team": {
+                        "id": 576012,
+                        "type": "draft_team",
+                        "season": 2021,
+                        "teamId": 1610612737,
+                        "teamRecord": {
+                            "season": "2020-21",
+                            "winsAndLosses": "41-31",
+                            "seasonFinish": "1st place, Southeast Division",
+                            "playoffsFinish": "Lost to Bucks in East finals"
+                        },
+                        "permalink": "https://www.nba.com/draft/2021/team-profiles/atlanta-hawks",
+                        "appUrl": "https://www.nba.com/webview/draft/2021/team-profiles/atlanta-hawks",
+                        "tradeDetails": [],
+                        "teamName": "Atlanta Hawks",
+                        "teamAbbr": "ATL",
+                        "pickedFirstRound": true,
+                        "pickedSecondRound": true
+                    },
+                    "prospect": null
+                },
+                {
+                    "pickNumber": 49,
+                    "pickDetails": "",
+                    "team": {
+                        "id": 576757,
+                        "type": "draft_team",
+                        "season": 2021,
+                        "teamId": 1610612751,
+                        "teamRecord": {
+                            "season": "2020-21",
+                            "winsAndLosses": "48-24",
+                            "seasonFinish": "2nd place, Atlantic Division",
+                            "playoffsFinish": "Lost to Bucks in East semifinals"
+                        },
+                        "permalink": "https://www.nba.com/draft/2021/team-profiles/brooklyn-nets",
+                        "appUrl": "https://www.nba.com/webview/draft/2021/team-profiles/brooklyn-nets",
+                        "tradeDetails": [],
+                        "teamName": "Brooklyn Nets",
+                        "teamAbbr": "BKN",
+                        "pickedFirstRound": true,
+                        "pickedSecondRound": true
+                    },
+                    "prospect": null
+                },
+                {
+                    "pickNumber": 50,
+                    "pickDetails": "",
+                    "team": {
+                        "id": 578160,
+                        "type": "draft_team",
+                        "season": 2021,
+                        "teamId": 1610612755,
+                        "teamRecord": {
+                            "season": "2020-21",
+                            "winsAndLosses": "49-23",
+                            "seasonFinish": "1st place, Atlantic Division",
+                            "playoffsFinish": "Lost in East semifinals to Hawks"
+                        },
+                        "permalink": "https://www.nba.com/draft/2021/team-profiles/philadelphia-76ers",
+                        "appUrl": "https://www.nba.com/webview/draft/2021/team-profiles/philadelphia-76ers",
+                        "tradeDetails": [],
+                        "teamName": "Philadelphia 76ers",
+                        "teamAbbr": "PHI",
+                        "pickedFirstRound": true,
+                        "pickedSecondRound": true
+                    },
+                    "prospect": null
+                },
+                {
+                    "pickNumber": 51,
+                    "pickDetails": "",
+                    "team": {
+                        "id": 576021,
+                        "type": "draft_team",
+                        "season": 2021,
+                        "teamId": 1610612763,
+                        "teamRecord": {
+                            "season": "2020-21",
+                            "winsAndLosses": "38-34",
+                            "seasonFinish": "2nd place, Southwest Division",
+                            "playoffsFinish": "Lost in first round to Jazz"
+                        },
+                        "permalink": "https://www.nba.com/draft/2021/team-profiles/memphis-grizzlies",
+                        "appUrl": "https://www.nba.com/webview/draft/2021/team-profiles/memphis-grizzlies",
+                        "tradeDetails": [],
+                        "teamName": "Memphis Grizzlies",
+                        "teamAbbr": "MEM",
+                        "pickedFirstRound": true,
+                        "pickedSecondRound": true
+                    },
+                    "prospect": null
+                },
+                {
+                    "pickNumber": 52,
+                    "pickDetails": "",
+                    "team": {
+                        "id": 577291,
+                        "type": "draft_team",
+                        "season": 2021,
+                        "teamId": 1610612765,
+                        "teamRecord": {
+                            "season": "2020-21",
+                            "winsAndLosses": "20-52",
+                            "seasonFinish": "5th place, Central Division",
+                            "playoffsFinish": "Did not make playoffs"
+                        },
+                        "permalink": "https://www.nba.com/draft/2021/team-profiles/detroit-pistons",
+                        "appUrl": "https://www.nba.com/webview/draft/2021/team-profiles/detroit-pistons",
+                        "tradeDetails": [],
+                        "teamName": "Detroit Pistons",
+                        "teamAbbr": "DET",
+                        "pickedFirstRound": true,
+                        "pickedSecondRound": true
+                    },
+                    "prospect": null
+                },
+                {
+                    "pickNumber": 53,
+                    "pickDetails": "Sixers acquire pick from Pelicans for cash considerations",
+                    "team": {
+                        "id": 578160,
+                        "type": "draft_team",
+                        "season": 2021,
+                        "teamId": 1610612755,
+                        "teamRecord": {
+                            "season": "2020-21",
+                            "winsAndLosses": "49-23",
+                            "seasonFinish": "1st place, Atlantic Division",
+                            "playoffsFinish": "Lost in East semifinals to Hawks"
+                        },
+                        "permalink": "https://www.nba.com/draft/2021/team-profiles/philadelphia-76ers",
+                        "appUrl": "https://www.nba.com/webview/draft/2021/team-profiles/philadelphia-76ers",
+                        "tradeDetails": [],
+                        "teamName": "Philadelphia 76ers",
+                        "teamAbbr": "PHI",
+                        "pickedFirstRound": true,
+                        "pickedSecondRound": true
+                    },
+                    "prospect": null
+                },
+                {
+                    "pickNumber": 54,
+                    "pickDetails": "",
+                    "team": {
+                        "id": 577279,
+                        "type": "draft_team",
+                        "season": 2021,
+                        "teamId": 1610612754,
+                        "teamRecord": {
+                            "season": "2020-21",
+                            "winsAndLosses": "34-38",
+                            "seasonFinish": "2nd place, Central Divsion",
+                            "playoffsFinish": "Lost to Wizards in Play-In Tournament"
+                        },
+                        "permalink": "https://www.nba.com/draft/2021/team-profiles/indiana-pacers",
+                        "appUrl": "https://www.nba.com/webview/draft/2021/team-profiles/indiana-pacers",
+                        "tradeDetails": [],
+                        "teamName": "Indiana Pacers",
+                        "teamAbbr": "IND",
+                        "pickedFirstRound": true,
+                        "pickedSecondRound": true
+                    },
+                    "prospect": null
+                },
+                {
+                    "pickNumber": 55,
+                    "pickDetails": "",
+                    "team": {
+                        "id": 576753,
+                        "type": "draft_team",
+                        "season": 2021,
+                        "teamId": 1610612760,
+                        "teamRecord": {
+                            "season": "2020-21",
+                            "winsAndLosses": "22-50",
+                            "seasonFinish": "5th Place, Northwest Division",
+                            "playoffsFinish": "Did not make playoffs"
+                        },
+                        "permalink": "https://www.nba.com/draft/2021/team-profiles/oklahoma-city-thunder",
+                        "appUrl": "https://www.nba.com/webview/draft/2021/team-profiles/oklahoma-city-thunder",
+                        "tradeDetails": [],
+                        "teamName": "Oklahoma City Thunder",
+                        "teamAbbr": "OKC",
+                        "pickedFirstRound": true,
+                        "pickedSecondRound": true
+                    },
+                    "prospect": null
+                },
+                {
+                    "pickNumber": 56,
+                    "pickDetails": "",
+                    "team": {
+                        "id": 577271,
+                        "type": "draft_team",
+                        "season": 2021,
+                        "teamId": 1610612766,
+                        "teamRecord": {
+                            "season": "2020-21",
+                            "winsAndLosses": "33-39",
+                            "seasonFinish": "4th Place, Southeast Division",
+                            "playoffsFinish": "Lost to Pacers in Play-In Tournament"
+                        },
+                        "permalink": "https://www.nba.com/draft/2021/team-profiles/charlotte-hornets",
+                        "appUrl": "https://www.nba.com/webview/draft/2021/team-profiles/charlotte-hornets",
+                        "tradeDetails": [],
+                        "teamName": "Charlotte Hornets",
+                        "teamAbbr": "CHA",
+                        "pickedFirstRound": true,
+                        "pickedSecondRound": true
+                    },
+                    "prospect": null
+                },
+                {
+                    "pickNumber": 57,
+                    "pickDetails": "",
+                    "team": {
+                        "id": 577271,
+                        "type": "draft_team",
+                        "season": 2021,
+                        "teamId": 1610612766,
+                        "teamRecord": {
+                            "season": "2020-21",
+                            "winsAndLosses": "33-39",
+                            "seasonFinish": "4th Place, Southeast Division",
+                            "playoffsFinish": "Lost to Pacers in Play-In Tournament"
+                        },
+                        "permalink": "https://www.nba.com/draft/2021/team-profiles/charlotte-hornets",
+                        "appUrl": "https://www.nba.com/webview/draft/2021/team-profiles/charlotte-hornets",
+                        "tradeDetails": [],
+                        "teamName": "Charlotte Hornets",
+                        "teamAbbr": "CHA",
+                        "pickedFirstRound": true,
+                        "pickedSecondRound": true
+                    },
+                    "prospect": null
+                },
+                {
+                    "pickNumber": 58,
+                    "pickDetails": "",
+                    "team": {
+                        "id": 576758,
+                        "type": "draft_team",
+                        "season": 2021,
+                        "teamId": 1610612752,
+                        "teamRecord": {
+                            "season": "2020-21",
+                            "winsAndLosses": "41-31",
+                            "seasonFinish": "3rd place, Atlantic Division",
+                            "playoffsFinish": "Lost in first round to Hawks"
+                        },
+                        "permalink": "https://www.nba.com/draft/2021/team-profiles/new-york-knicks",
+                        "appUrl": "https://www.nba.com/webview/draft/2021/team-profiles/new-york-knicks",
+                        "tradeDetails": [],
+                        "teamName": "New York Knicks",
+                        "teamAbbr": "NYK",
+                        "pickedFirstRound": true,
+                        "pickedSecondRound": true
+                    },
+                    "prospect": null
+                },
+                {
+                    "pickNumber": 59,
+                    "pickDetails": "",
+                    "team": {
+                        "id": 576757,
+                        "type": "draft_team",
+                        "season": 2021,
+                        "teamId": 1610612751,
+                        "teamRecord": {
+                            "season": "2020-21",
+                            "winsAndLosses": "48-24",
+                            "seasonFinish": "2nd place, Atlantic Division",
+                            "playoffsFinish": "Lost to Bucks in East semifinals"
+                        },
+                        "permalink": "https://www.nba.com/draft/2021/team-profiles/brooklyn-nets",
+                        "appUrl": "https://www.nba.com/webview/draft/2021/team-profiles/brooklyn-nets",
+                        "tradeDetails": [],
+                        "teamName": "Brooklyn Nets",
+                        "teamAbbr": "BKN",
+                        "pickedFirstRound": true,
+                        "pickedSecondRound": true
+                    },
+                    "prospect": null
+                },
+                {
+                    "pickNumber": 60,
+                    "pickDetails": "",
+                    "team": {
+                        "id": 577279,
+                        "type": "draft_team",
+                        "season": 2021,
+                        "teamId": 1610612754,
+                        "teamRecord": {
+                            "season": "2020-21",
+                            "winsAndLosses": "34-38",
+                            "seasonFinish": "2nd place, Central Divsion",
+                            "playoffsFinish": "Lost to Wizards in Play-In Tournament"
+                        },
+                        "permalink": "https://www.nba.com/draft/2021/team-profiles/indiana-pacers",
+                        "appUrl": "https://www.nba.com/webview/draft/2021/team-profiles/indiana-pacers",
+                        "tradeDetails": [],
+                        "teamName": "Indiana Pacers",
+                        "teamAbbr": "IND",
+                        "pickedFirstRound": true,
+                        "pickedSecondRound": true
+                    },
+                    "prospect": null
+                }
+            ]
+        },
+        "liveDraftCurrentPickNumber": 11,
+        "teamsWithoutPicks": {
+            "firstRound": [
+                {
+                    "id": 576037,
+                    "type": "draft_team",
+                    "season": 2021,
+                    "teamId": 1610612757,
+                    "teamRecord": {
+                        "season": "2020-21",
+                        "winsAndLosses": "42-30",
+                        "seasonFinish": "3rd Place, Northwest Division",
+                        "playoffsFinish": "Lost to Nuggets in first round"
+                    },
+                    "permalink": "https://www.nba.com/draft/2021/team-profiles/portland-trail-blazers",
+                    "appUrl": "https://www.nba.com/webview/draft/2021/team-profiles/portland-trail-blazers",
+                    "tradeDetails": [],
+                    "teamName": "Portland Trail Blazers",
+                    "teamAbbr": "POR"
+                },
+                {
+                    "id": 576723,
+                    "type": "draft_team",
+                    "season": 2021,
+                    "teamId": 1610612738,
+                    "teamRecord": {
+                        "season": "2020-21",
+                        "winsAndLosses": "36-36",
+                        "seasonFinish": "4th Place, Atlantic Division",
+                        "playoffsFinish": "Lost to Nets in first round"
+                    },
+                    "permalink": "https://www.nba.com/draft/2021/team-profiles/boston-celtics",
+                    "appUrl": "https://www.nba.com/webview/draft/2021/team-profiles/boston-celtics",
+                    "tradeDetails": [],
+                    "teamName": "Boston Celtics",
+                    "teamAbbr": "BOS",
+                    "pickedSecondRound": true
+                },
+                {
+                    "id": 577347,
+                    "type": "draft_team",
+                    "season": 2021,
+                    "teamId": 1610612750,
+                    "teamRecord": {
+                        "season": "2020-21",
+                        "winsAndLosses": "23-49",
+                        "seasonFinish": "4th place, Northwest Division",
+                        "playoffsFinish": "Did not qualify for playoffs"
+                    },
+                    "permalink": "https://www.nba.com/draft/2021/team-profiles/minnesota-timberwolves",
+                    "appUrl": "https://www.nba.com/webview/draft/2021/team-profiles/minnesota-timberwolves",
+                    "tradeDetails": [],
+                    "teamName": "Minnesota Timberwolves",
+                    "teamAbbr": "MIN"
+                },
+                {
+                    "id": 577344,
+                    "type": "draft_team",
+                    "season": 2021,
+                    "teamId": 1610612749,
+                    "teamRecord": {
+                        "season": "2020-21",
+                        "winsAndLosses": "46-26",
+                        "seasonFinish": "1st place, Central Division",
+                        "playoffsFinish": "Won NBA championship"
+                    },
+                    "permalink": "https://www.nba.com/draft/2021/team-profiles/milwaukee-bucks",
+                    "appUrl": "https://www.nba.com/webview/draft/2021/team-profiles/milwaukee-bucks",
+                    "tradeDetails": [],
+                    "teamName": "Milwaukee Bucks",
+                    "teamAbbr": "MIL",
+                    "pickedSecondRound": true
+                },
+                {
+                    "id": 577273,
+                    "type": "draft_team",
+                    "season": 2021,
+                    "teamId": 1610612741,
+                    "teamRecord": {
+                        "season": "2020-21",
+                        "winsAndLosses": "31-41",
+                        "seasonFinish": "3rd place, Central Division",
+                        "playoffsFinish": "Did not make playoffs"
+                    },
+                    "permalink": "https://www.nba.com/draft/2021/team-profiles/chicago-bulls",
+                    "appUrl": "https://www.nba.com/webview/draft/2021/team-profiles/chicago-bulls",
+                    "tradeDetails": [],
+                    "teamName": "Chicago Bulls",
+                    "teamAbbr": "CHI",
+                    "pickedSecondRound": true
+                },
+                {
+                    "id": 576000,
+                    "type": "draft_team",
+                    "season": 2021,
+                    "teamId": 1610612742,
+                    "teamRecord": {
+                        "season": "2020-21",
+                        "winsAndLosses": "42-30",
+                        "seasonFinish": "1st place, Southwest Division",
+                        "playoffsFinish": "Lost in first round to Clippers"
+                    },
+                    "permalink": "https://www.nba.com/draft/2021/team-profiles/dallas-mavericks",
+                    "appUrl": "https://www.nba.com/webview/draft/2021/team-profiles/dallas-mavericks",
+                    "tradeDetails": [],
+                    "teamName": "Dallas Mavericks",
+                    "teamAbbr": "DAL"
+                },
+                {
+                    "id": 578164,
+                    "type": "draft_team",
+                    "season": 2021,
+                    "teamId": 1610612748,
+                    "teamRecord": {
+                        "season": "2020-21",
+                        "winsAndLosses": "40-32",
+                        "seasonFinish": "2nd place, Southeast Division",
+                        "playoffsFinish": "Lost to Bucks in first round"
+                    },
+                    "permalink": "https://www.nba.com/draft/2021/team-profiles/miami-heat",
+                    "appUrl": "https://www.nba.com/webview/draft/2021/team-profiles/miami-heat",
+                    "tradeDetails": [],
+                    "teamName": "Miami Heat",
+                    "teamAbbr": "MIA"
+                }
+            ],
+            "secondRound": [
+                {
+                    "id": 576714,
+                    "type": "draft_team",
+                    "season": 2021,
+                    "teamId": 1610612762,
+                    "teamRecord": {
+                        "season": "2020-21",
+                        "winsAndLosses": "52-20",
+                        "seasonFinish": "1st place, Northwest Division",
+                        "playoffsFinish": "Lost in to Clippers in West semifinals"
+                    },
+                    "permalink": "https://www.nba.com/draft/2021/team-profiles/utah-jazz",
+                    "appUrl": "https://www.nba.com/webview/draft/2021/team-profiles/utah-jazz",
+                    "tradeDetails": [],
+                    "teamName": "Utah Jazz",
+                    "teamAbbr": "UTA",
+                    "pickedFirstRound": true
+                },
+                {
+                    "id": 576037,
+                    "type": "draft_team",
+                    "season": 2021,
+                    "teamId": 1610612757,
+                    "teamRecord": {
+                        "season": "2020-21",
+                        "winsAndLosses": "42-30",
+                        "seasonFinish": "3rd Place, Northwest Division",
+                        "playoffsFinish": "Lost to Nuggets in first round"
+                    },
+                    "permalink": "https://www.nba.com/draft/2021/team-profiles/portland-trail-blazers",
+                    "appUrl": "https://www.nba.com/webview/draft/2021/team-profiles/portland-trail-blazers",
+                    "tradeDetails": [],
+                    "teamName": "Portland Trail Blazers",
+                    "teamAbbr": "POR"
+                },
+                {
+                    "id": 576069,
+                    "type": "draft_team",
+                    "season": 2021,
+                    "teamId": 1610612745,
+                    "teamRecord": {
+                        "season": "2020-21",
+                        "winsAndLosses": "17-55",
+                        "seasonFinish": "5th place, Southwest Division",
+                        "playoffsFinish": "Did not make playoffs"
+                    },
+                    "permalink": "https://www.nba.com/draft/2021/team-profiles/houston-rockets",
+                    "appUrl": "https://www.nba.com/webview/draft/2021/team-profiles/houston-rockets",
+                    "tradeDetails": [],
+                    "teamName": "Houston Rockets",
+                    "teamAbbr": "HOU",
+                    "pickedFirstRound": true
+                },
+                {
+                    "id": 575049,
+                    "type": "draft_team",
+                    "season": 2021,
+                    "teamId": 1610612747,
+                    "teamRecord": {
+                        "season": "2020-21",
+                        "winsAndLosses": "42-30",
+                        "seasonFinish": "3rd place, Pacific Division",
+                        "playoffsFinish": "Lost in first round to Suns"
+                    },
+                    "permalink": "https://www.nba.com/draft/2021/team-profiles/los-angeles-lakers",
+                    "appUrl": "https://www.nba.com/webview/draft/2021/team-profiles/los-angeles-lakers",
+                    "tradeDetails": [],
+                    "teamName": "Los Angeles Lakers",
+                    "teamAbbr": "LAL",
+                    "pickedFirstRound": true
+                },
+                {
+                    "id": 577347,
+                    "type": "draft_team",
+                    "season": 2021,
+                    "teamId": 1610612750,
+                    "teamRecord": {
+                        "season": "2020-21",
+                        "winsAndLosses": "23-49",
+                        "seasonFinish": "4th place, Northwest Division",
+                        "playoffsFinish": "Did not qualify for playoffs"
+                    },
+                    "permalink": "https://www.nba.com/draft/2021/team-profiles/minnesota-timberwolves",
+                    "appUrl": "https://www.nba.com/webview/draft/2021/team-profiles/minnesota-timberwolves",
+                    "tradeDetails": [],
+                    "teamName": "Minnesota Timberwolves",
+                    "teamAbbr": "MIN"
+                },
+                {
+                    "id": 576028,
+                    "type": "draft_team",
+                    "season": 2021,
+                    "teamId": 1610612744,
+                    "teamRecord": {
+                        "season": "2020-21",
+                        "winsAndLosses": "39-33",
+                        "seasonFinish": "4th place, Pacific Division",
+                        "playoffsFinish": "Lost to Grizzlies in Play-In Tournament"
+                    },
+                    "permalink": "https://www.nba.com/draft/2021/team-profiles/golden-state-warriors",
+                    "appUrl": "https://www.nba.com/webview/draft/2021/team-profiles/golden-state-warriors",
+                    "tradeDetails": [],
+                    "teamName": "Golden State Warriors",
+                    "teamAbbr": "GSW",
+                    "pickedFirstRound": true
+                },
+                {
+                    "id": 572152,
+                    "type": "draft_team",
+                    "season": 2021,
+                    "teamId": 1610612739,
+                    "teamRecord": {
+                        "season": "2020-21",
+                        "winsAndLosses": "22-50",
+                        "seasonFinish": "4th place, Central Division",
+                        "playoffsFinish": "Did not make playoffs"
+                    },
+                    "permalink": "https://www.nba.com/draft/2021/team-profiles/cleveland-cavaliers",
+                    "appUrl": "https://www.nba.com/webview/draft/2021/team-profiles/cleveland-cavaliers",
+                    "tradeDetails": [],
+                    "teamName": "Cleveland Cavaliers",
+                    "teamAbbr": "CLE",
+                    "pickedFirstRound": true
+                },
+                {
+                    "id": 577289,
+                    "type": "draft_team",
+                    "season": 2021,
+                    "teamId": 1610612743,
+                    "teamRecord": {
+                        "season": "2020-21",
+                        "winsAndLosses": "47-25",
+                        "seasonFinish": "2nd place, Northwest Division",
+                        "playoffsFinish": "Lost to Suns in West semifinals"
+                    },
+                    "permalink": "https://www.nba.com/draft/2021/team-profiles/denver-nuggets",
+                    "appUrl": "https://www.nba.com/webview/draft/2021/team-profiles/denver-nuggets",
+                    "tradeDetails": [],
+                    "teamName": "Denver Nuggets",
+                    "teamAbbr": "DEN",
+                    "pickedFirstRound": true
+                },
+                {
+                    "id": 577334,
+                    "type": "draft_team",
+                    "season": 2021,
+                    "teamId": 1610612764,
+                    "teamRecord": {
+                        "season": "2020-21",
+                        "winsAndLosses": "34-38",
+                        "seasonFinish": "3rd place, Southeast Division",
+                        "playoffsFinish": "Lost in first round to 76ers"
+                    },
+                    "permalink": "https://www.nba.com/draft/2021/team-profiles/washington-wizards",
+                    "appUrl": "https://www.nba.com/webview/draft/2021/team-profiles/washington-wizards",
+                    "tradeDetails": [],
+                    "teamName": "Washington Wizards",
+                    "teamAbbr": "WAS",
+                    "pickedFirstRound": true
+                },
+                {
+                    "id": 576000,
+                    "type": "draft_team",
+                    "season": 2021,
+                    "teamId": 1610612742,
+                    "teamRecord": {
+                        "season": "2020-21",
+                        "winsAndLosses": "42-30",
+                        "seasonFinish": "1st place, Southwest Division",
+                        "playoffsFinish": "Lost in first round to Clippers"
+                    },
+                    "permalink": "https://www.nba.com/draft/2021/team-profiles/dallas-mavericks",
+                    "appUrl": "https://www.nba.com/webview/draft/2021/team-profiles/dallas-mavericks",
+                    "tradeDetails": [],
+                    "teamName": "Dallas Mavericks",
+                    "teamAbbr": "DAL"
+                },
+                {
+                    "id": 578164,
+                    "type": "draft_team",
+                    "season": 2021,
+                    "teamId": 1610612748,
+                    "teamRecord": {
+                        "season": "2020-21",
+                        "winsAndLosses": "40-32",
+                        "seasonFinish": "2nd place, Southeast Division",
+                        "playoffsFinish": "Lost to Bucks in first round"
+                    },
+                    "permalink": "https://www.nba.com/draft/2021/team-profiles/miami-heat",
+                    "appUrl": "https://www.nba.com/webview/draft/2021/team-profiles/miami-heat",
+                    "tradeDetails": [],
+                    "teamName": "Miami Heat",
+                    "teamAbbr": "MIA"
+                },
+                {
+                    "id": 575962,
+                    "type": "draft_team",
+                    "season": 2021,
+                    "teamId": 1610612746,
+                    "teamRecord": {
+                        "season": "2020-21",
+                        "winsAndLosses": "47-25",
+                        "seasonFinish": "2nd place, Pacific Division",
+                        "playoffsFinish": "Lost in West finals to Suns"
+                    },
+                    "permalink": "https://www.nba.com/draft/2021/team-profiles/la-clippers",
+                    "appUrl": "https://www.nba.com/webview/draft/2021/team-profiles/la-clippers",
+                    "tradeDetails": [],
+                    "teamName": "LA Clippers",
+                    "teamAbbr": "LAC",
+                    "pickedFirstRound": true
+                },
+                {
+                    "id": 575959,
+                    "type": "draft_team",
+                    "season": 2021,
+                    "teamId": 1610612756,
+                    "teamRecord": {
+                        "season": "2020-21",
+                        "winsAndLosses": "51-21",
+                        "seasonFinish": "1st place, Pacific Division",
+                        "playoffsFinish": "Lost in The Finals to Bucks"
+                    },
+                    "permalink": "https://www.nba.com/draft/2021/team-profiles/phoenix-suns",
+                    "appUrl": "https://www.nba.com/webview/draft/2021/team-profiles/phoenix-suns",
+                    "tradeDetails": [],
+                    "teamName": "Phoenix Suns",
+                    "teamAbbr": "PHX",
+                    "pickedFirstRound": true
+                }
+            ]
+        },
+        "categoryPrimary": {
+            "name": "2021 NBA Draft Board",
+            "slug": "2021-nba-draft-board",
+            "bannerImage": "https://cdn.nba.com/manage/2021/04/2021-draft-hub-header-v2.jpg",
+            "mobileBannerImage": "",
+            "menu": {
+                "name": "2021 NBA Draft",
+                "id": 28477,
+                "location": "",
+                "links": [
+                    {
+                        "id": 487031,
+                        "order": 1,
+                        "text": "Home",
+                        "href": "https://www.nba.com/draft/2021",
+                        "type": "custom",
+                        "icon": ""
+                    },
+                    {
+                        "id": 585018,
+                        "order": 2,
+                        "text": "Draft Board",
+                        "href": "https://www.nba.com/draft/2021/draft-board",
+                        "type": "custom",
+                        "icon": ""
+                    },
+                    {
+                        "id": 579551,
+                        "order": 3,
+                        "text": "Prospects",
+                        "href": "https://www.nba.com/draft/2021/prospects",
+                        "type": "custom",
+                        "icon": ""
+                    },
+                    {
+                        "id": 579552,
+                        "order": 4,
+                        "text": "Teams",
+                        "href": "https://www.nba.com/draft/2021/team-profiles",
+                        "type": "custom",
+                        "icon": ""
+                    },
+                    {
+                        "id": 557800,
+                        "order": 5,
+                        "text": "All Picks: 1-60",
+                        "href": "https://www.nba.com/news/2021-nba-draft-results-picks-1-60",
+                        "type": "custom",
+                        "icon": ""
+                    },
+                    {
+                        "id": 586350,
+                        "order": 6,
+                        "text": "Trade Tracker",
+                        "href": "https://www.nba.com/news/every-reported-trade-from-2021-nba-draft",
+                        "type": "custom",
+                        "icon": ""
+                    },
+                    {
+                        "id": 585716,
+                        "order": 7,
+                        "text": "News",
+                        "href": "https://www.nba.com/news/category/2021-nba-draft",
+                        "type": "custom",
+                        "icon": ""
+                    },
+                    {
+                        "id": 585914,
+                        "order": 8,
+                        "text": "Video",
+                        "href": "https://www.nba.com/2021-nba-draft-video",
+                        "type": "custom",
+                        "icon": ""
+                    },
+                    {
+                        "id": 573331,
+                        "order": 9,
+                        "text": "More",
+                        "href": "https://www.nba.com/news/2021-nba-draft-process-dates-official-release",
+                        "type": "custom",
+                        "icon": "",
+                        "children": [
+                            {
+                                "id": 582421,
+                                "order": 10,
+                                "text": "Tickets",
+                                "href": "https://nbaevents.nba.com/events/nba-draft",
+                                "type": "custom",
+                                "icon": ""
+                            },
+                            {
+                                "id": 585975,
+                                "order": 11,
+                                "text": "2021 Draft: By The Numbers",
+                                "href": "https://www.nba.com/news/nba-draft-2021-by-the-numbers",
+                                "type": "custom",
+                                "icon": ""
+                            },
+                            {
+                                "id": 573327,
+                                "order": 12,
+                                "text": "Consensus Mock Draft",
+                                "href": "https://www.nba.com/news/2021-consensus-mock-draft",
+                                "type": "custom",
+                                "icon": ""
+                            },
+                            {
+                                "id": 572221,
+                                "order": 13,
+                                "text": "Draft Lottery Results",
+                                "href": "https://www.nba.com/news/detroit-pistons-win-the-2021-nba-draft-lottery",
+                                "type": "custom",
+                                "icon": ""
+                            },
+                            {
+                                "id": 562337,
+                                "order": 14,
+                                "text": "Early Entry Candidates",
+                                "href": "https://www.nba.com/news/nba-announces-early-entry-candidates-for-nba-draft-2021",
+                                "type": "custom",
+                                "icon": ""
+                            },
+                            {
+                                "id": 573326,
+                                "order": 15,
+                                "text": "Draft Combine",
+                                "href": "https://www.nba.com/stats/draft/combine",
+                                "type": "custom",
+                                "icon": ""
+                            },
+                            {
+                                "id": 487036,
+                                "order": 16,
+                                "text": "Bleacher Report Draft News",
+                                "href": "https://bleacherreport.com/nba-draft",
+                                "type": "custom",
+                                "icon": ""
+                            },
+                            {
+                                "id": 522483,
+                                "order": 17,
+                                "text": "Draft Process Key Dates",
+                                "href": "https://www.nba.com/news/2021-nba-draft-process-dates-official-release",
+                                "type": "custom",
+                                "icon": ""
+                            },
+                            {
+                                "id": 487032,
+                                "order": 18,
+                                "text": "Draft History",
+                                "href": "https://www.nba.com/history/draft",
+                                "type": "custom",
+                                "icon": ""
+                            },
+                            {
+                                "id": 487033,
+                                "order": 19,
+                                "text": "Every Pick: 1947-2020",
+                                "href": "https://www.nba.com/stats/draft/history",
+                                "type": "custom",
+                                "icon": ""
+                            }
+                        ]
+                    }
+                ]
+            },
+            "isHub": true,
+            "adfuelTarget": "draft_board"
+        }
+    }
+}

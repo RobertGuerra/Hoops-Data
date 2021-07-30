@@ -1,0 +1,40 @@
+/* Draft Section */
+
+.dataframe {
+    font-family: Arial;
+    border-collapse: collapse;
+}
+
+.dataframe thead {
+    padding 5px;
+}
+
+.dataframe thead tr {
+    background: #000000;
+    color: white;
+}
+
+.dataframe thead tr th {
+
+}
+
+.dataframe tbody {
+    background-color: black;
+    color: white;
+}
+
+.dataframe tr:nth-child(even) {
+    background: #737480;
+}
+
+.dataframe tbody tr {
+
+}
+
+.dataframe tbody tr th {
+
+}
+
+.dataframe tbody tr td {
+    padding: 5px;
+}
