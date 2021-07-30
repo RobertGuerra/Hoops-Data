@@ -1,6 +1,8 @@
 import requests
 import json
 import pandas as pd
+
+
 url = "https://content-api-prod.nba.com/public/1/draft/2021/board"
 
 payload={}
@@ -14,15 +16,18 @@ headers = {
   'Connection': 'keep-alive'
 }
 
-response = requests.get(url, headers=headers)
+response = requests.request("GET", url, headers=headers, data=payload)
 
 
 lotto_df = pd.DataFrame(response.json())
+#lotto_df = pd.read_json('picks.json')
 
 picks = lotto_df.loc['picks', 'results']
 
 pd.json_normalize(picks['firstRound'][0])
 # new_home = lotto_df['results'][6]['firstRound'][0]['team']
+
+pd.set_option('colheader_justify', 'center')
 
 df = pd.DataFrame(dtype='object')
 
@@ -33,9 +38,23 @@ df = df.set_index('pickNumber')
 
 df = df.rename(axis=1, mapper=lambda x: x.split('.')[-1])
 
-selected_df = df[['pickDetails','prospect', 'winsAndLosses','seasonFinish','playoffsFinish','teamName']]
-selected_df = selected_df.to_html('picks.html')
-print(selected_df)
+lottery_df = df[['pickDetails','displayName', 'winsAndLosses','seasonFinish','playoffsFinish','teamName']]
+
+html_string = '''
+<html>
+  <link rel="stylesheet" type="text/css" href="lottery.css"/>
+  <body>
+    {table}
+  </body>
+</html
+'''
+
+with open('picks.html', 'w') as f:
+  f.write(html_string.format(table=lottery_df.to_html()))
+
+# df = df.to_html('picks.html')
+
+print(lottery_df)
 
 
 
