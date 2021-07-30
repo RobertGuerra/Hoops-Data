@@ -1,7 +1,6 @@
 import dash_html_components as html
 import pandas as pd
-from IPython.core.display import display_html, HTML, display
-from Hoops.helpers.nba_lottery import lottery_df
+
 
 def create_stats(df):
     home = df["record"][0]['items'][0]['stats']
@@ -64,9 +63,7 @@ def create_stats(df):
             html.P(
                 "league_Win_Percent: {:.2%}".format((home_ser['leagueWinPercent']))
             ),
-            html.Div(
-                html.Table(lottery_df.to_html(), className='dataframe')
-            )
+
         ],
 
         style={'width': '100%'}
