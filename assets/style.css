@@ -292,6 +292,11 @@
     background-color: white;
 }
 
+#hr-draft {
+    background: linear-gradient(red, white, blue);
+    height: 20px;
+}
+
 .h2 {
     "textAlignLast":"center";
 }
