@@ -32,14 +32,14 @@ layout = html.Div(
                         label="First Round Pick",
                         id="first-round-pick",
                         active_label_style={"color":"white"},
-                        tab_style={'textAlign': 'center'},
+                        tab_style={'textAlign': 'center', 'backgroundColor':'red'},
                 ),
 
                 dbc.Tab(
                         label="Second Round Pick",
                         id="second-round-pick",
                         active_label_style={"color":"white"},
-                        tab_style={'textAlign': 'center'},
+                        tab_style={'textAlign': 'center', 'backgroundColor':'red'},
                 )
             ],
             style={'justifyContent': 'center'}
