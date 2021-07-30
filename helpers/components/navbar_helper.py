@@ -10,7 +10,7 @@ def Navbar():
                     html.H1("NBA", className="nba"),
                     href="https://www.nba.com/",
                     target="blank",
-                    style={"paddingTop": "15%"}
+                    # style={"paddingTop": "15%"}
                 ),
 
                 className="nba-logo-img",

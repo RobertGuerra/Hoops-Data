@@ -132,7 +132,7 @@ a.nav-link{
     text-align: center;
     position: relative;
     box-shadow: 0rem 0 3rem #000;
-    transition: .2s ease-in-out;
+    transition: .4s ease-in-out;
 }
 
 .card:hover {
@@ -177,7 +177,7 @@ a.nav-link{
     }
 
     .card-grid {
-        padding-top: 8.75rem;
+        padding-top: 8rem;
     }
 }
 
