@@ -11,12 +11,26 @@ from app import app
 layout = html.Div(
     [
         html.Hr(id="hr-draft"),
+
         html.H2(
             "NBA LOTTERY",
             style={
                 "textAlignLast":"center",
                 # "backgroundColor": "blue",
             }
+        ),
+        html.Div(
+            html.A(
+            dbc.Button(
+                'HOME',
+                className="home-button",
+                style={'height': '3em', 'width': '8em', 'background-color': 'red', 'color': 'white'}
+            ),
+            href='/apps/start',
+            style={"margin": "auto", "textAlign":"center", "align-items": "baseline",
+                   "textDecoration":"none", "display":"center"}
+            ),
+            style={"justifyContent":"center", "display":"flex"}
         ),
 
         html.Hr(id="hr-draft"),
@@ -31,15 +45,15 @@ layout = html.Div(
                 dbc.Tab(
                         label="First Round Pick",
                         id="first-round-pick",
-                        active_label_style={"color":"white"},
-                        tab_style={'textAlign': 'center', 'backgroundColor':'red'},
+                        active_label_style={"color":"white", "backgroundColor":"red"},
+                        tab_style={'textAlign': 'center', 'backgroundColor':'blue'},
                 ),
 
                 dbc.Tab(
                         label="Second Round Pick",
                         id="second-round-pick",
-                        active_label_style={"color":"white"},
-                        tab_style={'textAlign': 'center', 'backgroundColor':'red'},
+                        active_label_style={"color":"white", "backgroundColor":"red"},
+                        tab_style={'textAlign': 'center', 'backgroundColor':'blue'},
                 )
             ],
             style={'justifyContent': 'center'}
