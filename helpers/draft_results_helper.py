@@ -21,7 +21,7 @@ def create_df(records):
                             'country': 'Country'},
                            axis=1)
 
-    return temp_df[['Team Name', 'Draft Pick', 'Position', 'Feet-Inches', 'Weight (lbs)', 'School', 'Status', 'Country']]
+    return temp_df[['Draft Pick', 'Team Name', 'Position', 'Feet-Inches', 'Weight (lbs)', 'School', 'Status', 'Country']]
 
 
 def get_lottery_picks():
