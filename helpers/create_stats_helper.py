@@ -1,7 +1,6 @@
 import dash_html_components as html
 import pandas as pd
 
-
 def create_stats(df):
     home = df["record"][0]['items'][0]['stats']
     home = [{d['name']: d['value']} for d in home]
