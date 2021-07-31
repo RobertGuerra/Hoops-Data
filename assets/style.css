@@ -1,5 +1,8 @@
 /* SECTION: PAGE 1 */
 
+a.nav-link{
+    margin:auto;
+}
 
 .table {
     background-color:black;
@@ -42,16 +45,17 @@
 
 .navbar-nav {
     text-align: center;
-    align-items: baseline;
+    align-items: center;
 }
 
 .navbar-nav .dropdown-menu {
     position: absolute;
 }
 
+/*
 .navbar-nav .nav-link:hover {
     color: blue;
-}
+}*/
 
 .bg-light {
     background-color: #000000 !important;
@@ -71,12 +75,6 @@
 
 .card-title {
     margin-bottom: 9rem;
-}
-
-.hoopsh1 {
-    padding-left: 0px;
-    display: flex;
-    justify-content: flex-start;
 }
 
 .dropdown {
@@ -134,7 +132,7 @@
     text-align: center;
     position: relative;
     box-shadow: 0rem 0 3rem #000;
-    transition: .2s ease-in-out;
+    transition: .4s ease-in-out;
 }
 
 .card:hover {
@@ -179,7 +177,7 @@
     }
 
     .card-grid {
-        padding-top: 8.75rem;
+        padding-top: 8rem;
     }
 }
 
@@ -302,4 +300,10 @@
 
 .h2 {
     "textAlignLast":"center";
+}
+
+.nav-tabs .nav-link, .nav-tabs .nav-link.active, .nav-tabs .nav-link.active:focus, .nav-tabs .nav-link.active:hover, .nav-tabs .nav-item.open .nav-link, .nav-tabs .nav-item.open .nav-link:focus, .nav-tabs .nav-item.open .nav-link:hover, .nav-pills .nav-link, .nav-pills .nav-link.active, .nav-pills .nav-link.active:focus, .nav-pills .nav-link.active:hover, .nav-pills .nav-item.open .nav-link, .nav-pills .nav-item.open .nav-link:focus, .nav-pills .nav-item.open .nav-link:hover {
+    color: #fff;
+    border-width: 3px;
+    border-color: red;
 }

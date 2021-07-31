@@ -7,31 +7,54 @@ def Navbar():
         children=[
             dbc.NavItem(
                 dbc.NavLink(
-                    [
-                        html.Img(
-                            src="https://s3.amazonaws.com/file.imleagues/Images/Teams/Uploaded/201801/201812316271650f5a72e9de44767031d56a47aca3fcadf.png",
-                            style={"height": "40px", "width": "55px", "padding-right": "1rem"}
-                        ),
+                    html.H1("NBA", className="nba"),
+                    href="https://www.nba.com/",
+                    target="blank",
+                    # style={"paddingTop": "15%"}
+                ),
 
-                        dbc.NavLink(
-                            html.H1("NBA", className="nba"),
-                            href="https://www.nba.com/",
-                            target="blank"
-                        )
-                    ],
-
-                    className="nba-logo-img",
-                    style={"display": "flex", "align-items": "baseline"}
-                )
+                className="nba-logo-img",
+                style={"display": "flex", "align-items": "baseline"}
             ),
+            # dbc.NavItem(
+            #     dbc.NavLink(
+            #         [
+            #             html.Img(
+            #                 src="https://s3.amazonaws.com/file.imleagues/Images/Teams/Uploaded/201801/201812316271650f5a72e9de44767031d56a47aca3fcadf.png",
+            #                 style={"height": "35%", "width": "35%", "padding-right": "1rem"}
+            #             ),
+            #
+            #             dbc.NavLink(
+            #                 html.H1("NBA", className="nba"),
+            #                 href="https://www.nba.com/",
+            #                 target="blank",
+            #                 style={"paddingTop":"15%"}
+            #             )
+            #         ],
+            #
+            #         className="nba-logo-img",
+            #         style={"display": "flex", "align-items": "baseline"}
+            #     ),
+            # ),
 
             dbc.NavItem(
                 dbc.NavLink(
                     html.H1(
                         "Hoops",
-                        className="hoopsh1",
-                    )
-                )
+                        className="nba",
+                    ),
+                    href="https://github.com/RobertJG17",
+                    target="blank"
+                ),
+                style={"display": "flex", "align-items": "baseline"}
+            ),
+
+            dbc.NavItem(
+                dbc.NavLink(
+                    html.H1("Draft", className="nba"),
+                    href="/apps/draft",
+                ),
+                style={"display": "flex", "align-items": "baseline"}
             ),
 
             dbc.DropdownMenu(
