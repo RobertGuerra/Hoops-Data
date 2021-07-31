@@ -42,8 +42,8 @@ a.nav-link{
 }
 
 .navbar-nav {
-    text-align: left;
-    align-items: baseline;
+    text-align: center;
+    align-items: center;
 }
 
 .navbar-nav .dropdown-menu {
@@ -160,10 +160,9 @@ a.nav-link{
 }
 
 @media (min-width: 768px) {
-    .navbar {
-        display: flex;
+    .navbar-nav {
+        text-align: center;
         align-items: baseline;
-        justify-content: center;
     }
 
     .img-logo {
@@ -323,4 +322,7 @@ a.nav-link{
     padding-top: 5rem;
     padding-left: .7rem;
     padding-right: .7rem;
+    color: #fff;
+    border-width: 3px;
+    border-color: red;
 }
