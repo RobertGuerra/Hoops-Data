@@ -1,19 +1,18 @@
 import dash_html_components as html
 import pandas as pd
 import dash_core_components as dcc
-from nba_lottery import get_lottery_picks
 from dash.dependencies import Input, Output
 
-def create_lotto_picks(lottery_df):
-    home = lottery_df["record"][0]['items'][0]['stats']
-    print(home)
-    home = [{d['name']: d['value']} for d in home]
-
-    # away = df["record"][0]['items'][2]['stats']
-    # away = [{d['name']: d['value']} for d in away]
-
-    home_ser = pd.Series(index=[list(d.keys())[0] for d in home], data=[list(d.values())[0] for d in home])
-    # away_ser = pd.Series(index=[list(d.keys())[0] for d in away], data=[list(d.values())[0] for d in away])
+# def create_lotto_picks(lottery_df):
+#     home = lottery_df["record"][0]['items'][0]['stats']
+#     print(home)
+#     home = [{d['name']: d['value']} for d in home]
+#
+#     # away = df["record"][0]['items'][2]['stats']
+#     # away = [{d['name']: d['value']} for d in away]
+#
+#     home_ser = pd.Series(index=[list(d.keys())[0] for d in home], data=[list(d.values())[0] for d in home])
+#     # away_ser = pd.Series(index=[list(d.keys())[0] for d in away], data=[list(d.values())[0] for d in away])
 
 
 
@@ -39,5 +38,5 @@ def create_lotto_picks(lottery_df):
     # )
 
 
-    return [lottery_div]
+    # return [lottery_div]
 
