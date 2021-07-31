@@ -24,9 +24,7 @@ a.nav-link{
     background-color: black !important;
 
     padding-left: 1rem;
-    font-family: Frutiger, Frutiger Linotype, Univers, Calibri, Gill Sans, Gill Sans MT,
-                 Myriad Pro, Myriad, DejaVu Sans Condensed, Liberation Sans, Nimbus Sans L,
-                 Tahoma, Geneva, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-family: Baskerville, "Baskerville Old Face", "Goudy Old Style", Garamond, "Times New Roman", serif;
 
 }
 
@@ -155,13 +153,16 @@ a.nav-link{
     .card-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .bubble-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (min-width: 768px) {
-    .navbar {
-        display: flex;
+    .navbar-nav {
+        text-align: center;
         align-items: baseline;
-        justify-content: center;
     }
 
     .img-logo {
@@ -186,11 +187,19 @@ a.nav-link{
     .card-grid {
         grid-template-columns: repeat(3, 1fr);
     }
+
+    .bubble-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 /* Screen larger than 900 px? 4 columns*/
 @media (min-width: 1200px) {
     .card-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .bubble-grid {
         grid-template-columns: repeat(4, 1fr);
     }
 }
@@ -303,6 +312,16 @@ a.nav-link{
 }
 
 .nav-tabs .nav-link, .nav-tabs .nav-link.active, .nav-tabs .nav-link.active:focus, .nav-tabs .nav-link.active:hover, .nav-tabs .nav-item.open .nav-link, .nav-tabs .nav-item.open .nav-link:focus, .nav-tabs .nav-item.open .nav-link:hover, .nav-pills .nav-link, .nav-pills .nav-link.active, .nav-pills .nav-link.active:focus, .nav-pills .nav-link.active:hover, .nav-pills .nav-item.open .nav-link, .nav-pills .nav-item.open .nav-link:focus, .nav-pills .nav-item.open .nav-link:hover {
+    border: solid;
+    text-decoration-color: currentcolor;
+}
+
+.bubble-grid {
+    display: grid;
+    width: 100%;
+    padding-top: 5rem;
+    padding-left: .7rem;
+    padding-right: .7rem;
     color: #fff;
     border-width: 3px;
     border-color: red;
