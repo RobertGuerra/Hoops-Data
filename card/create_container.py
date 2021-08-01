@@ -92,7 +92,7 @@ def create_card(datum):
             )
         ],
 
-        className='card',
+        className='team-card',
 
     )
 
