@@ -81,7 +81,7 @@ def fetch_draft(*args):
     table_1 = dash_table.DataTable(
         id='table',
         style_cell={
-            'backgroundColor': 'blue',
+            'backgroundColor': '#020359',
             'minWidth': '180px', 'width': '180px', 'maxWidth': '180px',
             'overflow': 'hidden',
             'textOverflow': 'ellipsis'
@@ -98,7 +98,7 @@ def fetch_draft(*args):
     table_2 = dash_table.DataTable(
         id='table',
         style_cell={
-            'backgroundColor': 'blue',
+            'backgroundColor': '#020359',
             'minWidth': '180px', 'width': '180px', 'maxWidth': '180px',
             'overflow': 'hidden',
             'textOverflow': 'ellipsis'
@@ -109,7 +109,7 @@ def fetch_draft(*args):
         fixed_rows={'headers': True},
         style_table={'minWidth': '100%'},
         columns=[{"name": i, "id": i} for i in df2.columns],
-        data=df2.to_dict('records')
+        data=df2.to_dict('records'),
     )
 
     return table_1, table_2
