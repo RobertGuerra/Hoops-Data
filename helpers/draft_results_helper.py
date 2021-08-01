@@ -14,14 +14,14 @@ def create_df(records):
     temp_df = temp_df.rename({'teamName': 'Team Name',
                             'displayName': 'Draft Pick',
                             'position': 'Position',
-                            'feetAndInches': 'Feet-Inches',
-                            'weightLbs': 'Weight (lbs)',
+                            'feetAndInches': 'Ft',
+                            'weightLbs': 'Wt',
                             'school': 'School',
                             'status': 'Status',
                             'country': 'Country'},
                            axis=1)
 
-    return temp_df[['Draft Pick', 'Team Name', 'Position', 'Feet-Inches', 'Weight (lbs)', 'School', 'Status', 'Country']]
+    return temp_df[['Draft Pick', 'Team Name', 'Position', 'Ft', 'Wt', 'School', 'Status', 'Country']]
 
 
 def get_lottery_picks():
