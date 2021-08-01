@@ -78,7 +78,10 @@ def fetch_draft(*args):
     table_1 = dash_table.DataTable(
         id='table',
         style_cell={'backgroundColor': 'blue'},
-        style_header={'textAlign': 'center'},
+        style_header={'textAlign': 'center', 
+                      'minWidth': '180px', 'width': '180px', 'maxWidth': '180px',
+                       'overflow': 'hidden',
+                        'textOverflow': 'ellipsis',},
         style_data={'textAlign': 'center'},
         fixed_columns={'headers': True, 'data': 1},
         fixed_rows={'headers': True},
@@ -90,7 +93,10 @@ def fetch_draft(*args):
     table_2 = dash_table.DataTable(
         id='table',
         style_cell={'backgroundColor': 'blue'},
-        style_header={'textAlign': 'center'},
+        style_header={'textAlign': 'center',
+                     'minWidth': '180px', 'width': '180px', 'maxWidth': '180px',
+                       'overflow': 'hidden',
+                        'textOverflow': 'ellipsis',},
         style_data={'textAlign': 'center'},
         fixed_columns={'headers': True, 'data': 1},
         fixed_rows={'headers': True},
