@@ -30,4 +30,4 @@ def display_page(pathname):
 
 # '0.0.0.0', 5001
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    app.run_server('0.0.0.0', 5001, debug=True)

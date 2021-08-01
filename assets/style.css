@@ -126,14 +126,14 @@ a.nav-link{
     font-weight="900";
 }
 
-.card {
+.team-card {
     text-align: center;
     position: relative;
     box-shadow: 0rem 0 3rem #000;
     transition: .4s ease-in-out;
 }
 
-.card:hover {
+.team-card:hover {
     transform: scale(.90, .85)
 }
 
@@ -303,17 +303,28 @@ a.nav-link{
 }
 
 #hr-draft {
-    background: linear-gradient(red, white, blue);
-    height: 20px;
+    background: linear-gradient(red, orange);
+    height: 10px;
 }
 
 .h2 {
     "textAlignLast":"center";
 }
 
+.data-table-tab {
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+    width: auto;
+}
+
+.stats-tabs {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+}
+
 .nav-tabs .nav-link, .nav-tabs .nav-link.active, .nav-tabs .nav-link.active:focus, .nav-tabs .nav-link.active:hover, .nav-tabs .nav-item.open .nav-link, .nav-tabs .nav-item.open .nav-link:focus, .nav-tabs .nav-item.open .nav-link:hover, .nav-pills .nav-link, .nav-pills .nav-link.active, .nav-pills .nav-link.active:focus, .nav-pills .nav-link.active:hover, .nav-pills .nav-item.open .nav-link, .nav-pills .nav-item.open .nav-link:focus, .nav-pills .nav-item.open .nav-link:hover {
-    border: solid;
-    text-decoration-color: currentcolor;
+    width: max-content;
 }
 
 .bubble-grid {
