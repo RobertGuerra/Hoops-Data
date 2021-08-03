@@ -12,17 +12,64 @@ layout = html.Div(
 @app.callback(Output('about-layout', 'children'),
               [Input('url', 'pathname')])
 def about_section(*args):
-    about_cards = dbc.Card(
-        html.A(
-            dbc.CardBody(
-                [
-                    html.H1("Robert James Guerra", style={"fontSize":"1rem"})
-                ],
-                style={"textAlignLast": "left"}
+
+    about_cards = [
+
+        html.Div(
+            html.A(
+                dbc.Button(
+                    'HOME',
+                    className="home-button",
+                    style={'height': '3em', 'width': '8em', 'background-color': 'blue', 'color': 'white'}
+                ),
+                href='/apps/start',
+                style={"margin": "auto", "textAlign": "center", "align-items": "baseline",
+                       "textDecoration": "none", "display": "center"}
             ),
-            href="https://github.com/RobertJG17"
-        )
-    )
+            style={"justifyContent": "center", "display": "flex"}
+        ),
+        html.Div(
+            html.A(
+                dbc.Card(
+                    [
+                        dbc.CardImg(
+                            src="../assets/Bobby_git.png", top=True, bottom=False
+                        ),
+                        dbc.CardBody(
+                            [
+                                html.H1("Robert James Guerra", style={"fontSize": "3rem", "color":"white"})
+                            ],
+                            style={"textAlignLast": "center"}
+                        ),
+                    ]
+                ),
+                style={"textDecoration": "none"},
+                href="https://github.com/RobertJG17",
+                target="blank"
+            ),
+        ),
+        html.Div(
+            html.A(
+                dbc.Card(
+                    [
+                        dbc.CardImg(
+                                src="../assets/rob_git.png", top=True, bottom=False
+                            ),
+                        dbc.CardBody(
+                            [
+                                html.H1("Roberto Guerra", style={"fontSize": "3rem", "color":"white"})
+                            ],
+                            style={"textAlignLast": "center"}
+                        ),
+                    ]
+                ),
+                style={"textDecoration":"none"},
+                href="https://github.com/RobertGuerra",
+                target="blank"
+            )
+        ),
+
+    ]
 
     return about_cards
 

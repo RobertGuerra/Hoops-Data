@@ -41,18 +41,18 @@ def Navbar():
                 dbc.NavLink(
                     html.H1(
                         "Hoops",
-                        className="nba",
+                        #className="nba",
                     ),
                     #href="https://github.com/RobertJG17",
-                    href="#",
-                    target="blank"
+                    # href="#",
+                    # target="blank"
                 ),
                 style={"display": "flex", "align-items": "baseline"}
             ),
 
             dbc.NavItem(
                 dbc.NavLink(
-                    html.H1("Draft Results", className="nba"),
+                    html.H1("Draft", className="nba"),
                     href="/apps/draft",
                 ),
                 style={"display": "flex", "align-items": "baseline"}
@@ -65,6 +65,7 @@ def Navbar():
                         ["All Teams", "Atlantic", "Southeast", "Central", "Northwest", "Pacific", "Southwest"]
                     )
                 ],
+                style={"fontSize":"2rem"},
                 nav=True,
                 label="All Teams",
                 id="team-list",
@@ -77,7 +78,7 @@ def Navbar():
                     html.H1("About", className="nba"),
                     href="/apps/about",
                 ),
-                style={"display": "flex", "align-items": "baseline", "height":"50%", "width":"50%"}
+                style={"display": "flex", "align-items": "baseline"}
             ),
 
         ],
