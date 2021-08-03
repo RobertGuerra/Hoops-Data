@@ -29,45 +29,50 @@ def about_section(*args):
             style={"justifyContent": "center", "display": "flex"}
         ),
         html.Div(
-            html.A(
                 dbc.Card(
                     [
                         dbc.CardImg(
                             src="../assets/Bobby_git.png", top=True, bottom=False
                         ),
-                        dbc.CardBody(
-                            [
-                                html.H1("Robert James Guerra", style={"fontSize": "3rem", "color":"white"})
-                            ],
-                            style={"textAlignLast": "center"}
-                        ),
-                    ]
+                            html.A(
+                            dbc.CardBody(
+                                [
+                                    html.H1("Robert James Guerra",
+                                    className='nba',
+                                    style={"fontSize": "3rem"})
+                                ],
+                                style={"textAlignLast": "center"}
+                            ),
+                                style={"textDecoration": "none", "margin":"auto"},
+                                href="https://github.com/RobertJG17",
+                                target="blank"
+                        )
+                    ],
                 ),
-                style={"textDecoration": "none"},
-                href="https://github.com/RobertJG17",
-                target="blank"
-            ),
         ),
         html.Div(
-            html.A(
-                dbc.Card(
-                    [
-                        dbc.CardImg(
-                                src="../assets/rob_git.png", top=True, bottom=False
-                            ),
+            dbc.Card(
+                [
+                    dbc.CardImg(
+                            src="../assets/rob_git.png", top=True, bottom=False
+                        ),
+                    html.A(
                         dbc.CardBody(
                             [
-                                html.H1("Roberto Guerra", style={"fontSize": "3rem", "color":"white"})
+                                html.H1("Roberto Guerra",
+                                className='nba',
+                                style={"fontSize": "3rem"})
                             ],
-                            style={"textAlignLast": "center"}
+                            style={"textAlignLast": "center"},
                         ),
-                    ]
-                ),
-                style={"textDecoration":"none"},
-                href="https://github.com/RobertGuerra",
-                target="blank"
-            )
-        ),
+                        style={"textDecoration": "none", "color":"blue", "margin":"auto"},
+                        href="https://github.com/RobertGuerra",
+                        target="blank"
+                    ),
+
+                ],
+            ),
+        )
 
     ]
 
