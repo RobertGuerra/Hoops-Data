@@ -77,9 +77,12 @@ def fetch_draft(*args):
 
     table_1 = dash_table.DataTable(
         id='table',
-        style_cell={'backgroundColor': 'blue'},
-        style_header={'textAlign': 'center'},
-        style_data={'textAlign': 'center'},
+        style_cell={'backgroundColor': '#020359'},
+        style_header={'border':'2px solid white','textAlign': 'center',
+                      'overflow': 'hidden',
+                      'textOverflow': 'ellipsis',
+                      },
+        style_data={'textAlign': 'center', 'border':'2px solid white',},
         fixed_columns={'headers': True, 'data': 1},
         fixed_rows={'headers': True},
         style_table={'minWidth': '100%'},
@@ -89,14 +92,17 @@ def fetch_draft(*args):
 
     table_2 = dash_table.DataTable(
         id='table',
-        style_cell={'backgroundColor': 'blue'},
-        style_header={'textAlign': 'center'},
-        style_data={'textAlign': 'center'},
+        style_cell={'backgroundColor': '#020359'},
+        style_header={'border':'2px solid white','textAlign': 'center',
+                      'overflow': 'hidden',
+                      'textOverflow': 'ellipsis',
+                      },
+        style_data={'textAlign': 'center', 'border':'2px solid white',},
         fixed_columns={'headers': True, 'data': 1},
         fixed_rows={'headers': True},
         style_table={'minWidth': '100%'},
         columns=[{"name": i, "id": i} for i in df2.columns],
-        data=df2.to_dict('records')
+        data=df2.to_dict('records'),
     )
 
     return table_1, table_2
