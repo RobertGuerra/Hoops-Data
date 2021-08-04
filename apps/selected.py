@@ -43,25 +43,25 @@ layout = html.Div(
                         [
                             dbc.Tabs(
                                 [
-                                    dbc.Tab(label="Playoff_seed", tab_id="tab-1"),
-                                    dbc.Tab(label="WINS", tab_id="tab-2"),
-                                    dbc.Tab(label="losses", tab_id="tab-3"),
-                                    dbc.Tab(label="winPercent", tab_id="tab-4"),
-                                    dbc.Tab(label="gamesBehind", tab_id="tab-5"),
-                                    dbc.Tab(label="gamesPlayed", tab_id="tab-6"),
-                                    dbc.Tab(label="pointsFor", tab_id="tab-7"),
-                                    dbc.Tab(label="pointsAgainst", tab_id="tab-8"),
-                                    dbc.Tab(label="avgPointsFor", tab_id="tab-9"),
-                                    dbc.Tab(label="avgPointsAgainst", tab_id="tab-10"),
-                                    dbc.Tab(label="divisionWinsPercent", tab_id="tab-11"),
-                                    dbc.Tab(label="leagueWinsPercent", tab_id="tab-12")
+                                    dbc.Tab(label="Playoff Seed", tab_id="tab-1"),
+                                    dbc.Tab(label="Wins", tab_id="tab-2"),
+                                    dbc.Tab(label="Losses", tab_id="tab-3"),
+                                    dbc.Tab(label="Win Percent", tab_id="tab-4"),
+                                    dbc.Tab(label="Games Behind", tab_id="tab-5"),
+                                    dbc.Tab(label="Games Played", tab_id="tab-6"),
+                                    dbc.Tab(label="Points For", tab_id="tab-7"),
+                                    dbc.Tab(label="Points Against", tab_id="tab-8"),
+                                    dbc.Tab(label="Avg. Points For", tab_id="tab-9"),
+                                    dbc.Tab(label="Avg. Points Against", tab_id="tab-10"),
+                                    dbc.Tab(label="Division Win %", tab_id="tab-11"),
+                                    dbc.Tab(label="League Win %", tab_id="tab-12")
                                 ],
                                 id="tabs",
-                                active_tab="tab-1",
+                                className="stats-tabs",
+                                active_tab="tab-1"
                             ),
                             html.Div(id="content"),
-                        ],
-                        style={"display":"flex", "flexDirection":"row"}
+                        ]
                     )
             ]
         ),
@@ -159,10 +159,10 @@ def switch_tab(data, at):
     tab1_content = dbc.Card(
         dbc.CardBody(
             [
-                html.P("{}".format(int(stats_ser['playoffSeed'])))
+                html.H3("{}".format(int(stats_ser['playoffSeed'])))
             ],
 
-            style = {"textAlignLast": "left", "width":"100%", "height":"100%"}
+            style = {"textAlignLast": "center"}
         )
         #className="mt-3",
     )
@@ -170,89 +170,89 @@ def switch_tab(data, at):
     tab2_content = dbc.Card(
         dbc.CardBody(
             [
-                html.P("{}".format(int(stats_ser['wins'])))
+                html.H3("{} Wins".format(int(stats_ser['wins'])))
             ],
-            style={"textAlignLast":"left"}
+            style={"textAlignLast":"center"}
         ),
     )
     tab3_content = dbc.Card(
         dbc.CardBody(
             [
-                html.P("{}".format(int(stats_ser['losses'])))
+                html.H3("{} Losses".format(int(stats_ser['losses'])))
             ],
-            style={"textAlignLast": "left"}
+            style={"textAlignLast": "center"}
         ),
     )
     tab4_content = dbc.Card(
         dbc.CardBody(
             [
-                html.P("{:.2%}".format(stats_ser['winPercent']))
+                html.H3("{:.2%}".format(stats_ser['winPercent']))
             ],
-            style={"textAlignLast": "left"}
+            style={"textAlignLast": "center"}
         ),
     )
     tab5_content = dbc.Card(
         dbc.CardBody(
             [
-                html.P("{}".format(int(stats_ser['gamesBehind'])))
+                html.H3("{} Games".format(int(stats_ser['gamesBehind'])))
             ],
-            style={"textAlignLast": "left"}
+            style={"textAlignLast": "center"}
         ),
     )
     tab6_content = dbc.Card(
         dbc.CardBody(
             [
-                html.P("{}".format(int(stats_ser['gamesPlayed'])))
+                html.H3("{} Games".format(int(stats_ser['gamesPlayed'])))
             ],
-            style={"textAlignLast": "left"}
+            style={"textAlignLast": "center"}
         ),
     )
     tab7_content = dbc.Card(
         dbc.CardBody(
             [
-                html.P("{}".format(int(stats_ser['pointsFor'])))
+                html.H3("{} Points".format(int(stats_ser['pointsFor'])))
             ],
-            style={"textAlignLast": "left"}
+            style={"textAlignLast": "center"}
         ),
     )
     tab8_content = dbc.Card(
         dbc.CardBody(
             [
-                html.P("{}".format(int(stats_ser['pointsAgainst'])))
+                html.H3("{} Points".format(int(stats_ser['pointsAgainst'])))
             ],
-            style={"textAlignLast":"left"}
+            style={"textAlignLast":"center"}
         ),
     ),
     tab9_content = dbc.Card(
         dbc.CardBody(
             [
-                html.P("{}".format(int(stats_ser['avgPointsFor'])))
+                html.H3("{} Points".format(int(stats_ser['avgPointsFor'])))
             ],
-            style={"textAlignLast": "left"}
+            style={"textAlignLast": "center"}
         ),
     ),
     tab10_content = dbc.Card(
         dbc.CardBody(
             [
-                html.P("{}".format(int(stats_ser['avgPointsAgainst'])))
+                html.H3("{} Points".format(int(stats_ser['avgPointsAgainst'])))
             ],
-            style={"textAlignLast": "left"}
+            style={"textAlignLast": "center"}
         ),
     ),
     tab11_content = dbc.Card(
         dbc.CardBody(
             [
-                html.P("{:.2%}".format(stats_ser['divisionWinPercent']))
+                html.H3("{:.2%}".format(stats_ser['divisionWinPercent']))
             ],
-            style={"textAlignLast": "left"}
+            style={"textAlignLast": "center"}
         ),
     ),
     tab12_content = dbc.Card(
         dbc.CardBody(
             [
-                html.P("{:.2%}".format(stats_ser['leagueWinPercent']))
+                html.H3("{:.2%}".format(stats_ser['leagueWinPercent']))
             ],
-            style={"textAlignLast": "left"}
+            style={"textAlignLast": "center"}
         ),
     ),
 
@@ -283,6 +283,3 @@ def switch_tab(data, at):
     elif at == "tab-12":
         return tab12_content
     return html.P("This shouldn't ever be displayed...")
-
-
-

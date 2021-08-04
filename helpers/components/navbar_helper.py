@@ -65,7 +65,6 @@ def Navbar():
                         ["All Teams", "Atlantic", "Southeast", "Central", "Northwest", "Pacific", "Southwest"]
                     )
                 ],
-                style={"fontSize":"2rem"},
                 nav=True,
                 label="All Teams",
                 id="team-list",
@@ -75,7 +74,7 @@ def Navbar():
 
             dbc.NavItem(
                 dbc.NavLink(
-                    html.H1("About", className="nba"),
+                    html.H1("About", className="nba", style={"fontSize":"1.3rem"}),
                     href="/apps/about",
                 ),
                 style={"display": "flex", "align-items": "baseline"}

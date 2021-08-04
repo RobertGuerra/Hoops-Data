@@ -32,38 +32,73 @@ def about_section(*args):
                 dbc.Card(
                     [
                         dbc.CardImg(
-                            src="../assets/Bobby_git.png", top=True, bottom=False
+                            src="../assets/Bobby2_git.png", top=True, bottom=False,
+                            style={"position": "relative"}
                         ),
-                            html.A(
+
+                        # dbc.CardImg(
+                        #     src="../assets/chi_op.png", top=False, bottom=True,
+                        #     style={
+                        #         "background-image": 'url("../assets/chi_op.png")',
+                        #         "background-repeat": "no-repeat",
+                        #         "display": "block",
+                        #         "width": "99vw",
+                        #         "height": "25vh",
+                        #         "object-fit": "cover",
+                        #         "z-index": "0"
+                        #     },
+                        # ),
+                        html.A(
                             dbc.CardBody(
                                 [
                                     html.H1("Robert James Guerra",
-                                    className='nba',
-                                    style={"fontSize": "3rem"})
+                                            className='nba',
+                                            style={"fontSize": "2rem",
+                                                   "position": "relative",})
                                 ],
-                                style={"textAlignLast": "center"}
+                                style={"textAlignLast": "center", }
                             ),
-                                style={"textDecoration": "none", "margin":"auto"},
-                                href="https://github.com/RobertJG17",
-                                target="blank"
-                        )
+                            style={"textDecoration": "none", "margin": "auto"},
+                            href="https://github.com/RobertJG17",
+                            target="blank"
+                        ),
+                        # dbc.CardImgOverlay(
+                        #     children=[
+                        #         html.Img(
+                        #             src="../assets/chi_op.jpg",
+                        #             style={
+                        #                 "z-index": "0",
+                        #                 "position": "absolute",
+                        #                 "padding-bottom": "0px",
+                        #                 "padding-top":"67px",
+                        #                 "bottom":"-2px",
+                        #                 "left":"0px",
+                        #                 "width": "99vw",
+                        #                 "height": "30vh",
+                        #                 "object-fit": "cover",
+                        #                 "mix-blend-mode":"hard-light"
+                        #             }
+                        #         )
+                        #     ],
+                        # ),
                     ],
+                    style={"background-color":"#fc4c49"}
                 ),
         ),
         html.Div(
             dbc.Card(
                 [
                     dbc.CardImg(
-                            src="../assets/rob_git.png", top=True, bottom=False
+                            src="../assets/rob2_git.png", top=True, bottom=False
                         ),
                     html.A(
                         dbc.CardBody(
                             [
                                 html.H1("Roberto Guerra",
                                 className='nba',
-                                style={"fontSize": "3rem"})
+                                style={"fontSize": "2rem", "z-index":"1"}),
                             ],
-                            style={"textAlignLast": "center"},
+                            style={"textAlignLast": "start"},
                         ),
                         style={"textDecoration": "none", "color":"blue", "margin":"auto"},
                         href="https://github.com/RobertGuerra",
@@ -71,6 +106,7 @@ def about_section(*args):
                     ),
 
                 ],
+                style={"background-color": "#8AD"}
             ),
         )
 
