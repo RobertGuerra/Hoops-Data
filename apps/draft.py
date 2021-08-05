@@ -43,17 +43,20 @@ layout = html.Div(
         dbc.Tabs(
             [
                 dbc.Tab(
-                        label="First Round Pick",
-                        id="first-round-pick",
-                        active_label_style={"color":"white", "backgroundColor":"red"},
-                        tab_style={'textAlign': 'center', 'backgroundColor':'blue'},
+                    label="First Round Pick",
+                    id="first-round-pick",
+                    active_label_style={"color":"white", "backgroundColor":"red"},
+                    tab_style={'textAlign': 'center', 'backgroundColor':'blue'},
+                    tabClassName="data-table-tab"
+
                 ),
 
                 dbc.Tab(
-                        label="Second Round Pick",
-                        id="second-round-pick",
-                        active_label_style={"color":"white", "backgroundColor":"red"},
-                        tab_style={'textAlign': 'center', 'backgroundColor':'blue'},
+                    label="Second Round Pick",
+                    id="second-round-pick",
+                    active_label_style={"color":"white", "backgroundColor":"red"},
+                    tab_style={'textAlign': 'center', 'backgroundColor':'blue'},
+                    tabClassName="data-table-tab"
                 )
             ],
             style={'justifyContent': 'center'}
@@ -77,12 +80,23 @@ def fetch_draft(*args):
 
     table_1 = dash_table.DataTable(
         id='table',
+
         style_cell={'backgroundColor': '#020359'},
         style_header={'border':'2px solid white','textAlign': 'center',
                       'overflow': 'hidden',
                       'textOverflow': 'ellipsis',
                       },
         style_data={'textAlign': 'center', 'border':'2px solid white',},
+
+        style_cell={
+            'backgroundColor': '#020359',
+            'minWidth': '180px', 'width': '180px', 'maxWidth': '180px',
+            'overflow': 'hidden',
+            'textOverflow': 'ellipsis'
+        },
+        style_header={'textAlign': 'center'},
+        style_data={'textAlign': 'center'},
+
         fixed_columns={'headers': True, 'data': 1},
         fixed_rows={'headers': True},
         style_table={'minWidth': '100%'},
@@ -92,12 +106,22 @@ def fetch_draft(*args):
 
     table_2 = dash_table.DataTable(
         id='table',
+
         style_cell={'backgroundColor': '#020359'},
         style_header={'border':'2px solid white','textAlign': 'center',
                       'overflow': 'hidden',
                       'textOverflow': 'ellipsis',
                       },
         style_data={'textAlign': 'center', 'border':'2px solid white',},
+      
+        style_cell={
+            'backgroundColor': '#020359',
+            'minWidth': '180px', 'width': '180px', 'maxWidth': '180px',
+            'overflow': 'hidden',
+            'textOverflow': 'ellipsis'
+        },
+        style_header={'textAlign': 'center'},
+        style_data={'textAlign': 'center'},
         fixed_columns={'headers': True, 'data': 1},
         fixed_rows={'headers': True},
         style_table={'minWidth': '100%'},
