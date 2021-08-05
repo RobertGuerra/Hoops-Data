@@ -26,7 +26,7 @@ def Navbar():
 
             dbc.NavItem(
                 dbc.NavLink(
-                    html.H1("Draft Board", className="nba"),
+                    html.H1("Draft", className="nba"),
                     href="/apps/draft",
                 ),
                 style={"display": "flex", "align-items": "baseline"}
