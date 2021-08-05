@@ -32,22 +32,9 @@ def about_section(*args):
                 dbc.Card(
                     [
                         dbc.CardImg(
-                            src="../assets/Bobby2_git.png", top=True, bottom=False,
+                            src="../assets/Bobby_git.png", top=True, bottom=False,
                             style={"position": "relative"}
                         ),
-
-                        # dbc.CardImg(
-                        #     src="../assets/chi_op.png", top=False, bottom=True,
-                        #     style={
-                        #         "background-image": 'url("../assets/chi_op.png")',
-                        #         "background-repeat": "no-repeat",
-                        #         "display": "block",
-                        #         "width": "99vw",
-                        #         "height": "25vh",
-                        #         "object-fit": "cover",
-                        #         "z-index": "0"
-                        #     },
-                        # ),
                         html.A(
                             dbc.CardBody(
                                 [
@@ -62,25 +49,6 @@ def about_section(*args):
                             href="https://github.com/RobertJG17",
                             target="blank"
                         ),
-                        # dbc.CardImgOverlay(
-                        #     children=[
-                        #         html.Img(
-                        #             src="../assets/chi_op.jpg",
-                        #             style={
-                        #                 "z-index": "0",
-                        #                 "position": "absolute",
-                        #                 "padding-bottom": "0px",
-                        #                 "padding-top":"67px",
-                        #                 "bottom":"-2px",
-                        #                 "left":"0px",
-                        #                 "width": "99vw",
-                        #                 "height": "30vh",
-                        #                 "object-fit": "cover",
-                        #                 "mix-blend-mode":"hard-light"
-                        #             }
-                        #         )
-                        #     ],
-                        # ),
                     ],
                     style={"background-color":"#fc4c49"}
                 ),
