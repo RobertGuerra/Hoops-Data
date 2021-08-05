@@ -194,3 +194,56 @@
                         #         "z-index": "0"
                         #     },
                         # ),
+                        
+# working navbar
+# nav = dbc.NavbarSimple(
+#         children=[
+#
+#             html.Img(
+#                 src="https://s3.amazonaws.com/file.imleagues/Images/Teams/Uploaded/201801/201812316271650f5a72e9de44767031d56a47aca3fcadf.png",
+#                 style={
+#                     "height": "10%",
+#                     "width": "10%",
+#                     "display": "inline-bock",
+#                 }
+#             ),
+#
+#             html.Div(
+#                 dbc.NavLink(
+#                     html.H1("NBA"),
+#                     href="https://www.nba.com/",
+#                     target="blank",
+#                     className="nba",
+#                     style={"padding-right": "30%", "overflow": "hidden", "display": "inline-block"}
+#
+#                 ),
+#             ),
+#
+#             html.H1(
+#                 "TITLE HERE",
+#                 style={"padding-left":"200px"}
+#             ),
+#
+#
+#             dbc.DropdownMenu(
+#                 [
+#                     dbc.DropdownMenuItem(i, id=i)
+#                     for i in sorted(
+#                         ["All Teams", "Atlantic", "Southeast", "Central", "Northwest", "Pacific", "Southwest"]
+#                     )
+#                 ],
+#                 nav=True,
+#                 label="Select Division",
+#                 id="team-list",
+#                 in_navbar=True,
+#                 className="dropdown",
+#                 style={"padding-left":"300px"}
+#             )
+#
+#         ],
+#
+#         className="navbar",
+#         color="primary",
+#         sticky=True,
+#         dark=True
+#     )
