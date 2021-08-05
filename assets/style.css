@@ -68,7 +68,7 @@ a.nav-link{
 }
 
 .nba:hover {
-    color: blue
+    color: blue;
 }
 
 .card-title {
@@ -88,7 +88,6 @@ a.nav-link{
 .dropdown-menu {
     left: auto;
 }
-
 
 .image-logo {
     width: 11rem;
@@ -336,4 +335,12 @@ a.nav-link{
     color: #fff;
     border-width: 3px;
     border-color: red;
+}
+
+/*  page 3 */
+
+.bottom-left {
+  position: relative;
+  bottom: 8px;
+  left: 16px;
 }

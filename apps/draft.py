@@ -80,6 +80,14 @@ def fetch_draft(*args):
 
     table_1 = dash_table.DataTable(
         id='table',
+
+        style_cell={'backgroundColor': '#020359'},
+        style_header={'border':'2px solid white','textAlign': 'center',
+                      'overflow': 'hidden',
+                      'textOverflow': 'ellipsis',
+                      },
+        style_data={'textAlign': 'center', 'border':'2px solid white',},
+
         style_cell={
             'backgroundColor': '#020359',
             'minWidth': '180px', 'width': '180px', 'maxWidth': '180px',
@@ -88,6 +96,7 @@ def fetch_draft(*args):
         },
         style_header={'textAlign': 'center'},
         style_data={'textAlign': 'center'},
+
         fixed_columns={'headers': True, 'data': 1},
         fixed_rows={'headers': True},
         style_table={'minWidth': '100%'},
@@ -97,6 +106,14 @@ def fetch_draft(*args):
 
     table_2 = dash_table.DataTable(
         id='table',
+
+        style_cell={'backgroundColor': '#020359'},
+        style_header={'border':'2px solid white','textAlign': 'center',
+                      'overflow': 'hidden',
+                      'textOverflow': 'ellipsis',
+                      },
+        style_data={'textAlign': 'center', 'border':'2px solid white',},
+      
         style_cell={
             'backgroundColor': '#020359',
             'minWidth': '180px', 'width': '180px', 'maxWidth': '180px',

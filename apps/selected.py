@@ -283,6 +283,3 @@ def switch_tab(data, at):
     elif at == "tab-12":
         return tab12_content
     return html.P("This shouldn't ever be displayed...")
-
-
-

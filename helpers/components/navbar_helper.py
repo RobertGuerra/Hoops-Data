@@ -41,10 +41,11 @@ def Navbar():
                 dbc.NavLink(
                     html.H1(
                         "Hoops",
-                        className="nba",
+                        #className="nba",
                     ),
-                    href="https://github.com/RobertJG17",
-                    target="blank"
+                    #href="https://github.com/RobertJG17",
+                    # href="#",
+                    # target="blank"
                 ),
                 style={"display": "flex", "align-items": "baseline"}
             ),
@@ -69,7 +70,15 @@ def Navbar():
                 id="team-list",
                 in_navbar=True,
                 className="dropdown",
-            )
+            ),
+
+            dbc.NavItem(
+                dbc.NavLink(
+                    html.H1("About", className="nba", style={"fontSize":"1.3rem"}),
+                    href="/apps/about",
+                ),
+                style={"display": "flex", "align-items": "baseline"}
+            ),
 
         ],
 

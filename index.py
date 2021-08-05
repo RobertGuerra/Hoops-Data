@@ -3,7 +3,7 @@ import dash_html_components as html
 from dash.dependencies import Input, Output
 
 from app import app
-from apps import start, selected, draft
+from apps import start, selected, draft, about
 
 
 server = app.server
@@ -24,6 +24,8 @@ def display_page(pathname):
         return selected.layout
     elif '/apps/draft' in pathname:
         return draft.layout
+    elif '/apps/about' in pathname:
+        return about.layout
     else:
         return '404'
 

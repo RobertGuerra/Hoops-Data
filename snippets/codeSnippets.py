@@ -159,3 +159,38 @@
 # result = flatten(lottery_data, '', {})
 # print("\n\nafter flatten...\n")
 # print(result)
+
+
+#   2 different options for inserting an image into a dbc card
+# dbc.CardImgOverlay(
+                        #     children=[
+                        #         html.Img(
+                        #             src="../assets/chi_op.jpg",
+                        #             style={
+                        #                 "z-index": "0",
+                        #                 "position": "absolute",
+                        #                 "padding-bottom": "0px",
+                        #                 "padding-top":"67px",
+                        #                 "bottom":"-2px",
+                        #                 "left":"0px",
+                        #                 "width": "99vw",
+                        #                 "height": "30vh",
+                        #                 "object-fit": "cover",
+                        #                 "mix-blend-mode":"hard-light"
+                        #             }
+                        #         )
+                        #     ],
+                        # ),
+
+# dbc.CardImg(
+                        #     src="../assets/chi_op.png", top=False, bottom=True,
+                        #     style={
+                        #         "background-image": 'url("../assets/chi_op.png")',
+                        #         "background-repeat": "no-repeat",
+                        #         "display": "block",
+                        #         "width": "99vw",
+                        #         "height": "25vh",
+                        #         "object-fit": "cover",
+                        #         "z-index": "0"
+                        #     },
+                        # ),
