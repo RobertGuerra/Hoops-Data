@@ -87,8 +87,6 @@ def fetch_draft(*args):
                       'textOverflow': 'ellipsis',
                       },
         style_data={'textAlign': 'center', 'border':'2px solid white',},
-        style_header={'textAlign': 'center'},
-
         fixed_columns={'headers': True, 'data': 1},
         fixed_rows={'headers': True},
         style_table={'minWidth': '100%'},
@@ -105,7 +103,6 @@ def fetch_draft(*args):
                       'textOverflow': 'ellipsis',
                       },
         style_data={'textAlign': 'center', 'border':'2px solid white',},
-        style_header={'textAlign': 'center'},
         fixed_columns={'headers': True, 'data': 1},
         fixed_rows={'headers': True},
         style_table={'minWidth': '100%'},
