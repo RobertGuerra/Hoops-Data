@@ -87,15 +87,7 @@ def fetch_draft(*args):
                       'textOverflow': 'ellipsis',
                       },
         style_data={'textAlign': 'center', 'border':'2px solid white',},
-
-        style_cell={
-            'backgroundColor': '#020359',
-            'minWidth': '180px', 'width': '180px', 'maxWidth': '180px',
-            'overflow': 'hidden',
-            'textOverflow': 'ellipsis'
-        },
         style_header={'textAlign': 'center'},
-        style_data={'textAlign': 'center'},
 
         fixed_columns={'headers': True, 'data': 1},
         fixed_rows={'headers': True},
@@ -113,15 +105,7 @@ def fetch_draft(*args):
                       'textOverflow': 'ellipsis',
                       },
         style_data={'textAlign': 'center', 'border':'2px solid white',},
-      
-        style_cell={
-            'backgroundColor': '#020359',
-            'minWidth': '180px', 'width': '180px', 'maxWidth': '180px',
-            'overflow': 'hidden',
-            'textOverflow': 'ellipsis'
-        },
         style_header={'textAlign': 'center'},
-        style_data={'textAlign': 'center'},
         fixed_columns={'headers': True, 'data': 1},
         fixed_rows={'headers': True},
         style_table={'minWidth': '100%'},
